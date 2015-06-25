@@ -142,36 +142,66 @@ class TGApp:
 #			print "Error: Wierd index!"
 	def runJSON(self):
 	
-		TGA_rowDict = {}
+		TGA_headerList = []
 		
-		for rownum in xrange(1,self.sh.nrows):
+		for rownum in range(19):
+
+			row_values = str(self.sh.row(rownum))
+			TGA_headerList.append(row_values)
+
+
+		j = json.dumps(TGA_headerList)
+
+		with open('TGA_1.json', 'w') as f:
+			f.write(j)
+					
+
+			# TGA_headerList['File Name'] = ('row_values')
+			# TGA_headerList['Experiment'] = ('row_values')
+			# TGA_headerList['Operator'] = ('row_values')
+			# TGA_headerList['Experiment ID'] = ('row_values')
+			# TGA_headerList['Sample Name'] = ('row_values')
+			# TGA_headerList['Sample Lot #'] = ('row_values')
+			# TGA_headerList['Notes'] = ('row_values')
+			# TGA_headerList[''] = ('row_values')
+			# TGA_headerList['Adsorbate'] = ('row_values')
+			# TGA_headerList['Drying Temp'] = ('row_values')
+			# # TGA_headerList['Drying Temp']['unit' = (ow_values[9)]
+			# # TGA_headerList['Drying Temp']['value' = (ow_values[9)]
+			# TGA_headerList['Heating Rate'] = ('row_values')
+			# TGA_headerList['Max Drying Time'] = ('row_values')
+			# TGA_headerList['Equil Crit'] = ('row_values')
+			# TGA_headerList['Run Temp'] = ('row_values')
+			# TGA_headerList['Max Equil Time'] = ('row_values')
+			# TGA_headerList['Equil Crit'] = ('row_values')
+			# TGA_headerList['Pres Steps'] = ('row_values')
+			# TGA_headerList['Data Logging Interval'] = ('row_values')
+			# TGA_headerList['Expt Started'] = ('row_values')
+			# TGA_headerList['Run Started'] = ('row_values')
+
+		# TGA_colList = [] 
+
+		# for colnum in xrange(1,self.sh.ncols)
+
+
 			
-			row_values = self.sh.row_values(rownum)
-			TGA_rowDict['File Name'] = (row_values)
-			TGA_rowDict['Experiment'] = (row_values)
-			TGA_rowDict['Operator'] = (row_values)
-			TGA_rowDict['Experiment ID'] = (row_values)
-			TGA_rowDict['Sample Name'] = (row_values)
-			TGA_rowDict['Sample Lot #'] = (row_values)
-			TGA_rowDict['Notes'] = (row_values)
-			TGA_rowDict[''] = (row_values)
-			TGA_rowDict['Adsorbate'] = (row_values)
-			TGA_rowDict['Drying Temp'] = (row_values)
-			# TGA_rowDict['Drying Temp']['unit' = (ow_values[9)]
-			# TGA_rowDict['Drying Temp']['value' = (ow_values[9)]
-			TGA_rowDict['Heating Rate'] = (row_values)
-			TGA_rowDict['Max Drying Time'] = (row_values)
-			TGA_rowDict['Equil Crit'] = (row_values)
-			TGA_rowDict['Run Temp'] = (row_values)
-			TGA_rowDict['Max Equil Time'] = (row_values)
-			TGA_rowDict['Equil Crit'] = (row_values)
-			TGA_rowDict['Pres Steps'] = (row_values)
-			TGA_rowDict['rowDict Logging Interval'] = (row_values)
-			TGA_rowDict['Expt Started'] = (row_values)
-			TGA_rowDict['Run Started'] = (row_values)
+			
 
 
-			# TGA_rowList['Elap Time'] = {}
+			
+
+
+
+
+
+
+
+if __name__ == '__main__':
+
+	TGInstance = TGApp()
+	TGInstance.run()
+	
+# TGA_rowList['Elap Time'] = {}
 			# TGA_rowList['Elap Time']['unit'] = 'min'
 			# TGA_rowList['Elap Time']['value'] = 355.7
 
@@ -181,18 +211,4 @@ class TGApp:
 			# if rownum >= 24:
 			# 	TGA_raw_rowList = {}
 			# 	for column in sh.column_values(rownum):
-			# 		row_values = sh.row_values(rownum) #column_values i think.
-
-			j = json.dumps(TGA_rowDict)
-
-			with open('rowDict.json', 'w') as f:
-					f.write(j)
-					
-		
-
-if __name__ == '__main__':
-
-	TGInstance = TGApp()
-	TGInstance.run()
-	
-	
+			# 		row_values = sh.row_values(rownum) #column_values i think.	
