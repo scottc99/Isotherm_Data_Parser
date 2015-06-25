@@ -4,66 +4,12 @@ import os
 import xlrd
 from collections import OrderedDict
 import simplejson as json 
+import pprint
 import tkFileDialog
 import tkSimpleDialog
 from Tkinter import *	
-#### Script prompting the user to select relevant excel file ####
-
-# class TGApp(Frame):
-
-# 	def __init__(self, master):
-		
-# 		Frame.__init__(self, master)
-# 		Frame.pack()
-		
-# 		self.label = Label(self, text = "Enter Sheet Number").grid(row = 0)
-# 		self.label.pack()
-		
-# 		self.button = Button(self, text = "okay", command = Frame.quit)
-# 		self.button.pack()
-
-
-# 		self.button = Entry(self)
-# 		sheet = self.get()
-# 		print str(sheet)
-
-
-# class TGApp(Label):
-
-# 	def __init__(self, master = None):
-
-# 		Label.__init__(self, master)
-		
-# 		self.label = Label(self, text = "Enter Sheet Number")
-# 		self.label.pack()
-
-# 	def grid(self):
-
-# 		self.tk.call(self, row = 0, column = 0)
-
-		
-# class TGApp(Button):
-
-# 	def __init__(self, master = None):
-		
-# 		Button.__init__(self, master)
-
-# 		self.button = Button(self, text = "okay", command = Frame.quit)
-# 		self.button.pack()
-
-# class TGApp(Entry):
-	
-# 	def __init__(self, master = None, widget = None):
-		
-# 		Entry.__init__(self)
-# 		sheet = self.get()
-# 		print str(sheet)
-		# if int(sheet) > 0:
-		# 	print 'sh = wb.sheet_by_index' + (int(sheet) - 1)
-		# else:
-		# 	print 'Eee Roar!' 
-
-
+import dicttoxml
+import lxml.etree as etree
 
 class TGApp:
 	def __init__(self):
@@ -92,123 +38,180 @@ class TGApp:
 
 	def run(self):
 		print "Please select a file"
-		file_path = tkFileDialog.askopenfilename()
-		self.wb = xlrd.open_workbook(filename = file_path)
+		self.file_path = tkFileDialog.askopenfilename()
+		self.wb = xlrd.open_workbook(filename = self.file_path)
+		print self.file_path
 		self.root.mainloop()
 
 
-
-	# student1 = Student("John")
-	# student2 = Student("Alice")
-
-	# student1.whoAreYou()
-	# student2.whoAreYou()
-
-	# student2.rename("Alicia")
-	
-	# student1.whoAreYou()
-	# student2.whoAreYou()
-
-	# root = Tk()
-	# label = Label(root, text = "Enter Sheet Number")
-	# label.pack()
-
-	# entry = Entry(root)
-	# entry.pack()
-
-	# def load_sheet():
-	# 	sheet = entry.get()
-	# 	print "Sheet No: %s"%sheet
-	# 	if int(sheet) > 0:
-	# 		try:
-	# 			sh = wb.sheet_by_index(int(sheet) - 1)
-	# 			root.destroy()
-	# 		except:
-	# 			print "Error loading the sheet."
-	# 	else:
-	# 		print 'Eee Roar!'
-
-	# button = Button(root, text = "Load", command = load_sheet)
-	# button.pack()
-
-	
-	# root.mainloop()
-	# print "Hey!!! Where am i?"
-
-
-#if int(self.e1.get()) > 0:
-#			return 'sh = wb.sheet_by_index' + (int(int(self.e1.get()))) - 1
-#else:
-#			print "Error: Wierd index!"
 	def runJSON(self):
-	
-		TGA_headerList = []
-		
-		for rownum in range(19):
 
-			row_values = str(self.sh.row(rownum))
-			TGA_headerList.append(row_values)
+		TGA_Data = {"dataset":self.file_path.split("/")[-1]}
+
+		TGA_Header = {}
+		TGA_Content = []
+
+		#FileName
+		TGA_Header["filename"] = self.sh.cell_value(0, 2)
+
+		#Experiment
+		TGA_Header["experiment"] = {}
+		TGA_Header["experiment"]["name"]= self.sh.cell_value(1, 2)
+		TGA_Header["experiment"]["id"]= self.sh.cell_value(3, 2)
+		TGA_Header["experiment"]["started"]= self.sh.cell_value(18, 2)
+
+		#Operator
+		TGA_Header["operator"] = self.sh.cell_value(2, 2)
+
+		#Sample Name
+		TGA_Header["sample"] = {}
+		TGA_Header["sample"]["name"] = self.sh.cell_value(4, 2)
+		TGA_Header["sample"]["lot"] = self.sh.cell_value(5, 2)
+
+		#Notes
+		TGA_Header["notes"] = self.sh.cell_value(6, 2)
+
+		#Pump
+		TGA_Header["pump"] = self.sh.cell_value(7, 3)
+
+		#Absorbate
+		TGA_Header["absorbate"] = self.sh.cell_value(8, 2)
+
+		#Temp
+		TGA_Header["temperature"] = {}
+		TGA_Header["temperature"]["drying"] = self.sh.cell_value(9, 2)
+		TGA_Header["temperature"]["run"] = {}
+		TGA_Header["temperature"]["run"]["value"] = self.sh.cell_value(13, 2)
+		TGA_Header["temperature"]["run"]["unit"] = self.sh.cell_value(13, 3)
+
+		#Heating Rate
+		TGA_Header["heating_rate"] = {}
+		TGA_Header["heating_rate"]["value"] = self.sh.cell_value(10, 2)
+		TGA_Header["heating_rate"]["unit"] = self.sh.cell_value(10, 3)
+
+		#Max Time
+		TGA_Header["max_time"] = {}
+		TGA_Header["max_time"]["drying"] = {}
+		TGA_Header["max_time"]["drying"]["value"] = self.sh.cell_value(11, 2)
+		TGA_Header["max_time"]["drying"]["unit"] = self.sh.cell_value(11, 3)
+		TGA_Header["max_time"]["equil"] = {}
+		TGA_Header["max_time"]["equil"]["value"] = self.sh.cell_value(14, 2)
+		TGA_Header["max_time"]["equil"]["unit"] = self.sh.cell_value(14, 3)
+
+		#Equal Crit
+		TGA_Header["equil_crit"] = []
+
+		equil_1 = {}
+		equil_1["value1"] = self.sh.cell_value(12, 2)
+		equil_1["unit1"] = self.sh.cell_value(12, 3)
+		equil_1["value2"] = self.sh.cell_value(12, 4)
+		equil_1["unit2"] = self.sh.cell_value(12, 5)
+
+		equil_2 = {}
+		equil_2["value1"] = self.sh.cell_value(15, 2)
+		equil_2["unit1"] = self.sh.cell_value(15, 3)
+		equil_2["value2"] = self.sh.cell_value(15, 4)
+		equil_2["unit2"] = self.sh.cell_value(15, 5)
+
+		TGA_Header["equil_crit"].append(equil_1)
+		TGA_Header["equil_crit"].append(equil_2)
 
 
-		j = json.dumps(TGA_headerList)
+		#Pres Steps
+		steps = self.sh.cell_value(16, 2)[1:len(self.sh.cell_value(16, 2))-1]
+		TGA_Header["pressure_steps"] = steps.split(",")
 
-		with open('TGA_1.json', 'w') as f:
-			f.write(j)
+		#Data Logging Interval
+		TGA_Header["data_logging_interval"] = {}
+		TGA_Header["data_logging_interval"]["value1"] = self.sh.cell_value(17, 2)
+		TGA_Header["data_logging_interval"]["unit1"] = self.sh.cell_value(17, 3)
+		TGA_Header["data_logging_interval"]["value2"] = self.sh.cell_value(17, 4)
+		TGA_Header["data_logging_interval"]["unit2"] = self.sh.cell_value(17, 5)
+
+		#Run Started
+		TGA_Header["run_started"] = self.sh.cell_value(19, 2)
+
+		TGA_Data["header"] = TGA_Header
+
+
+		#Content
+
+		begin = 23
+
+		print str(begin)
+		print self.sh.cell_value(23, 0)
+
+		while 1:
+			try:
+				row = {}
+
+				row["index"] = begin -22
+				row["elap_time"] = {}
+				row["elap_time"]["unit"] = self.sh.cell_value(22, 0)
+				row["elap_time"]["value"] = self.sh.cell_value(begin, 0)
+
+				row["weights"] = []
+				weight1 = {}
+				weight1["prefix"] = ""
+				weight1["unit"] = self.sh.cell_value(22, 1)
+				weight1["value"] = self.sh.cell_value(begin, 1)
+				row["weights"].append(weight1)
+
+				weight2 = {}
+				weight2["prefix"] = ""
+				weight2["unit"] = self.sh.cell_value(22, 2)
+				weight2["value"] = self.sh.cell_value(begin, 2)
+				row["weights"].append(weight2)
+
+				weight3 = {}
+				weight3["prefix"] = "Corr."
+				weight3["unit"] = self.sh.cell_value(22, 7)
+				weight3["value"] = self.sh.cell_value(begin, 7)
+				row["weights"].append(weight3)
+
+				weight4 = {}
+				weight4["prefix"] = "Corr."
+				weight4["unit"] = self.sh.cell_value(22, 8)
+				weight4["value"] = self.sh.cell_value(begin, 8)
+				row["weights"].append(weight4)
+
+				row["pressure"] = {}
+				row["pressure"]["unit"] = self.sh.cell_value(22, 3)
+				row["pressure"]["value"] = self.sh.cell_value(begin, 3)
+
+				row["sample_temp"] = {}
+				row["sample_temp"]["unit"] = self.sh.cell_value(22, 4)
+				row["sample_temp"]["value"] = self.sh.cell_value(begin, 4)
+
+				row["Z"] = {}
+				row["Z"]["unit"] = self.sh.cell_value(22, 6)
+				row["Z"]["value"] = self.sh.cell_value(begin, 6)
+
+				TGA_Content.append(row)
+				begin += 1
+			except:
+				break
+
+
+		#End content
+		TGA_Data["content"] = TGA_Content
+
+		with open('TGA_2.json', 'w') as f:
+			f.write(json.dumps(TGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
+
+		# print parseString(dicttoxml.dicttoxml(TGA_Data)).toprettyxml()
+		with open('TGA_2.xml', 'w') as f:
+
+			f.write(dicttoxml.dicttoxml(TGA_Data))
+
+		x = etree.parse("TGA_2.xml")
+		with open('TGA_2.xml', 'w') as f:
+
+			f.write(etree.tostring(x, pretty_print = True))
 					
-
-			# TGA_headerList['File Name'] = ('row_values')
-			# TGA_headerList['Experiment'] = ('row_values')
-			# TGA_headerList['Operator'] = ('row_values')
-			# TGA_headerList['Experiment ID'] = ('row_values')
-			# TGA_headerList['Sample Name'] = ('row_values')
-			# TGA_headerList['Sample Lot #'] = ('row_values')
-			# TGA_headerList['Notes'] = ('row_values')
-			# TGA_headerList[''] = ('row_values')
-			# TGA_headerList['Adsorbate'] = ('row_values')
-			# TGA_headerList['Drying Temp'] = ('row_values')
-			# # TGA_headerList['Drying Temp']['unit' = (ow_values[9)]
-			# # TGA_headerList['Drying Temp']['value' = (ow_values[9)]
-			# TGA_headerList['Heating Rate'] = ('row_values')
-			# TGA_headerList['Max Drying Time'] = ('row_values')
-			# TGA_headerList['Equil Crit'] = ('row_values')
-			# TGA_headerList['Run Temp'] = ('row_values')
-			# TGA_headerList['Max Equil Time'] = ('row_values')
-			# TGA_headerList['Equil Crit'] = ('row_values')
-			# TGA_headerList['Pres Steps'] = ('row_values')
-			# TGA_headerList['Data Logging Interval'] = ('row_values')
-			# TGA_headerList['Expt Started'] = ('row_values')
-			# TGA_headerList['Run Started'] = ('row_values')
-
-		# TGA_colList = [] 
-
-		# for colnum in xrange(1,self.sh.ncols)
-
-
-			
-			
-
-
-			
-
-
-
-
-
 
 
 if __name__ == '__main__':
 
 	TGInstance = TGApp()
 	TGInstance.run()
-	
-# TGA_rowList['Elap Time'] = {}
-			# TGA_rowList['Elap Time']['unit'] = 'min'
-			# TGA_rowList['Elap Time']['value'] = 355.7
-
-			# if rownum == 22:
-			# 	TGA_Measurements = []
-			
-			# if rownum >= 24:
-			# 	TGA_raw_rowList = {}
-			# 	for column in sh.column_values(rownum):
-			# 		row_values = sh.row_values(rownum) #column_values i think.	
