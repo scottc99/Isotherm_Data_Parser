@@ -196,18 +196,18 @@ class TGApp:
 		#End content
 		TGA_Data["content"] = TGA_Content
 
-		with open('8852_DataSet_TGA.json', 'w') as f:
+		os.chdir(os.path.dirname(os.getcwd()))
+
+		with open('Data_Files/JSON/8852_DataSet_TGA.json', 'w') as f:
 			f.write(json.dumps(TGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
 
-		with open('8852_DataSet_TGA.xml', 'w') as f:
+		with open('Data_Files/XML/8852_DataSet_TGA.xml', 'w') as f:
 			f.write(dicttoxml.dicttoxml(TGA_Data))
 
-		x = etree.parse("8852_DataSet_TGA.xml")
+		x = etree.parse("Data_Files/XML/8852_DataSet_TGA.xml")
 
-		with open('8852_DataSet_TGA.xml', 'w') as f:
-			f.write(etree.tostring(x, pretty_print = True))
-
-		os.rename('8852_DataSet_TGA.json', 'TGA_Files/Data_Files/json /8852_DataSet_TGA.json')					
+		with open('Data_Files/XML/8852_DataSet_TGA.xml', 'w') as f:
+			f.write(etree.tostring(x, pretty_print = True))				
 
 
 if __name__ == '__main__':

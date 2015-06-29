@@ -1,4 +1,4 @@
-#### Script for file format conversion for TGA (machine 1) ####
+#### Script for file format conversion for IGA (machine 2) ####
 
 import os
 import xlrd
@@ -44,9 +44,9 @@ if __name__ == '__main__':
 			row["pressure"]["unit"] = "mbar"
 			row["pressure"]["value"] = sh.cell_value(begin, 1)
 
-			row["'%' mass"] = {} 
-			row["'%' mass"]["unit"] = "'%' mass"
-			row["'%' mass"]["value"] = sh.cell_value(begin, 2)
+			row["mass %"] = {} 
+			row["mass %"]["unit"] = "mass %"
+			row["mass %"]["value"] = sh.cell_value(begin, 2)
 
 			row["concentration"] = {}
 			row["concentration"]["unit"] = "mmol/g"
@@ -64,15 +64,17 @@ if __name__ == '__main__':
 
 	IGA_Data["content"] = IGA_Content 
 
-	with open('8852_DataSet_IGA.json', 'w') as f:
+	os.chdir(os.path.dirname(os.getcwd()))
+
+	with open('Data_Files/JSON/8852_DataSet_IGA.json', 'w') as f:
 		f.write(json.dumps(IGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
 			
-	with open('8852_DataSet_IGA.xml', 'w') as f:
+	with open('Data_Files/XML/8852_DataSet_IGA.xml', 'w') as f:
 		f.write(dicttoxml.dicttoxml(IGA_Data))
 
-	x = etree.parse("8852_DataSet_IGA.xml")
+	x = etree.parse("Data_Files/XML/8852_DataSet_IGA.xml")
 
-	with open('8852_DataSet_IGA.xml', 'w') as f:
+	with open('Data_Files/XML/8852_DataSet_IGA.xml', 'w') as f:
 		f.write(etree.tostring(x, pretty_print = True))
 
 
