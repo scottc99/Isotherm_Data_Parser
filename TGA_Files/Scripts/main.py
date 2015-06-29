@@ -1,4 +1,4 @@
-#### Script for first set of rowList from TGA (machine 1) ####
+#### Script for file format conversion for TGA (machine 1) ####
 
 import os
 import xlrd
@@ -138,8 +138,8 @@ class TGApp:
 
 		begin = 23
 
-		print str(begin)
-		print self.sh.cell_value(23, 0)
+		# print str(begin)
+		# print self.sh.cell_value(23, 0)
 
 		while 1:
 			try:
@@ -196,19 +196,18 @@ class TGApp:
 		#End content
 		TGA_Data["content"] = TGA_Content
 
-		with open('TGA_2.json', 'w') as f:
+		with open('8852_DataSet_TGA.json', 'w') as f:
 			f.write(json.dumps(TGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
 
-		# print parseString(dicttoxml.dicttoxml(TGA_Data)).toprettyxml()
-		with open('TGA_2.xml', 'w') as f:
-
+		with open('8852_DataSet_TGA.xml', 'w') as f:
 			f.write(dicttoxml.dicttoxml(TGA_Data))
 
-		x = etree.parse("TGA_2.xml")
-		with open('TGA_2.xml', 'w') as f:
+		x = etree.parse("8852_DataSet_TGA.xml")
 
+		with open('8852_DataSet_TGA.xml', 'w') as f:
 			f.write(etree.tostring(x, pretty_print = True))
-					
+
+		os.rename('8852_DataSet_TGA.json', 'TGA_Files/Data_Files/json /8852_DataSet_TGA.json')					
 
 
 if __name__ == '__main__':

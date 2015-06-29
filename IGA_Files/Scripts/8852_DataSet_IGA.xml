@@ -1,0 +1,1041 @@
+<root>
+  <content type="list">
+    <item type="dict">
+      <index type="int">1</index>
+      <weight type="dict">
+        <value type="float">88.94184</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.032</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">0.0</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">3.004459</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">0.0</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">2</index>
+      <weight type="dict">
+        <value type="float">94.84</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.956</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">6.675817</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">526.0757</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">1.51692</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">3</index>
+      <weight type="dict">
+        <value type="float">95.72093</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.998</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">7.6864</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">739.5516</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">1.74655</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">4</index>
+      <weight type="dict">
+        <value type="float">96.03563</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.032</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">8.050163</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">843.6694</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">1.82921</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">5</index>
+      <weight type="dict">
+        <value type="float">97.37903</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.97</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">9.626376</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">1513.333</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.18737</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">6</index>
+      <weight type="dict">
+        <value type="float">98.33706</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.989</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">10.8029</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">2499.073</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.4547</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">7</index>
+      <weight type="dict">
+        <value type="float">98.88177</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.989</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">11.51947</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">3514.325</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.61753</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">8</index>
+      <weight type="dict">
+        <value type="float">99.24117</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.008</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">12.02672</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">4507.236</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.73279</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">9</index>
+      <weight type="dict">
+        <value type="float">99.50008</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.989</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">12.42295</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">5508.56</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.82282</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">10</index>
+      <weight type="dict">
+        <value type="float">99.70999</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.998</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">12.76487</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">6507.677</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.90051</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">11</index>
+      <weight type="dict">
+        <value type="float">99.85585</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.013</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.03382</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">7494.245</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.96163</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">12</index>
+      <weight type="dict">
+        <value type="float">99.97767</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.013</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.27855</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">8499.843</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.01724</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">13</index>
+      <weight type="dict">
+        <value type="float">100.0773</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.036</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.49526</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">9471.241</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.06648</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">14</index>
+      <weight type="dict">
+        <value type="float">100.1516</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.013</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.68738</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">10473.12</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.11013</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">15</index>
+      <weight type="dict">
+        <value type="float">100.2192</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.051</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.87152</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">11467.96</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.15197</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">16</index>
+      <weight type="dict">
+        <value type="float">100.27</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.032</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.03698</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">12458.39</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.18957</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">17</index>
+      <weight type="dict">
+        <value type="float">100.3143</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.027</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.19636</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">13454.75</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.22579</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">18</index>
+      <weight type="dict">
+        <value type="float">100.3514</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.041</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.34731</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">14445.31</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.26009</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">19</index>
+      <weight type="dict">
+        <value type="float">100.3811</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.022</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.49042</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">15432.85</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.2926</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">20</index>
+      <weight type="dict">
+        <value type="float">100.4003</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.998</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.6227</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">16427.0</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.32266</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">21</index>
+      <weight type="dict">
+        <value type="float">100.414</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.027</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.74858</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">17420.32</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.35126</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">22</index>
+      <weight type="dict">
+        <value type="float">100.4228</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.022</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.87001</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">18416.27</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.37886</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">23</index>
+      <weight type="dict">
+        <value type="float">100.4353</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.008</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.99657</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">19412.49</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.40761</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">24</index>
+      <weight type="dict">
+        <value type="float">100.4353</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.008</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.99657</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">19412.49</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.40761</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">25</index>
+      <weight type="dict">
+        <value type="float">100.4308</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.96</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.89306</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">18533.07</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.38409</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">26</index>
+      <weight type="dict">
+        <value type="float">100.4185</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.027</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.7688</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">17554.37</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.35586</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">27</index>
+      <weight type="dict">
+        <value type="float">100.4138</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.003</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.65172</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">16546.56</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.32926</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">28</index>
+      <weight type="dict">
+        <value type="float">100.3977</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.017</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.5235</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">15557.37</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.30012</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">29</index>
+      <weight type="dict">
+        <value type="float">100.3703</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.022</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.38208</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">14560.05</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.26799</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">30</index>
+      <weight type="dict">
+        <value type="float">100.3415</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.979</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.2405</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">13567.28</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.23582</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">31</index>
+      <weight type="dict">
+        <value type="float">100.2904</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.984</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">14.07349</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">12574.64</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.19787</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">32</index>
+      <weight type="dict">
+        <value type="float">100.2537</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.003</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.92373</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">11580.08</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.16384</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">33</index>
+      <weight type="dict">
+        <value type="float">100.1845</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.017</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.73763</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">10589.23</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.12155</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">34</index>
+      <weight type="dict">
+        <value type="float">100.1006</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.994</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.53601</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">9600.182</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.07574</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">35</index>
+      <weight type="dict">
+        <value type="float">100.0176</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.022</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.33586</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">8609.201</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">3.03026</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">36</index>
+      <weight type="dict">
+        <value type="float">99.89732</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.017</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">13.09487</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">7624.426</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.9755</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">37</index>
+      <weight type="dict">
+        <value type="float">99.74192</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.008</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">12.81299</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">6620.758</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.91145</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">38</index>
+      <weight type="dict">
+        <value type="float">99.57063</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.017</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">12.51582</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">5631.295</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.84392</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">39</index>
+      <weight type="dict">
+        <value type="float">99.32569</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.994</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">12.13479</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">4625.42</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.75734</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">40</index>
+      <weight type="dict">
+        <value type="float">98.99059</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.979</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">11.65747</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">3660.641</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.64888</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">41</index>
+      <weight type="dict">
+        <value type="float">98.47775</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.036</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">10.975</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">2632.427</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.49381</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">42</index>
+      <weight type="dict">
+        <value type="float">97.59061</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.994</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">9.877297</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">1642.135</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">2.24438</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">43</index>
+      <weight type="dict">
+        <value type="float">96.36344</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">19.998</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">8.428075</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">938.4096</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">1.91508</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">44</index>
+      <weight type="dict">
+        <value type="float">95.90003</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.017</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">7.892124</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">784.3705</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">1.7933</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+    <item type="dict">
+      <index type="int">45</index>
+      <weight type="dict">
+        <value type="float">95.46339</value>
+        <unit type="str">mg</unit>
+      </weight>
+      <sample_temp type="dict">
+        <value type="float">20.013</value>
+        <unit type="str">C</unit>
+      </sample_temp>
+      <key type="dict" name="'%' mass">
+        <value type="float">7.389594</value>
+        <unit type="str">'%' mass</unit>
+      </key>
+      <pressure type="dict">
+        <value type="float">663.0146</value>
+        <unit type="str">mbar</unit>
+      </pressure>
+      <concentration type="dict">
+        <value type="float">1.67911</value>
+        <unit type="str">mmol/g</unit>
+      </concentration>
+    </item>
+  </content>
+  <header type="dict"/>
+  <dataset type="str">8852_DataSet_IGA.xlsx</dataset>
+</root>
