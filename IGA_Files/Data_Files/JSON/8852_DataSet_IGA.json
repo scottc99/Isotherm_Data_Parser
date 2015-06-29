@@ -1,15 +1,15 @@
 {
     "content": [
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 0.0
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 0.0
             },
             "index": 1,
+            "mass %": {
+                "unit": "mass %",
+                "value": 0.0
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 3.004459
@@ -24,15 +24,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 6.675817
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 1.51692
             },
             "index": 2,
+            "mass %": {
+                "unit": "mass %",
+                "value": 6.675817
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 526.0757
@@ -47,15 +47,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 7.6864
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 1.74655
             },
             "index": 3,
+            "mass %": {
+                "unit": "mass %",
+                "value": 7.6864
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 739.5516
@@ -70,15 +70,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 8.050163
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 1.82921
             },
             "index": 4,
+            "mass %": {
+                "unit": "mass %",
+                "value": 8.050163
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 843.6694
@@ -93,15 +93,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 9.626376
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.18737
             },
             "index": 5,
+            "mass %": {
+                "unit": "mass %",
+                "value": 9.626376
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 1513.333
@@ -116,15 +116,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 10.8029
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.4547
             },
             "index": 6,
+            "mass %": {
+                "unit": "mass %",
+                "value": 10.8029
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 2499.073
@@ -139,15 +139,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 11.51947
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.61753
             },
             "index": 7,
+            "mass %": {
+                "unit": "mass %",
+                "value": 11.51947
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 3514.325
@@ -162,15 +162,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 12.02672
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.73279
             },
             "index": 8,
+            "mass %": {
+                "unit": "mass %",
+                "value": 12.02672
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 4507.236
@@ -185,15 +185,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 12.42295
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.82282
             },
             "index": 9,
+            "mass %": {
+                "unit": "mass %",
+                "value": 12.42295
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 5508.56
@@ -208,15 +208,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 12.76487
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.90051
             },
             "index": 10,
+            "mass %": {
+                "unit": "mass %",
+                "value": 12.76487
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 6507.677
@@ -231,15 +231,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.03382
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.96163
             },
             "index": 11,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.03382
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 7494.245
@@ -254,15 +254,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.27855
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.01724
             },
             "index": 12,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.27855
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 8499.843
@@ -277,15 +277,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.49526
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.06648
             },
             "index": 13,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.49526
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 9471.241
@@ -300,15 +300,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.68738
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.11013
             },
             "index": 14,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.68738
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 10473.12
@@ -323,15 +323,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.87152
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.15197
             },
             "index": 15,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.87152
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 11467.96
@@ -346,15 +346,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.03698
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.18957
             },
             "index": 16,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.03698
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 12458.39
@@ -369,15 +369,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.19636
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.22579
             },
             "index": 17,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.19636
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 13454.75
@@ -392,15 +392,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.34731
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.26009
             },
             "index": 18,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.34731
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 14445.31
@@ -415,15 +415,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.49042
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.2926
             },
             "index": 19,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.49042
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 15432.85
@@ -438,15 +438,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.6227
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.32266
             },
             "index": 20,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.6227
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 16427.0
@@ -461,15 +461,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.74858
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.35126
             },
             "index": 21,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.74858
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 17420.32
@@ -484,15 +484,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.87001
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.37886
             },
             "index": 22,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.87001
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 18416.27
@@ -507,15 +507,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.99657
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.40761
             },
             "index": 23,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.99657
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 19412.49
@@ -530,15 +530,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.99657
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.40761
             },
             "index": 24,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.99657
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 19412.49
@@ -553,15 +553,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.89306
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.38409
             },
             "index": 25,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.89306
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 18533.07
@@ -576,15 +576,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.7688
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.35586
             },
             "index": 26,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.7688
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 17554.37
@@ -599,15 +599,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.65172
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.32926
             },
             "index": 27,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.65172
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 16546.56
@@ -622,15 +622,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.5235
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.30012
             },
             "index": 28,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.5235
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 15557.37
@@ -645,15 +645,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.38208
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.26799
             },
             "index": 29,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.38208
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 14560.05
@@ -668,15 +668,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.2405
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.23582
             },
             "index": 30,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.2405
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 13567.28
@@ -691,15 +691,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 14.07349
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.19787
             },
             "index": 31,
+            "mass %": {
+                "unit": "mass %",
+                "value": 14.07349
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 12574.64
@@ -714,15 +714,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.92373
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.16384
             },
             "index": 32,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.92373
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 11580.08
@@ -737,15 +737,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.73763
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.12155
             },
             "index": 33,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.73763
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 10589.23
@@ -760,15 +760,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.53601
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.07574
             },
             "index": 34,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.53601
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 9600.182
@@ -783,15 +783,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.33586
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 3.03026
             },
             "index": 35,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.33586
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 8609.201
@@ -806,15 +806,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 13.09487
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.9755
             },
             "index": 36,
+            "mass %": {
+                "unit": "mass %",
+                "value": 13.09487
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 7624.426
@@ -829,15 +829,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 12.81299
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.91145
             },
             "index": 37,
+            "mass %": {
+                "unit": "mass %",
+                "value": 12.81299
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 6620.758
@@ -852,15 +852,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 12.51582
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.84392
             },
             "index": 38,
+            "mass %": {
+                "unit": "mass %",
+                "value": 12.51582
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 5631.295
@@ -875,15 +875,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 12.13479
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.75734
             },
             "index": 39,
+            "mass %": {
+                "unit": "mass %",
+                "value": 12.13479
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 4625.42
@@ -898,15 +898,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 11.65747
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.64888
             },
             "index": 40,
+            "mass %": {
+                "unit": "mass %",
+                "value": 11.65747
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 3660.641
@@ -921,15 +921,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 10.975
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.49381
             },
             "index": 41,
+            "mass %": {
+                "unit": "mass %",
+                "value": 10.975
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 2632.427
@@ -944,15 +944,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 9.877297
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 2.24438
             },
             "index": 42,
+            "mass %": {
+                "unit": "mass %",
+                "value": 9.877297
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 1642.135
@@ -967,15 +967,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 8.428075
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 1.91508
             },
             "index": 43,
+            "mass %": {
+                "unit": "mass %",
+                "value": 8.428075
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 938.4096
@@ -990,15 +990,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 7.892124
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 1.7933
             },
             "index": 44,
+            "mass %": {
+                "unit": "mass %",
+                "value": 7.892124
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 784.3705
@@ -1013,15 +1013,15 @@
             }
         },
         {
-            "'%' mass": {
-                "unit": "'%' mass",
-                "value": 7.389594
-            },
             "concentration": {
                 "unit": "mmol/g",
                 "value": 1.67911
             },
             "index": 45,
+            "mass %": {
+                "unit": "mass %",
+                "value": 7.389594
+            },
             "pressure": {
                 "unit": "mbar",
                 "value": 663.0146

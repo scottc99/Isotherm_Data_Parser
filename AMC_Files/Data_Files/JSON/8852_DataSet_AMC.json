@@ -1,5 +1,1416 @@
 {
-    "content": [],
-    "dataset": "8852_DataSet_AMC(ads.).xlsx",
-    "header": {}
+    "absorbtion": {
+        "content": [
+            {
+                "index": 0,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 0.0002967639
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 0.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.383717
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 1.011
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": -9e-06
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": -1e-06
+                }
+            },
+            {
+                "index": 1,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 0.4773708
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 1.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.045157
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 2059.994
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 56.767003
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 7.060567
+                }
+            },
+            {
+                "index": 2,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 1.659487
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 2.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.778561
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 4041.017
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 84.975229
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 10.56905
+                }
+            },
+            {
+                "index": 3,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 3.287251
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 3.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.046807
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 6014.009
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 95.727558
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 11.906403
+                }
+            },
+            {
+                "index": 4,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 5.093416
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 4.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.875179
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 7999.996
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 100.716989
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.526979
+                }
+            },
+            {
+                "index": 5,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 6.906781
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 5.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.931249
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 9984.998
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 103.299739
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.848216
+                }
+            },
+            {
+                "index": 6,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 8.805231
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 6.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.839249
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 12040.994
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 104.833281
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.038955
+                }
+            },
+            {
+                "index": 7,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 10.64494
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 7.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.954592
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 14034.995
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 105.632849
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.138404
+                }
+            },
+            {
+                "index": 8,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 12.61615
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 8.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.277274
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 15945.013
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 106.016591
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.186133
+                }
+            },
+            {
+                "index": 9,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 14.51636
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 9.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.144671
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 17868.003
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 105.944976
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.177225
+                }
+            },
+            {
+                "index": 10,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 16.53609
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 10.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.13456
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 19838.0
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 105.630651
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.13813
+                }
+            },
+            {
+                "index": 11,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 18.3657
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 11.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.696858
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 21760.996
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 105.028282
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.063209
+                }
+            },
+            {
+                "index": 12,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 20.09282
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 12.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.929434
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 23684.983
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 104.739859
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.027335
+                }
+            },
+            {
+                "index": 13,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 22.14765
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 13.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.124895
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 25670.996
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 103.832192
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.914441
+                }
+            },
+            {
+                "index": 14,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 24.03676
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 14.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.751289
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 27594.998
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 103.159595
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.830785
+                }
+            },
+            {
+                "index": 15,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 25.90631
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 15.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.276069
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 29571.004
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 102.522245
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.751513
+                }
+            },
+            {
+                "index": 16,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 27.80172
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 16.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.868919
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 31628.003
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 101.582074
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.634576
+                }
+            },
+            {
+                "index": 17,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 29.84754
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 17.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.131609
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 33626.997
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 101.033202
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.566309
+                }
+            },
+            {
+                "index": 18,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 31.74355
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 18.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.282689
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 35620.0
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 100.611224
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.513824
+                }
+            },
+            {
+                "index": 19,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 33.40147
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 19.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.133778
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 37536.992
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 99.883975
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.42337
+                }
+            },
+            {
+                "index": 20,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 35.21239
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 20.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.174193
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 39592.991
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 99.267806
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.346732
+                }
+            },
+            {
+                "index": 21,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 37.1836
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 21.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.785063
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 41513.999
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 98.088123
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.200005
+                }
+            },
+            {
+                "index": 22,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 39.0142
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 22.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.809831
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 43499.007
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 97.727646
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.15517
+                }
+            },
+            {
+                "index": 23,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 41.21322
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 23.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.286663
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 45426.991
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 99.172163
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.334836
+                }
+            },
+            {
+                "index": 24,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 43.32279
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 24.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.806549
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 47354.994
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 98.87671
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.298088
+                }
+            },
+            {
+                "index": 25,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 45.19492
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 25.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.023642
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 49277.996
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 101.258961
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.594388
+                }
+            }
+        ],
+        "filename": "8852_absorbtion.xlsx"
+    },
+    "desorption": {
+        "content": [
+            {
+                "index": 0,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 45.19056
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 0.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.244567
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 1.001
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 101.299378
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.599415
+                }
+            },
+            {
+                "index": 1,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 43.24802
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 1.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.891465
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 1985.997
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 100.048679
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.443856
+                }
+            },
+            {
+                "index": 2,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 41.18519
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 2.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.949139
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 3986.995
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 100.537446
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.504647
+                }
+            },
+            {
+                "index": 3,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 39.15809
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 3.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.850673
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 5973.996
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 101.204456
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.587609
+                }
+            },
+            {
+                "index": 4,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 37.21117
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 4.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.803013
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 7999.995
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 102.086996
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.697377
+                }
+            },
+            {
+                "index": 5,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 35.17581
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 5.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.038215
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 9986.992
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 103.629341
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.889211
+                }
+            },
+            {
+                "index": 6,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 33.2922
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 6.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.069047
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 11939.992
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 104.523642
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.000442
+                }
+            },
+            {
+                "index": 7,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 31.42341
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 7.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.884093
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 14007.002
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 105.684299
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.144803
+                }
+            },
+            {
+                "index": 8,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 29.34035
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 8.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.315125
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 15995.997
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 106.863903
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.29152
+                }
+            },
+            {
+                "index": 9,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 27.40258
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 9.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.167972
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 18087.02
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 108.025581
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.436007
+                }
+            },
+            {
+                "index": 10,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 25.38069
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 10.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.743158
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 20132.014
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 108.828458
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.535867
+                }
+            },
+            {
+                "index": 11,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 23.27644
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 11.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.194804
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 22099.01
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 110.142583
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.699315
+                }
+            },
+            {
+                "index": 12,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 21.1925
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 12.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.773047
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 24080.004
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 110.866869
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.7894
+                }
+            },
+            {
+                "index": 13,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 19.10904
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 13.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.031126
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 26074.994
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 111.845126
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.911074
+                }
+            },
+            {
+                "index": 14,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 17.05508
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 14.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.694663
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 28100.998
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 112.396438
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.979645
+                }
+            },
+            {
+                "index": 15,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 14.9915
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 15.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.97076
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 30089.018
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 112.956177
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 14.049264
+                }
+            },
+            {
+                "index": 16,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 12.92317
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 16.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.230323
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 32114.996
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 113.330788
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 14.095858
+                }
+            },
+            {
+                "index": 17,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 10.83249
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 17.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.243562
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 34116.994
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 113.108048
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 14.068154
+                }
+            },
+            {
+                "index": 18,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 8.845096
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 18.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.248598
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 36143.016
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 112.486843
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.99089
+                }
+            },
+            {
+                "index": 19,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 6.778413
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 19.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.26298
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 38196.994
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 110.807306
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.781992
+                }
+            },
+            {
+                "index": 20,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 4.91806
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 20.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.23002
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 40166.998
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 108.017408
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 13.43499
+                }
+            },
+            {
+                "index": 21,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 3.179259
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 21.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.09158
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 42169.0
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 102.852636
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 12.792606
+                }
+            },
+            {
+                "index": 22,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 1.781188
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 22.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.915626
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 44056.015
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 93.976287
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 11.688584
+                }
+            },
+            {
+                "index": 23,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 1.383972
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 23.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.940622
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 45942.005
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 89.267054
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 11.102858
+                }
+            },
+            {
+                "index": 24,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 1.101791
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 24.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 20.176273
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 47826.99
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 84.561924
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 10.517644
+                }
+            },
+            {
+                "index": 25,
+                "measured pressure": {
+                    "unit": "atm",
+                    "value": 0.8951712
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 25.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.936281
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 49711.998
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 80.069441
+                },
+                "weight %": {
+                    "unit": "wt%",
+                    "value": 9.958878
+                }
+            }
+        ],
+        "filename": "8852_desorption.xlsx"
+    }
 }

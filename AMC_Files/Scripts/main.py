@@ -12,105 +12,106 @@ import lxml.etree as etree
 
 if __name__ == '__main__':
 
-	file_pathAds = tkFileDialog.askopenfilename()
-	wbAds = xlrd.open_workbook(filename = file_pathAds)
-	shAds = wbAds.sheet_by_index(0)
+	os.chdir(os.path.dirname(os.getcwd()))
 
-	AMC_Data = {"dataset":file_pathAds.split("/")[-1]}
+	for file in glob.glob("Data_Files/Excel/*.xlsx"):
+		file_path = file
+		sequence = file.split("/")[-1].split("_")[0]
 
-	AMC_Header = {}
-	AMC_Content = []
+		file_path1 = tkFileDialog.askopenfilename()
+		wb1 = xlrd.open_workbook(filename = file_path1)
+		sh1 = wb1.sheet_by_index(0)
 
-	#### 6/29/2015 Discussing what the header should contain ####
+		AMC_Data = {}
 
-	AMC_Data["header"] = AMC_Header
+		AMC_Header1 = {"dataset":file_path1.split("/")[-1]}
+		AMC_adsorbedContent = []
 
-	#### Content ####
+		begin = 0
 
-	begin = 0
+		while True: 
+			try: 
+				row = {}
 
-	while 0: 
-		try: 
-			row = {"adsorption"}
+				row["index"] = begin 
+				
+				row["serial #"] = {}
+				row["serial #"]["unit"] = ""
+				row["serial #"]["value"] = sh1.cell_value(begin, 0)
 
-			row["index"] = begin + 1
-			
-			row["serial #"] = {}
-			row["Serial #"]["unit"] = ""
-			row["Serial #"]["value"] = shAds.cell_value(begin, 0)
+				row["time"] = {}
+				row["time"]["unit"] = "s (seconds)"
+				row["time"]["value"] = sh1.cell_value(begin, 1)
 
-			row["time"] = {}
-			row["time"]["unit"] = "s (seconds)"
-			row["time"]["value"] = shAds.cell_value(begin, 1)
+				row["temperature"] = {} 
+				row["temperature"]["unit"] = "C"
+				row["temperature"]["value"] = sh1.cell_value(begin, 2)
 
-			row["temperature"] = {} 
-			row["temperature"]["unit"] = "C"
-			row["temperature"]["value"] = shAds.cell_value(begin, 2)
+				row["measured pressure"] = {}
+				row["measured pressure"]["unit"] = "atm"
+				row["measured pressure"]["value"] = sh1.cell_value(begin, 3)
 
-			row["measured pressure"] = {}
-			row["measured pressure"]["unit"] = "atm"
-			row["measured pressure"]["value"] = shAds.cell_value(begin, 3)
+				row["volume of gas(@STP)"] = {}
+				row["volume of gas(@STP)"]["unit"] = "cc"
+				row["volume of gas(@STP)"]["value"] = sh1.cell_value(begin, 4)
 
-			row["volume of gas(@STP)"] = {}
-			row["volume of gas(@STP)"]["unit"] = "cc"
-			row["volume of gas(@STP)"]["value"] = shAds.cell_value(begin, 4)
+				row["weight %"] = {}
+				row["weight %"]["unit"] = "wt%"
+				row["weight %"]["value"] = sh1.cell_value(begin, 5)
 
-			row["weight %"] = {}
-			row["weight %"]["unit"] = "wt%"
-			row["weight %"]["value"] = shAds.cell_value(begin, 5)
+				AMC_Content1.append(row)
+				begin += 1 
 
-			AMC_Content.append(row)
-			begin += 1 
-
-		except: 
-			break 
+			except: 
+				break 
 
 
-	file_pathDes = tkFileDialog.askopenfilename()
-	wbDes = xlrd.open_workbook(filename = file_pathDes)
-	shDes = wbDes.sheet_by_index(0)
+		file_path2 = tkFileDialog.askopenfilename()
+		wb2 = xlrd.open_workbook(filename = file_path2)
+		sh2 = wb2.sheet_by_index(0)
 
-	begin = 25
+		AMC_Header2 = {"dataset":file_path2.split("/")[-1]}
+		AMC_desorbedContent = []
 
-	while 26: 
-		try: 
-			row = {"desorption"}
+		begin = 0
 
-			row["index"] = begin + 1
-			
-			row["serial #"] = {}
-			row["Serial #"]["unit"] = ""
-			row["Serial #"]["value"] = shDes.cell_value(begin, 0)
+		while True: 
+			try: 
+				row = {}
 
-			row["time"] = {}
-			row["time"]["unit"] = "s (seconds)"
-			row["time"]["value"] = shDes.cell_value(begin, 1)
+				row["index"] = begin 
+				
+				row["serial #"] = {}
+				row["serial #"]["unit"] = ""
+				row["serial #"]["value"] = sh2.cell_value(begin, 0)
 
-			row["temperature"] = {} 
-			row["temperature"]["unit"] = "C"
-			row["temperature"]["value"] = shDes.cell_value(begin, 2)
+				row["time"] = {}
+				row["time"]["unit"] = "s (seconds)"
+				row["time"]["value"] = sh2.cell_value(begin, 1)
 
-			row["measured pressure"] = {}
-			row["measured pressure"]["unit"] = "atm"
-			row["measured pressure"]["value"] = shDes.cell_value(begin, 3)
+				row["temperature"] = {} 
+				row["temperature"]["unit"] = "C"
+				row["temperature"]["value"] = sh2.cell_value(begin, 2)
 
-			row["volume of gas(@STP)"] = {}
-			row["volume of gas(@STP)"]["unit"] = "cc"
-			row["volume of gas(@STP)"]["value"] = shDes.cell_value(begin, 4)
+				row["measured pressure"] = {}
+				row["measured pressure"]["unit"] = "atm"
+				row["measured pressure"]["value"] = sh2.cell_value(begin, 3)
 
-			row["weight %"] = {}
-			row["weight %"]["unit"] = "wt%"
-			row["weight %"]["value"] = shDes.cell_value(begin, 5)
+				row["volume of gas(@STP)"] = {}
+				row["volume of gas(@STP)"]["unit"] = "cc"
+				row["volume of gas(@STP)"]["value"] = sh2.cell_value(begin, 4)
 
-			AMC_Content.append(row)
-			begin -= 1 
+				row["weight %"] = {}
+				row["weight %"]["unit"] = "wt%"
+				row["weight %"]["value"] = sh2.cell_value(begin, 5)
 
-		except: 
-			break 
+				AMC_Content2.append(row)
+				begin += 1 
+
+			except: 
+				break 
 
 	AMC_Data["content"] = AMC_Content 
-
-	os.chdir(os.path.dirname(os.getcwd()))
 
 	with open('Data_Files/JSON/8852_DataSet_AMC.json', 'w') as f:
 		f.write(json.dumps(AMC_Data, sort_keys=True, indent=4, separators=(',', ': ')))
