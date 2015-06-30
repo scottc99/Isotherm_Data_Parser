@@ -177,13 +177,13 @@ class TGApp:
 
 					weight4 = {}
 					weight4["prefix"] = "Corr."
-					weight4["unit"] = self.sh.cell_value(22, 8)
-					weight4["value"] = self.sh.cell_value(begin, 8)
+					weight4["unit"] = "mmol/g"
+					weight4["value"] = (self.sh.cell_value(begin, 8)*10)/44
 					row["weights"].append(weight4)
 
 					row["pressure"] = {}
-					row["pressure"]["unit"] = self.sh.cell_value(22, 3)
-					row["pressure"]["value"] = self.sh.cell_value(begin, 3)
+					row["pressure"]["unit"] = "Bar"
+					row["pressure"]["value"] = (self.sh.cell_value(begin, 3))/(750.1)
 
 					row["sample_temp"] = {}
 					row["sample_temp"]["unit"] = self.sh.cell_value(22, 4)

@@ -11,8 +11,8 @@
             },
             "index": 1,
             "pressure": {
-                "unit": "Torrs",
-                "value": 0.132
+                "unit": "Bar",
+                "value": 0.0001759765364618051
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -36,7 +36,7 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
+                    "unit": "mmol/g",
                     "value": 0.0
                 }
             ]
@@ -52,8 +52,8 @@
             },
             "index": 2,
             "pressure": {
-                "unit": "Torrs",
-                "value": 302.246
+                "unit": "Bar",
+                "value": 0.4029409412078389
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -77,8 +77,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 6.501118891360344
+                    "unit": "mmol/g",
+                    "value": 1.4775270207637143
                 }
             ]
         },
@@ -93,8 +93,8 @@
             },
             "index": 3,
             "pressure": {
-                "unit": "Torrs",
-                "value": 501.851
+                "unit": "Bar",
+                "value": 0.6690454606052526
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -118,8 +118,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 8.034778656374344
+                    "unit": "mmol/g",
+                    "value": 1.8260860582668963
                 }
             ]
         },
@@ -134,8 +134,8 @@
             },
             "index": 4,
             "pressure": {
-                "unit": "Torrs",
-                "value": 703.069
+                "unit": "Bar",
+                "value": 0.9373003599520063
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -159,8 +159,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 9.01590685403283
+                    "unit": "mmol/g",
+                    "value": 2.0490697395529156
                 }
             ]
         },
@@ -175,8 +175,8 @@
             },
             "index": 5,
             "pressure": {
-                "unit": "Torrs",
-                "value": 990.222
+                "unit": "Bar",
+                "value": 1.320119984002133
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -200,8 +200,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 10.151703413841473
+                    "unit": "mmol/g",
+                    "value": 2.3072053213276074
                 }
             ]
         },
@@ -216,8 +216,8 @@
             },
             "index": 6,
             "pressure": {
-                "unit": "Torrs",
-                "value": 1374.453
+                "unit": "Bar",
+                "value": 1.8323596853752833
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -241,8 +241,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 10.871993360121708
+                    "unit": "mmol/g",
+                    "value": 2.4709075818458426
                 }
             ]
         },
@@ -257,8 +257,8 @@
             },
             "index": 7,
             "pressure": {
-                "unit": "Torrs",
-                "value": 2498.881
+                "unit": "Bar",
+                "value": 3.3313971470470602
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -282,8 +282,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 12.054932885078673
+                    "unit": "mmol/g",
+                    "value": 2.7397574738815162
                 }
             ]
         },
@@ -298,8 +298,8 @@
             },
             "index": 8,
             "pressure": {
-                "unit": "Torrs",
-                "value": 5021.86
+                "unit": "Bar",
+                "value": 6.694920677243034
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -323,8 +323,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 13.254550556877657
+                    "unit": "mmol/g",
+                    "value": 3.0123978538358314
                 }
             ]
         },
@@ -339,8 +339,8 @@
             },
             "index": 9,
             "pressure": {
-                "unit": "Torrs",
-                "value": 7478.936
+                "unit": "Bar",
+                "value": 9.970585255299293
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -364,8 +364,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 13.839792079100816
+                    "unit": "mmol/g",
+                    "value": 3.1454072907047306
                 }
             ]
         },
@@ -380,8 +380,8 @@
             },
             "index": 10,
             "pressure": {
-                "unit": "Torrs",
-                "value": 9902.97
+                "unit": "Bar",
+                "value": 13.202199706705771
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -405,8 +405,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.22119191369778
+                    "unit": "mmol/g",
+                    "value": 3.23208907129495
                 }
             ]
         },
@@ -421,8 +421,8 @@
             },
             "index": 11,
             "pressure": {
-                "unit": "Torrs",
-                "value": 12386.604
+                "unit": "Bar",
+                "value": 16.513270230635914
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -446,8 +446,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.50037564007043
+                    "unit": "mmol/g",
+                    "value": 3.295539918197825
                 }
             ]
         },
@@ -462,8 +462,8 @@
             },
             "index": 12,
             "pressure": {
-                "unit": "Torrs",
-                "value": 14866.46
+                "unit": "Bar",
+                "value": 19.819304092787625
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -487,8 +487,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.722046902517539
+                    "unit": "mmol/g",
+                    "value": 3.345919750572168
                 }
             ]
         },
@@ -503,8 +503,8 @@
             },
             "index": 13,
             "pressure": {
-                "unit": "Torrs",
-                "value": 17477.207
+                "unit": "Bar",
+                "value": 23.299836021863747
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -528,8 +528,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.88126128489686
+                    "unit": "mmol/g",
+                    "value": 3.382104837476559
                 }
             ]
         },
@@ -544,8 +544,8 @@
             },
             "index": 14,
             "pressure": {
-                "unit": "Torrs",
-                "value": 19868.779
+                "unit": "Bar",
+                "value": 26.488173576856415
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -569,8 +569,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.989469107886258
+                    "unit": "mmol/g",
+                    "value": 3.4066975245196045
                 }
             ]
         },
@@ -585,8 +585,8 @@
             },
             "index": 15,
             "pressure": {
-                "unit": "Torrs",
-                "value": 22440.991
+                "unit": "Bar",
+                "value": 29.91733235568591
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -610,8 +610,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 15.04019125799435
+                    "unit": "mmol/g",
+                    "value": 3.4182252859078064
                 }
             ]
         },
@@ -626,8 +626,8 @@
             },
             "index": 16,
             "pressure": {
-                "unit": "Torrs",
-                "value": 25044.098
+                "unit": "Bar",
+                "value": 33.38767897613651
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -651,8 +651,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 15.060984261445183
+                    "unit": "mmol/g",
+                    "value": 3.4229509685102686
                 }
             ]
         },
@@ -667,8 +667,8 @@
             },
             "index": 17,
             "pressure": {
-                "unit": "Torrs",
-                "value": 27124.974
+                "unit": "Bar",
+                "value": 36.16181042527663
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -692,8 +692,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 15.05727488951618
+                    "unit": "mmol/g",
+                    "value": 3.4221079294354952
                 }
             ]
         },
@@ -708,8 +708,8 @@
             },
             "index": 18,
             "pressure": {
-                "unit": "Torrs",
-                "value": 30038.728
+                "unit": "Bar",
+                "value": 40.046297826956405
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -733,8 +733,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.956743215424934
+                    "unit": "mmol/g",
+                    "value": 3.399259821687485
                 }
             ]
         },
@@ -749,8 +749,8 @@
             },
             "index": 19,
             "pressure": {
-                "unit": "Torrs",
-                "value": 32965.18
+                "unit": "Bar",
+                "value": 43.947713638181575
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -774,8 +774,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.746675920751395
+                    "unit": "mmol/g",
+                    "value": 3.351517254716226
                 }
             ]
         },
@@ -790,8 +790,8 @@
             },
             "index": 20,
             "pressure": {
-                "unit": "Torrs",
-                "value": 29148.477
+                "unit": "Bar",
+                "value": 38.85945473936808
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -815,8 +815,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.9971226704122
+                    "unit": "mmol/g",
+                    "value": 3.408436970548227
                 }
             ]
         },
@@ -831,8 +831,8 @@
             },
             "index": 21,
             "pressure": {
-                "unit": "Torrs",
-                "value": 27669.154
+                "unit": "Bar",
+                "value": 36.88728702839621
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -856,8 +856,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 15.054554282569503
+                    "unit": "mmol/g",
+                    "value": 3.4214896096748872
                 }
             ]
         },
@@ -872,8 +872,8 @@
             },
             "index": 22,
             "pressure": {
-                "unit": "Torrs",
-                "value": 25684.69
+                "unit": "Bar",
+                "value": 34.24168777496334
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -897,8 +897,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 15.078869545349258
+                    "unit": "mmol/g",
+                    "value": 3.427015805761195
                 }
             ]
         },
@@ -913,8 +913,8 @@
             },
             "index": 23,
             "pressure": {
-                "unit": "Torrs",
-                "value": 22930.511
+                "unit": "Bar",
+                "value": 30.56993867484335
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -938,8 +938,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 15.076191711093578
+                    "unit": "mmol/g",
+                    "value": 3.426407207066722
                 }
             ]
         },
@@ -954,8 +954,8 @@
             },
             "index": 24,
             "pressure": {
-                "unit": "Torrs",
-                "value": 21011.973
+                "unit": "Bar",
+                "value": 28.012229036128517
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -979,8 +979,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 15.043885431661463
+                    "unit": "mmol/g",
+                    "value": 3.4190648708321505
                 }
             ]
         },
@@ -995,8 +995,8 @@
             },
             "index": 25,
             "pressure": {
-                "unit": "Torrs",
-                "value": 17964.5
+                "unit": "Bar",
+                "value": 23.949473403546193
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -1020,8 +1020,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.935114712212775
+                    "unit": "mmol/g",
+                    "value": 3.3943442527756305
                 }
             ]
         },
@@ -1036,8 +1036,8 @@
             },
             "index": 26,
             "pressure": {
-                "unit": "Torrs",
-                "value": 15980.691
+                "unit": "Bar",
+                "value": 21.304747367017733
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -1061,8 +1061,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.817646442444627
+                    "unit": "mmol/g",
+                    "value": 3.367646918737415
                 }
             ]
         },
@@ -1077,8 +1077,8 @@
             },
             "index": 27,
             "pressure": {
-                "unit": "Torrs",
-                "value": 12908.974
+                "unit": "Bar",
+                "value": 17.209670710571924
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -1102,8 +1102,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.57001625449241
+                    "unit": "mmol/g",
+                    "value": 3.3113673305664566
                 }
             ]
         },
@@ -1118,8 +1118,8 @@
             },
             "index": 28,
             "pressure": {
-                "unit": "Torrs",
-                "value": 10954.903
+                "unit": "Bar",
+                "value": 14.60459005465938
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -1143,8 +1143,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.3741744895776
+                    "unit": "mmol/g",
+                    "value": 3.2668578385403637
                 }
             ]
         },
@@ -1159,8 +1159,8 @@
             },
             "index": 29,
             "pressure": {
-                "unit": "Torrs",
-                "value": 8989.059
+                "unit": "Bar",
+                "value": 11.983814158112251
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -1184,8 +1184,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 14.104931061431666
+                    "unit": "mmol/g",
+                    "value": 3.2056661503253783
                 }
             ]
         },
@@ -1200,8 +1200,8 @@
             },
             "index": 30,
             "pressure": {
-                "unit": "Torrs",
-                "value": 6968.716
+                "unit": "Bar",
+                "value": 9.290382615651247
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -1225,8 +1225,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 13.739070819397655
+                    "unit": "mmol/g",
+                    "value": 3.1225160953176494
                 }
             ]
         },
@@ -1241,8 +1241,8 @@
             },
             "index": 31,
             "pressure": {
-                "unit": "Torrs",
-                "value": 4001.3
+                "unit": "Bar",
+                "value": 5.33435541927743
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -1266,8 +1266,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 12.886158587944092
+                    "unit": "mmol/g",
+                    "value": 2.92867240635093
                 }
             ]
         },
@@ -1282,8 +1282,8 @@
             },
             "index": 32,
             "pressure": {
-                "unit": "Torrs",
-                "value": 1475.863
+                "unit": "Bar",
+                "value": 1.9675549926676443
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -1307,8 +1307,8 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 10.995575350806943
+                    "unit": "mmol/g",
+                    "value": 2.498994397910669
                 }
             ]
         },
@@ -1323,8 +1323,8 @@
             },
             "index": 33,
             "pressure": {
-                "unit": "Torrs",
-                "value": 894.673
+                "unit": "Bar",
+                "value": 1.192738301559792
             },
             "sample_temp": {
                 "unit": "\u00b0C",
@@ -1348,13 +1348,13 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "% chg",
-                    "value": 9.890326873696111
+                    "unit": "mmol/g",
+                    "value": 2.247801562203662
                 }
             ]
         }
     ],
-    "dataset": "8852_DataSet_TGA.xlsx",
+    "dataset": "20150609_DataSet_TGA.xlsx",
     "header": {
         "absorbate": "CO2",
         "data_logging_interval": {

@@ -43,8 +43,8 @@ if __name__ == '__main__':
 				row["weight"]["value"] = sh.cell_value(begin, 0)
 
 				row["pressure"] = {}
-				row["pressure"]["unit"] = "mbar"
-				row["pressure"]["value"] = sh.cell_value(begin, 1)
+				row["pressure"]["unit"] = "bar"
+				row["pressure"]["value"] = (sh.cell_value(begin, 1))/1000
 
 				row["mass %"] = {} 
 				row["mass %"]["unit"] = "mass %"

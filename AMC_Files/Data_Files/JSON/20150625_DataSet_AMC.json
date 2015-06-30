@@ -1,11 +1,11 @@
 {
-    "absorbtion": {
+    "adsorbtion": {
         "content": [
             {
                 "index": 0,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 0.0002967639
+                    "unit": "bar",
+                    "value": 0.00030070311075083595
                 },
                 "serial #": {
                     "unit": "",
@@ -19,20 +19,20 @@
                     "unit": "s (seconds)",
                     "value": 1.011
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": -2.2727272727272726e-07
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": -9e-06
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": -1e-06
                 }
             },
             {
                 "index": 1,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 0.4773708
+                    "unit": "bar",
+                    "value": 0.48370736650116525
                 },
                 "serial #": {
                     "unit": "",
@@ -46,20 +46,20 @@
                     "unit": "s (seconds)",
                     "value": 2059.994
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 1.6046743181818182
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 56.767003
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 7.060567
                 }
             },
             {
                 "index": 2,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 1.659487
+                    "unit": "bar",
+                    "value": 1.6815148444624581
                 },
                 "serial #": {
                     "unit": "",
@@ -73,20 +73,20 @@
                     "unit": "s (seconds)",
                     "value": 4041.017
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.4020568181818187
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 84.975229
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 10.56905
                 }
             },
             {
                 "index": 3,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 3.287251
+                    "unit": "bar",
+                    "value": 3.3308856013780526
                 },
                 "serial #": {
                     "unit": "",
@@ -100,20 +100,20 @@
                     "unit": "s (seconds)",
                     "value": 6014.009
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.7060006818181814
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 95.727558
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 11.906403
                 }
             },
             {
                 "index": 4,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 5.093416
+                    "unit": "bar",
+                    "value": 5.161025433174587
                 },
                 "serial #": {
                     "unit": "",
@@ -127,20 +127,20 @@
                     "unit": "s (seconds)",
                     "value": 7999.996
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8470406818181817
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 100.716989
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.526979
                 }
             },
             {
                 "index": 5,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 6.906781
+                    "unit": "bar",
+                    "value": 6.998460836964231
                 },
                 "serial #": {
                     "unit": "",
@@ -154,20 +154,20 @@
                     "unit": "s (seconds)",
                     "value": 9984.998
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.9200490909090915
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 103.299739
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.848216
                 }
             },
             {
                 "index": 6,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 8.805231
+                    "unit": "bar",
+                    "value": 8.92211064950856
                 },
                 "serial #": {
                     "unit": "",
@@ -181,20 +181,20 @@
                     "unit": "s (seconds)",
                     "value": 12040.994
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.9633988636363635
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 104.833281
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.038955
                 }
             },
             {
                 "index": 7,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 10.64494
+                    "unit": "bar",
+                    "value": 10.786239740601884
                 },
                 "serial #": {
                     "unit": "",
@@ -208,20 +208,20 @@
                     "unit": "s (seconds)",
                     "value": 14034.995
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.986000909090909
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 105.632849
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.138404
                 }
             },
             {
                 "index": 8,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 12.61615
+                    "unit": "bar",
+                    "value": 12.78361536123214
                 },
                 "serial #": {
                     "unit": "",
@@ -235,20 +235,20 @@
                     "unit": "s (seconds)",
                     "value": 15945.013
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.996848409090909
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 106.016591
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.186133
                 }
             },
             {
                 "index": 9,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 14.51636
+                    "unit": "bar",
+                    "value": 14.709048535819232
                 },
                 "serial #": {
                     "unit": "",
@@ -262,20 +262,20 @@
                     "unit": "s (seconds)",
                     "value": 17868.003
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.994823863636363
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 105.944976
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.177225
                 }
             },
             {
                 "index": 10,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 16.53609
+                    "unit": "bar",
+                    "value": 16.755588205491946
                 },
                 "serial #": {
                     "unit": "",
@@ -289,20 +289,20 @@
                     "unit": "s (seconds)",
                     "value": 19838.0
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.9859386363636364
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 105.630651
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.13813
                 }
             },
             {
                 "index": 11,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 18.3657
+                    "unit": "bar",
+                    "value": 18.609484243591044
                 },
                 "serial #": {
                     "unit": "",
@@ -316,20 +316,20 @@
                     "unit": "s (seconds)",
                     "value": 21760.996
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.9689111363636367
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 105.028282
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.063209
                 }
             },
             {
                 "index": 12,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 20.09282
+                    "unit": "bar",
+                    "value": 20.359529840916
                 },
                 "serial #": {
                     "unit": "",
@@ -343,20 +343,20 @@
                     "unit": "s (seconds)",
                     "value": 23684.983
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.9607579545454543
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 104.739859
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.027335
                 }
             },
             {
                 "index": 13,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 22.14765
+                    "unit": "bar",
+                    "value": 22.44163542405512
                 },
                 "serial #": {
                     "unit": "",
@@ -370,20 +370,20 @@
                     "unit": "s (seconds)",
                     "value": 25670.996
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.935100227272727
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 103.832192
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.914441
                 }
             },
             {
                 "index": 14,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 24.03676
+                    "unit": "bar",
+                    "value": 24.35582125848617
                 },
                 "serial #": {
                     "unit": "",
@@ -397,20 +397,20 @@
                     "unit": "s (seconds)",
                     "value": 27594.998
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.9160875
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 103.159595
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.830785
                 }
             },
             {
                 "index": 15,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 25.90631
+                    "unit": "bar",
+                    "value": 26.25018745566927
                 },
                 "serial #": {
                     "unit": "",
@@ -424,20 +424,20 @@
                     "unit": "s (seconds)",
                     "value": 29571.004
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8980711363636362
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 102.522245
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.751513
                 }
             },
             {
                 "index": 16,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 27.80172
+                    "unit": "bar",
+                    "value": 28.170756915594286
                 },
                 "serial #": {
                     "unit": "",
@@ -451,20 +451,20 @@
                     "unit": "s (seconds)",
                     "value": 31628.003
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8714945454545453
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 101.582074
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.634576
                 }
             },
             {
                 "index": 17,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 29.84754
+                    "unit": "bar",
+                    "value": 30.24373290100314
                 },
                 "serial #": {
                     "unit": "",
@@ -478,20 +478,20 @@
                     "unit": "s (seconds)",
                     "value": 33626.997
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8559793181818183
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 101.033202
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.566309
                 }
             },
             {
                 "index": 18,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 31.74355
+                    "unit": "bar",
+                    "value": 32.16491032526092
                 },
                 "serial #": {
                     "unit": "",
@@ -505,20 +505,20 @@
                     "unit": "s (seconds)",
                     "value": 35620.0
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.844050909090909
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 100.611224
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.513824
                 }
             },
             {
                 "index": 19,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 33.40147
+                    "unit": "bar",
+                    "value": 33.84483736954099
                 },
                 "serial #": {
                     "unit": "",
@@ -532,20 +532,20 @@
                     "unit": "s (seconds)",
                     "value": 37536.992
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.823493181818182
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 99.883975
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.42337
                 }
             },
             {
                 "index": 20,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 35.21239
+                    "unit": "bar",
+                    "value": 35.679795318674635
                 },
                 "serial #": {
                     "unit": "",
@@ -559,20 +559,20 @@
                     "unit": "s (seconds)",
                     "value": 39592.991
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8060754545454545
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 99.267806
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.346732
                 }
             },
             {
                 "index": 21,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 37.1836
+                    "unit": "bar",
+                    "value": 37.677170939304894
                 },
                 "serial #": {
                     "unit": "",
@@ -586,20 +586,20 @@
                     "unit": "s (seconds)",
                     "value": 41513.999
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.7727284090909095
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 98.088123
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.200005
                 }
             },
             {
                 "index": 22,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 39.0142
+                    "unit": "bar",
+                    "value": 39.532070118553044
                 },
                 "serial #": {
                     "unit": "",
@@ -613,20 +613,20 @@
                     "unit": "s (seconds)",
                     "value": 43499.007
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.762538636363636
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 97.727646
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.15517
                 }
             },
             {
                 "index": 23,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 41.21322
+                    "unit": "bar",
+                    "value": 41.76027966359307
                 },
                 "serial #": {
                     "unit": "",
@@ -640,20 +640,20 @@
                     "unit": "s (seconds)",
                     "value": 45426.991
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8033718181818177
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 99.172163
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.334836
                 }
             },
             {
                 "index": 24,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 43.32279
+                    "unit": "bar",
+                    "value": 43.89785185935758
                 },
                 "serial #": {
                     "unit": "",
@@ -667,20 +667,20 @@
                     "unit": "s (seconds)",
                     "value": 47354.994
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.79502
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 98.87671
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.298088
                 }
             },
             {
                 "index": 25,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 45.19492
+                    "unit": "bar",
+                    "value": 45.79483230317155
                 },
                 "serial #": {
                     "unit": "",
@@ -694,25 +694,25 @@
                     "unit": "s (seconds)",
                     "value": 49277.996
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8623609090909095
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 101.258961
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.594388
                 }
             }
         ],
-        "filename": "8852_absorbtion.xlsx"
+        "filename": "20150625_DataSet_AMCads.xlsx"
     },
     "desorption": {
         "content": [
             {
                 "index": 0,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 45.19056
+                    "unit": "bar",
+                    "value": 45.79041442902016
                 },
                 "serial #": {
                     "unit": "",
@@ -726,20 +726,20 @@
                     "unit": "s (seconds)",
                     "value": 1.001
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8635034090909093
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 101.299378
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.599415
                 }
             },
             {
                 "index": 1,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 43.24802
+                    "unit": "bar",
+                    "value": 43.82208937075691
                 },
                 "serial #": {
                     "unit": "",
@@ -753,20 +753,20 @@
                     "unit": "s (seconds)",
                     "value": 1985.997
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8281490909090907
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 100.048679
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.443856
                 }
             },
             {
                 "index": 2,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 41.18519
+                    "unit": "bar",
+                    "value": 41.73187759651434
                 },
                 "serial #": {
                     "unit": "",
@@ -780,20 +780,20 @@
                     "unit": "s (seconds)",
                     "value": 3986.995
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8419652272727274
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 100.537446
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.504647
                 }
             },
             {
                 "index": 3,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 39.15809
+                    "unit": "bar",
+                    "value": 39.67787009828757
                 },
                 "serial #": {
                     "unit": "",
@@ -807,20 +807,20 @@
                     "unit": "s (seconds)",
                     "value": 5973.996
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8608202272727272
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 101.204456
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.587609
                 }
             },
             {
                 "index": 4,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 37.21117
+                    "unit": "bar",
+                    "value": 37.70510690039518
                 },
                 "serial #": {
                     "unit": "",
@@ -834,20 +834,20 @@
                     "unit": "s (seconds)",
                     "value": 7999.995
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.8857675
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 102.086996
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.697377
                 }
             },
             {
                 "index": 5,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 35.17581
+                    "unit": "bar",
+                    "value": 35.642729759854085
                 },
                 "serial #": {
                     "unit": "",
@@ -861,20 +861,20 @@
                     "unit": "s (seconds)",
                     "value": 9986.992
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.9293661363636363
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 103.629341
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.889211
                 }
             },
             {
                 "index": 6,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 33.2922
+                    "unit": "bar",
+                    "value": 33.73411693180667
                 },
                 "serial #": {
                     "unit": "",
@@ -888,20 +888,20 @@
                     "unit": "s (seconds)",
                     "value": 11939.992
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.9546459090909085
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 104.523642
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.000442
                 }
             },
             {
                 "index": 7,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 31.42341
+                    "unit": "bar",
+                    "value": 31.840520822778398
                 },
                 "serial #": {
                     "unit": "",
@@ -915,20 +915,20 @@
                     "unit": "s (seconds)",
                     "value": 14007.002
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.987455227272727
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 105.684299
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.144803
                 }
             },
             {
                 "index": 8,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 29.34035
+                    "unit": "bar",
+                    "value": 29.72981051778296
                 },
                 "serial #": {
                     "unit": "",
@@ -942,20 +942,20 @@
                     "unit": "s (seconds)",
                     "value": 15995.997
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.0208
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 106.863903
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.29152
                 }
             },
             {
                 "index": 9,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 27.40258
+                    "unit": "bar",
+                    "value": 27.766318775965143
                 },
                 "serial #": {
                     "unit": "",
@@ -969,20 +969,20 @@
                     "unit": "s (seconds)",
                     "value": 18087.02
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.053637954545455
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 108.025581
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.436007
                 }
             },
             {
                 "index": 10,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 25.38069
+                    "unit": "bar",
+                    "value": 25.7175904346945
                 },
                 "serial #": {
                     "unit": "",
@@ -996,20 +996,20 @@
                     "unit": "s (seconds)",
                     "value": 20132.014
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.0763334090909087
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 108.828458
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.535867
                 }
             },
             {
                 "index": 11,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 23.27644
+                    "unit": "bar",
+                    "value": 23.585408856013782
                 },
                 "serial #": {
                     "unit": "",
@@ -1023,20 +1023,20 @@
                     "unit": "s (seconds)",
                     "value": 22099.01
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.113480681818182
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 110.142583
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.699315
                 }
             },
             {
                 "index": 12,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 21.1925
+                    "unit": "bar",
+                    "value": 21.47380686999696
                 },
                 "serial #": {
                     "unit": "",
@@ -1050,20 +1050,20 @@
                     "unit": "s (seconds)",
                     "value": 24080.004
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.1339545454545457
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 110.866869
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.7894
                 }
             },
             {
                 "index": 13,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 19.10904
+                    "unit": "bar",
+                    "value": 19.362691255446347
                 },
                 "serial #": {
                     "unit": "",
@@ -1077,20 +1077,20 @@
                     "unit": "s (seconds)",
                     "value": 26074.994
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.161607727272727
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 111.845126
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.911074
                 }
             },
             {
                 "index": 14,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 17.05508
+                    "unit": "bar",
+                    "value": 17.281467220589725
                 },
                 "serial #": {
                     "unit": "",
@@ -1104,20 +1104,20 @@
                     "unit": "s (seconds)",
                     "value": 28100.998
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.1771920454545453
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 112.396438
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.979645
                 }
             },
             {
                 "index": 15,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 14.9915
+                    "unit": "bar",
+                    "value": 15.190495490931198
                 },
                 "serial #": {
                     "unit": "",
@@ -1131,20 +1131,20 @@
                     "unit": "s (seconds)",
                     "value": 30089.018
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.1930145454545453
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 112.956177
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 14.049264
                 }
             },
             {
                 "index": 16,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 12.92317
+                    "unit": "bar",
+                    "value": 13.094710710304996
                 },
                 "serial #": {
                     "unit": "",
@@ -1158,20 +1158,20 @@
                     "unit": "s (seconds)",
                     "value": 32114.996
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.2036040909090904
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 113.330788
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 14.095858
                 }
             },
             {
                 "index": 17,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 10.83249
+                    "unit": "bar",
+                    "value": 10.976279258283514
                 },
                 "serial #": {
                     "unit": "",
@@ -1185,20 +1185,20 @@
                     "unit": "s (seconds)",
                     "value": 34116.994
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.197307727272727
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 113.108048
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 14.068154
                 }
             },
             {
                 "index": 18,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 8.845096
+                    "unit": "bar",
+                    "value": 8.962504813050968
                 },
                 "serial #": {
                     "unit": "",
@@ -1212,20 +1212,20 @@
                     "unit": "s (seconds)",
                     "value": 36143.016
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.1797477272727277
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 112.486843
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.99089
                 }
             },
             {
                 "index": 19,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 6.778413
+                    "unit": "bar",
+                    "value": 6.868388894518188
                 },
                 "serial #": {
                     "unit": "",
@@ -1239,20 +1239,20 @@
                     "unit": "s (seconds)",
                     "value": 38196.994
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.132270909090909
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 110.807306
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.781992
                 }
             },
             {
                 "index": 20,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 4.91806
+                    "unit": "bar",
+                    "value": 4.983341777282399
                 },
                 "serial #": {
                     "unit": "",
@@ -1266,20 +1266,20 @@
                     "unit": "s (seconds)",
                     "value": 40166.998
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.0534068181818186
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 108.017408
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 13.43499
                 }
             },
             {
                 "index": 21,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 3.179259
+                    "unit": "bar",
+                    "value": 3.22146012767251
                 },
                 "serial #": {
                     "unit": "",
@@ -1293,20 +1293,20 @@
                     "unit": "s (seconds)",
                     "value": 42169.0
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.907410454545454
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 102.852636
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 12.792606
                 }
             },
             {
                 "index": 22,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 1.781188
+                    "unit": "bar",
+                    "value": 1.8048312898976593
                 },
                 "serial #": {
                     "unit": "",
@@ -1320,20 +1320,20 @@
                     "unit": "s (seconds)",
                     "value": 44056.015
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.656496363636364
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 93.976287
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 11.688584
                 }
             },
             {
                 "index": 23,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 1.383972
+                    "unit": "bar",
+                    "value": 1.4023426892288986
                 },
                 "serial #": {
                     "unit": "",
@@ -1347,20 +1347,20 @@
                     "unit": "s (seconds)",
                     "value": 45942.005
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.523376818181818
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 89.267054
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 11.102858
                 }
             },
             {
                 "index": 24,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 1.101791
+                    "unit": "bar",
+                    "value": 1.1164160502583849
                 },
                 "serial #": {
                     "unit": "",
@@ -1374,20 +1374,20 @@
                     "unit": "s (seconds)",
                     "value": 47826.99
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.3903736363636368
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 84.561924
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 10.517644
                 }
             },
             {
                 "index": 25,
                 "measured pressure": {
-                    "unit": "atm",
-                    "value": 0.8951712
+                    "unit": "bar",
+                    "value": 0.9070536021886716
                 },
                 "serial #": {
                     "unit": "",
@@ -1401,16 +1401,16 @@
                     "unit": "s (seconds)",
                     "value": 49711.998
                 },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 2.2633813636363636
+                },
                 "volume of gas(@STP)": {
                     "unit": "cc",
                     "value": 80.069441
-                },
-                "weight %": {
-                    "unit": "wt%",
-                    "value": 9.958878
                 }
             }
         ],
-        "filename": "8852_desorption.xlsx"
+        "filename": "20150625_DataSet_AMCdes.xlsx"
     }
 }

@@ -11,8 +11,8 @@
                 "value": 0.0
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 3.004459
+                "unit": "bar",
+                "value": 0.003004459
             },
             "sample temp": {
                 "unit": "C",
@@ -34,8 +34,8 @@
                 "value": 6.675817
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 526.0757
+                "unit": "bar",
+                "value": 0.5260757
             },
             "sample temp": {
                 "unit": "C",
@@ -57,8 +57,8 @@
                 "value": 7.6864
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 739.5516
+                "unit": "bar",
+                "value": 0.7395516
             },
             "sample temp": {
                 "unit": "C",
@@ -80,8 +80,8 @@
                 "value": 8.050163
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 843.6694
+                "unit": "bar",
+                "value": 0.8436694
             },
             "sample temp": {
                 "unit": "C",
@@ -103,8 +103,8 @@
                 "value": 9.626376
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 1513.333
+                "unit": "bar",
+                "value": 1.513333
             },
             "sample temp": {
                 "unit": "C",
@@ -126,8 +126,8 @@
                 "value": 10.8029
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 2499.073
+                "unit": "bar",
+                "value": 2.4990729999999997
             },
             "sample temp": {
                 "unit": "C",
@@ -149,8 +149,8 @@
                 "value": 11.51947
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 3514.325
+                "unit": "bar",
+                "value": 3.514325
             },
             "sample temp": {
                 "unit": "C",
@@ -172,8 +172,8 @@
                 "value": 12.02672
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 4507.236
+                "unit": "bar",
+                "value": 4.507236
             },
             "sample temp": {
                 "unit": "C",
@@ -195,8 +195,8 @@
                 "value": 12.42295
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 5508.56
+                "unit": "bar",
+                "value": 5.50856
             },
             "sample temp": {
                 "unit": "C",
@@ -218,8 +218,8 @@
                 "value": 12.76487
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 6507.677
+                "unit": "bar",
+                "value": 6.507676999999999
             },
             "sample temp": {
                 "unit": "C",
@@ -241,8 +241,8 @@
                 "value": 13.03382
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 7494.245
+                "unit": "bar",
+                "value": 7.494245
             },
             "sample temp": {
                 "unit": "C",
@@ -264,8 +264,8 @@
                 "value": 13.27855
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 8499.843
+                "unit": "bar",
+                "value": 8.499843
             },
             "sample temp": {
                 "unit": "C",
@@ -287,8 +287,8 @@
                 "value": 13.49526
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 9471.241
+                "unit": "bar",
+                "value": 9.471241
             },
             "sample temp": {
                 "unit": "C",
@@ -310,8 +310,8 @@
                 "value": 13.68738
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 10473.12
+                "unit": "bar",
+                "value": 10.473120000000002
             },
             "sample temp": {
                 "unit": "C",
@@ -333,8 +333,8 @@
                 "value": 13.87152
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 11467.96
+                "unit": "bar",
+                "value": 11.46796
             },
             "sample temp": {
                 "unit": "C",
@@ -356,8 +356,8 @@
                 "value": 14.03698
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 12458.39
+                "unit": "bar",
+                "value": 12.45839
             },
             "sample temp": {
                 "unit": "C",
@@ -379,8 +379,8 @@
                 "value": 14.19636
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 13454.75
+                "unit": "bar",
+                "value": 13.45475
             },
             "sample temp": {
                 "unit": "C",
@@ -402,8 +402,8 @@
                 "value": 14.34731
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 14445.31
+                "unit": "bar",
+                "value": 14.44531
             },
             "sample temp": {
                 "unit": "C",
@@ -425,8 +425,8 @@
                 "value": 14.49042
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 15432.85
+                "unit": "bar",
+                "value": 15.43285
             },
             "sample temp": {
                 "unit": "C",
@@ -448,8 +448,8 @@
                 "value": 14.6227
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 16427.0
+                "unit": "bar",
+                "value": 16.427
             },
             "sample temp": {
                 "unit": "C",
@@ -471,8 +471,8 @@
                 "value": 14.74858
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 17420.32
+                "unit": "bar",
+                "value": 17.42032
             },
             "sample temp": {
                 "unit": "C",
@@ -494,8 +494,8 @@
                 "value": 14.87001
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 18416.27
+                "unit": "bar",
+                "value": 18.41627
             },
             "sample temp": {
                 "unit": "C",
@@ -517,8 +517,8 @@
                 "value": 14.99657
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 19412.49
+                "unit": "bar",
+                "value": 19.412490000000002
             },
             "sample temp": {
                 "unit": "C",
@@ -540,8 +540,8 @@
                 "value": 14.99657
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 19412.49
+                "unit": "bar",
+                "value": 19.412490000000002
             },
             "sample temp": {
                 "unit": "C",
@@ -563,8 +563,8 @@
                 "value": 14.89306
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 18533.07
+                "unit": "bar",
+                "value": 18.53307
             },
             "sample temp": {
                 "unit": "C",
@@ -586,8 +586,8 @@
                 "value": 14.7688
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 17554.37
+                "unit": "bar",
+                "value": 17.55437
             },
             "sample temp": {
                 "unit": "C",
@@ -609,8 +609,8 @@
                 "value": 14.65172
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 16546.56
+                "unit": "bar",
+                "value": 16.546560000000003
             },
             "sample temp": {
                 "unit": "C",
@@ -632,8 +632,8 @@
                 "value": 14.5235
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 15557.37
+                "unit": "bar",
+                "value": 15.55737
             },
             "sample temp": {
                 "unit": "C",
@@ -655,8 +655,8 @@
                 "value": 14.38208
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 14560.05
+                "unit": "bar",
+                "value": 14.560049999999999
             },
             "sample temp": {
                 "unit": "C",
@@ -678,8 +678,8 @@
                 "value": 14.2405
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 13567.28
+                "unit": "bar",
+                "value": 13.56728
             },
             "sample temp": {
                 "unit": "C",
@@ -701,8 +701,8 @@
                 "value": 14.07349
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 12574.64
+                "unit": "bar",
+                "value": 12.574639999999999
             },
             "sample temp": {
                 "unit": "C",
@@ -724,8 +724,8 @@
                 "value": 13.92373
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 11580.08
+                "unit": "bar",
+                "value": 11.58008
             },
             "sample temp": {
                 "unit": "C",
@@ -747,8 +747,8 @@
                 "value": 13.73763
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 10589.23
+                "unit": "bar",
+                "value": 10.589229999999999
             },
             "sample temp": {
                 "unit": "C",
@@ -770,8 +770,8 @@
                 "value": 13.53601
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 9600.182
+                "unit": "bar",
+                "value": 9.600182
             },
             "sample temp": {
                 "unit": "C",
@@ -793,8 +793,8 @@
                 "value": 13.33586
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 8609.201
+                "unit": "bar",
+                "value": 8.609200999999999
             },
             "sample temp": {
                 "unit": "C",
@@ -816,8 +816,8 @@
                 "value": 13.09487
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 7624.426
+                "unit": "bar",
+                "value": 7.624426000000001
             },
             "sample temp": {
                 "unit": "C",
@@ -839,8 +839,8 @@
                 "value": 12.81299
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 6620.758
+                "unit": "bar",
+                "value": 6.6207579999999995
             },
             "sample temp": {
                 "unit": "C",
@@ -862,8 +862,8 @@
                 "value": 12.51582
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 5631.295
+                "unit": "bar",
+                "value": 5.631295
             },
             "sample temp": {
                 "unit": "C",
@@ -885,8 +885,8 @@
                 "value": 12.13479
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 4625.42
+                "unit": "bar",
+                "value": 4.62542
             },
             "sample temp": {
                 "unit": "C",
@@ -908,8 +908,8 @@
                 "value": 11.65747
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 3660.641
+                "unit": "bar",
+                "value": 3.660641
             },
             "sample temp": {
                 "unit": "C",
@@ -931,8 +931,8 @@
                 "value": 10.975
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 2632.427
+                "unit": "bar",
+                "value": 2.6324270000000003
             },
             "sample temp": {
                 "unit": "C",
@@ -954,8 +954,8 @@
                 "value": 9.877297
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 1642.135
+                "unit": "bar",
+                "value": 1.642135
             },
             "sample temp": {
                 "unit": "C",
@@ -977,8 +977,8 @@
                 "value": 8.428075
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 938.4096
+                "unit": "bar",
+                "value": 0.9384096
             },
             "sample temp": {
                 "unit": "C",
@@ -1000,8 +1000,8 @@
                 "value": 7.892124
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 784.3705
+                "unit": "bar",
+                "value": 0.7843705
             },
             "sample temp": {
                 "unit": "C",
@@ -1023,8 +1023,8 @@
                 "value": 7.389594
             },
             "pressure": {
-                "unit": "mbar",
-                "value": 663.0146
+                "unit": "bar",
+                "value": 0.6630146
             },
             "sample temp": {
                 "unit": "C",
@@ -1036,6 +1036,6 @@
             }
         }
     ],
-    "dataset": "8852_DataSet_IGA.xlsx",
+    "dataset": "20150625_DataSet_IGA.xlsx",
     "header": {}
 }

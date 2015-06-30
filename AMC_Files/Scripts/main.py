@@ -21,8 +21,8 @@ def isAbsorbed(content):
 		return True
 
 def load_set_2(file_path):
-	wbAds = xlrd.open_workbook(filename = file_path)
-	shAds = wbAds.sheet_by_index(0)
+	wb1 = xlrd.open_workbook(filename = file_path)
+	sh1 = wb1.sheet_by_index(0)
 
 	content = []
 
@@ -30,35 +30,35 @@ def load_set_2(file_path):
 
 	while True: 
 		try: 
-			rowAds = {}
+			row1 = {}
 
-			rowAds["index"] = begin
+			row1["index"] = begin
 			
-			rowAds["serial #"] = {}
-			rowAds["serial #"]["unit"] = ""
-			rowAds["serial #"]["value"] = shAds.cell_value(begin, 0)
+			row1["serial #"] = {}
+			row1["serial #"]["unit"] = ""
+			row1["serial #"]["value"] = sh1.cell_value(begin, 0)
 
-			rowAds["time"] = {}
-			rowAds["time"]["unit"] = "s (seconds)"
-			rowAds["time"]["value"] = shAds.cell_value(begin, 1)
+			row1["time"] = {}
+			row1["time"]["unit"] = "s (seconds)"
+			row1["time"]["value"] = sh1.cell_value(begin, 1)
 
-			rowAds["temperature"] = {} 
-			rowAds["temperature"]["unit"] = "C"
-			rowAds["temperature"]["value"] = shAds.cell_value(begin, 2)
+			row1["temperature"] = {} 
+			row1["temperature"]["unit"] = "C"
+			row1["temperature"]["value"] = sh1.cell_value(begin, 2)
 
-			rowAds["measured pressure"] = {}
-			rowAds["measured pressure"]["unit"] = "atm"
-			rowAds["measured pressure"]["value"] = shAds.cell_value(begin, 3)
+			row1["measured pressure"] = {}
+			row1["measured pressure"]["unit"] = "bar"
+			row1["measured pressure"]["value"] = (sh1.cell_value(begin, 3))/(0.9869)
 
-			rowAds["volume of gas(@STP)"] = {}
-			rowAds["volume of gas(@STP)"]["unit"] = "cc"
-			rowAds["volume of gas(@STP)"]["value"] = shAds.cell_value(begin, 4)
+			row1["volume of gas(@STP)"] = {}
+			row1["volume of gas(@STP)"]["unit"] = "cc"
+			row1["volume of gas(@STP)"]["value"] = sh1.cell_value(begin, 4)
 
-			rowAds["weight %"] = {}
-			rowAds["weight %"]["unit"] = "wt%"
-			rowAds["weight %"]["value"] = shAds.cell_value(begin, 5)
+			row1["uptake"] = {}
+			row1["uptake"]["unit"] = "mmol/g"
+			row1["uptake"]["value"] = (sh1.cell_value(begin, 5)*10)/44
 
-			content.append(rowAds)
+			content.append(row1)
 			begin += 1 
 
 		except: 
@@ -94,16 +94,16 @@ def load_set():
 			rowAds["temperature"]["value"] = shAds.cell_value(begin, 2)
 
 			rowAds["measured pressure"] = {}
-			rowAds["measured pressure"]["unit"] = "atm"
-			rowAds["measured pressure"]["value"] = shAds.cell_value(begin, 3)
+			rowAds["measured pressure"]["unit"] = "bar"
+			rowAds["measured pressure"]["value"] = (shAds.cell_value(begin, 3))/(0.9869)
 
 			rowAds["volume of gas(@STP)"] = {}
 			rowAds["volume of gas(@STP)"]["unit"] = "cc"
 			rowAds["volume of gas(@STP)"]["value"] = shAds.cell_value(begin, 4)
 
-			rowAds["weight %"] = {}
-			rowAds["weight %"]["unit"] = "wt%"
-			rowAds["weight %"]["value"] = shAds.cell_value(begin, 5)
+			rowAds["uptake"] = {}
+			rowAds["uptake"]["unit"] = "mmol/g"
+			rowAds["uptake"]["value"] = (shAds.cell_value(begin, 5)*10)/44
 
 			content.append(rowAds)
 			begin += 1 
@@ -122,7 +122,7 @@ if __name__ == '__main__':
 		absorb_path = ""
 		desorb_path = ""
 
-		if "adsorbtion" in file:
+		if "ads" in file:
 			absorb_path = file
 		else:
 			desorb_path = file
@@ -133,9 +133,9 @@ if __name__ == '__main__':
 			pass
 		else:
 			if absorb_path == "":
-				absorb_path = "Data_Files/Excel/%s_adsorbtion.xlsx"%sequence
+				absorb_path = "Data_Files/Excel/%s_DataSet_AMCads.xlsx"%sequence
 			else:
-				desorb_path = "Data_Files/Excel/%s_desorption.xlsx"%sequence
+				desorb_path = "Data_Files/Excel/%s_DataSet_AMCdes.xlsx"%sequence
 		
 			amc_data = {}
 			absorb_content = load_set_2(absorb_path)
