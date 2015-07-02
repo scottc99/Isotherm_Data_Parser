@@ -3,11 +3,12 @@
 import os
 import tkFileDialog
 import tkSimpleDialog
+import Tkinter as Tk
 from Tkinter import *	
 import time
 
+time1 = time.sleep(1)
 time2 = time.sleep(2)
-time3 = time.sleep(3)
 
 def runTGA():
 
@@ -40,78 +41,56 @@ def runAMC():
 	os.system('python AMCplot.py')
 
 def machineButton(machine):
-
-	root = Tk()
+	
 	machNum = 1
-
 	while True:
 		try: 
-			if machNum == machine:
-				label = Label(root, text = "Machine 1 - TGA")
-				label.pack()
-
-				button1 = Button(root, text = "Run TGA Program")
-				button1.pack()
-
-				machNum += 1	
-
-				time3
+			if machNum == machine:	
 				runTGA()
+				
+				machNum +=1
+				time1
 
 			elif machNum == machine:
-				label = Label(root, text = "Machine 2 - IGA")
-				label.pack()
-
-				button2 = Button(root, text = "Run IGA Program")
-				button2.pack()
-
-				machNum += 1
-
-				time3
 				runIGA()
+				
+				machNum +=1
+				time1
 
-			elif machNum == machine:
-				label = Label(root, text = "Machine 3 - AMC")
-				label.pack()
-
-				button3 = Button(root, text = "Run AMC Program")
-				button3.pack()
-
-				machNum += 1
-
-				time3
+			elif machNum == machine:	
 				runAMC()
+				
+				machNum +=1
+				time1
 
 			else: 
-				pass
+				print ""
+				
 		except: 
+			machNum += 1
 			break
+
 
 if __name__ == '__main__':
 	
 	curr_path = os.getcwd()
 
 	machineButton(1)
-	root.destroy()
-	print "TGA JSON and XML files created. Plots completed"
-	
-	print "Redirecting to main path...."
-	os.chdir(os.path.dirname('%s'%curr_path))
-	
-	time2
-	machineButton(2)
-	root.destroy()
 	print "IGA JSON and XML files created. Plots completed"
-	
 	print "Redirecting to main path...."
 	os.chdir(os.path.dirname('%s'%curr_path))
 	
-	time2
-	machineButtons(3)
-	root.destroy()
+	machineButton(2)
+	print "IGA JSON and XML files created. Plots completed"
+	print "Redirecting to main path...."
+	os.chdir(os.path.dirname('%s'%curr_path))
+	time1
+	
+	machineButton(3)
 	print "AMC JSON and XML files created. Plots completed"
+	time2
+	
 
-	time3
 	print "File conversion for TGA, IGA, and AMC completed. You will find the"
 	print "corresponding Excel, JSON, and XML files in the individual machine"
 	print "Data_Files folder. The plots can be found in the plots for each"
