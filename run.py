@@ -40,53 +40,37 @@ def runAMC():
 	os.system('python main.py')
 	os.system('python AMCplot.py')
 
-def machineButton(machine):
+def machineInit(x):
 	
-	machNum = 1
-	while True:
-		try: 
-			if machNum == machine:	
-				runTGA()
-				
-				machNum +=1
-				time1
+	if x == 1: 
+		runTGA()
 
-			elif machNum == machine:
-				runIGA()
-				
-				machNum +=1
-				time1
+	elif x == 2: 
+		runIGA()
 
-			elif machNum == machine:	
-				runAMC()
-				
-				machNum +=1
-				time1
+	elif x == 3: 
+		runAMC()
 
-			else: 
-				print ""
-				
-		except: 
-			machNum += 1
-			break
+	else: 
+		pass
 
 
 if __name__ == '__main__':
 	
 	curr_path = os.getcwd()
 
-	machineButton(1)
+	machineInit(1)
 	print "IGA JSON and XML files created. Plots completed"
 	print "Redirecting to main path...."
 	os.chdir(os.path.dirname('%s'%curr_path))
 	
-	machineButton(2)
+	machineInit(2)
 	print "IGA JSON and XML files created. Plots completed"
 	print "Redirecting to main path...."
 	os.chdir(os.path.dirname('%s'%curr_path))
 	time1
 	
-	machineButton(3)
+	machineInit(3)
 	print "AMC JSON and XML files created. Plots completed"
 	time2
 	
