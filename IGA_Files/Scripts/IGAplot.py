@@ -4,11 +4,12 @@
 
 import glob, os
 from collections import OrderedDict
-import simplejson as json 
-from pprint import pprint
-import tkFileDialog
-from Tkinter import *	
-import matplotlib.pyplot as plot
+import simplejson as json 	
+import matplotlib
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import show, plot, ion
+import pylab
 import numpy as np
 
 
@@ -23,33 +24,41 @@ if __name__ == '__main__':
 
 		with open('%s'%json_file_path) as json_data_file:    
 			json_dict = json.load(json_data_file)
-		
-#						{Pressure}
-#					{		row		 }		
-#				[		  Content		 ]
-#			 {			 json_data   		}
-
-		
 
 		begin = 1
 
-		pressure_dict = {}
-		
+		pressure_list = []
+		conc_list = []
+
 		while True: 
 			try:
 				content_dict = json_dict["content"][begin - 1]
-				print content_dict
-				row_dict = content_dict[3]
-				print row_dict
-				bar_val = row_dict[0]
 				
-				for value in bar_val.values():
-					pressure_dict.append(value)
+				pressure_dict = content_dict.get('pressure')
+				conc_dict = content_dict.get('concentration')
+
+				pressure_val = pressure_dict.get('value')
+				conc_val = conc_dict.get('value')
+
+				pressure_list.append(pressure_val)
+				conc_list.append(conc_val)
 					
 				begin +=1
 
 			except:
-				break 
+				break
+
+	
+
+	plt.plot(pressure_list, conc_list, 'ro')
+	plt.axis([0, 20, 0, 3.5])
+	plt.show()
+
+	print "done" 
+	
+		
+
+
 
 		
 
