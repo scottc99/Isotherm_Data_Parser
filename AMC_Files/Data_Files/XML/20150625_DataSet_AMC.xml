@@ -1,0 +1,1416 @@
+<root>
+  <adsorbtion type="dict">
+    <content type="list">
+      <item type="dict">
+        <index type="int">0</index>
+        <temperature type="dict">
+          <value type="float">20.383717</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">0.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">0.000300703110751</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">1.011</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">-2.27272727273e-07</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">-9e-06</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">1</index>
+        <temperature type="dict">
+          <value type="float">20.045157</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">1.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">0.483707366501</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">2059.994</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">1.60467431818</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">56.767003</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">2</index>
+        <temperature type="dict">
+          <value type="float">19.778561</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">2.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">1.68151484446</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">4041.017</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.40205681818</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">84.975229</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">3</index>
+        <temperature type="dict">
+          <value type="float">20.046807</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">3.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">3.33088560138</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">6014.009</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.70600068182</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">95.727558</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">4</index>
+        <temperature type="dict">
+          <value type="float">19.875179</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">4.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">5.16102543317</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">7999.996</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.84704068182</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">100.716989</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">5</index>
+        <temperature type="dict">
+          <value type="float">19.931249</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">5.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">6.99846083696</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">9984.998</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.92004909091</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">103.299739</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">6</index>
+        <temperature type="dict">
+          <value type="float">19.839249</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">6.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">8.92211064951</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">12040.994</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.96339886364</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">104.833281</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">7</index>
+        <temperature type="dict">
+          <value type="float">19.954592</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">7.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">10.7862397406</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">14034.995</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.98600090909</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">105.632849</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">8</index>
+        <temperature type="dict">
+          <value type="float">20.277274</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">8.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">12.7836153612</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">15945.013</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.99684840909</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">106.016591</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">9</index>
+        <temperature type="dict">
+          <value type="float">20.144671</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">9.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">14.7090485358</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">17868.003</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.99482386364</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">105.944976</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">10</index>
+        <temperature type="dict">
+          <value type="float">20.13456</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">10.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">16.7555882055</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">19838.0</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.98593863636</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">105.630651</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">11</index>
+        <temperature type="dict">
+          <value type="float">19.696858</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">11.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">18.6094842436</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">21760.996</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.96891113636</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">105.028282</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">12</index>
+        <temperature type="dict">
+          <value type="float">19.929434</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">12.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">20.3595298409</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">23684.983</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.96075795455</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">104.739859</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">13</index>
+        <temperature type="dict">
+          <value type="float">20.124895</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">13.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">22.4416354241</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">25670.996</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.93510022727</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">103.832192</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">14</index>
+        <temperature type="dict">
+          <value type="float">19.751289</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">14.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">24.3558212585</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">27594.998</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.9160875</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">103.159595</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">15</index>
+        <temperature type="dict">
+          <value type="float">20.276069</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">15.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">26.2501874557</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">29571.004</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.89807113636</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">102.522245</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">16</index>
+        <temperature type="dict">
+          <value type="float">19.868919</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">16.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">28.1707569156</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">31628.003</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.87149454545</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">101.582074</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">17</index>
+        <temperature type="dict">
+          <value type="float">20.131609</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">17.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">30.243732901</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">33626.997</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.85597931818</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">101.033202</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">18</index>
+        <temperature type="dict">
+          <value type="float">20.282689</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">18.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">32.1649103253</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">35620.0</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.84405090909</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">100.611224</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">19</index>
+        <temperature type="dict">
+          <value type="float">20.133778</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">19.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">33.8448373695</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">37536.992</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.82349318182</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">99.883975</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">20</index>
+        <temperature type="dict">
+          <value type="float">20.174193</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">20.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">35.6797953187</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">39592.991</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.80607545455</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">99.267806</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">21</index>
+        <temperature type="dict">
+          <value type="float">19.785063</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">21.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">37.6771709393</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">41513.999</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.77272840909</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">98.088123</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">22</index>
+        <temperature type="dict">
+          <value type="float">19.809831</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">22.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">39.5320701186</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">43499.007</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.76253863636</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">97.727646</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">23</index>
+        <temperature type="dict">
+          <value type="float">20.286663</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">23.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">41.7602796636</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">45426.991</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.80337181818</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">99.172163</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">24</index>
+        <temperature type="dict">
+          <value type="float">19.806549</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">24.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">43.8978518594</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">47354.994</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.79502</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">98.87671</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">25</index>
+        <temperature type="dict">
+          <value type="float">20.023642</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">25.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">45.7948323032</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">49277.996</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.86236090909</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">101.258961</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+    </content>
+    <filename type="str">20150625_DataSet_AMCads.xlsx</filename>
+  </adsorbtion>
+  <desorption type="dict">
+    <content type="list">
+      <item type="dict">
+        <index type="int">0</index>
+        <temperature type="dict">
+          <value type="float">20.244567</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">0.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">45.790414429</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">1.001</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.86350340909</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">101.299378</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">1</index>
+        <temperature type="dict">
+          <value type="float">19.891465</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">1.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">43.8220893708</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">1985.997</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.82814909091</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">100.048679</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">2</index>
+        <temperature type="dict">
+          <value type="float">19.949139</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">2.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">41.7318775965</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">3986.995</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.84196522727</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">100.537446</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">3</index>
+        <temperature type="dict">
+          <value type="float">19.850673</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">3.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">39.6778700983</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">5973.996</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.86082022727</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">101.204456</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">4</index>
+        <temperature type="dict">
+          <value type="float">19.803013</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">4.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">37.7051069004</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">7999.995</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.8857675</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">102.086996</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">5</index>
+        <temperature type="dict">
+          <value type="float">20.038215</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">5.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">35.6427297599</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">9986.992</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.92936613636</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">103.629341</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">6</index>
+        <temperature type="dict">
+          <value type="float">20.069047</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">6.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">33.7341169318</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">11939.992</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.95464590909</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">104.523642</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">7</index>
+        <temperature type="dict">
+          <value type="float">19.884093</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">7.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">31.8405208228</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">14007.002</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.98745522727</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">105.684299</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">8</index>
+        <temperature type="dict">
+          <value type="float">20.315125</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">8.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">29.7298105178</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">15995.997</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.0208</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">106.863903</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">9</index>
+        <temperature type="dict">
+          <value type="float">20.167972</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">9.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">27.766318776</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">18087.02</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.05363795455</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">108.025581</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">10</index>
+        <temperature type="dict">
+          <value type="float">19.743158</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">10.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">25.7175904347</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">20132.014</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.07633340909</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">108.828458</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">11</index>
+        <temperature type="dict">
+          <value type="float">20.194804</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">11.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">23.585408856</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">22099.01</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.11348068182</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">110.142583</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">12</index>
+        <temperature type="dict">
+          <value type="float">19.773047</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">12.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">21.47380687</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">24080.004</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.13395454545</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">110.866869</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">13</index>
+        <temperature type="dict">
+          <value type="float">20.031126</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">13.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">19.3626912554</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">26074.994</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.16160772727</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">111.845126</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">14</index>
+        <temperature type="dict">
+          <value type="float">19.694663</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">14.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">17.2814672206</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">28100.998</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.17719204545</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">112.396438</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">15</index>
+        <temperature type="dict">
+          <value type="float">19.97076</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">15.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">15.1904954909</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">30089.018</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.19301454545</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">112.956177</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">16</index>
+        <temperature type="dict">
+          <value type="float">20.230323</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">16.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">13.0947107103</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">32114.996</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.20360409091</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">113.330788</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">17</index>
+        <temperature type="dict">
+          <value type="float">20.243562</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">17.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">10.9762792583</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">34116.994</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.19730772727</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">113.108048</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">18</index>
+        <temperature type="dict">
+          <value type="float">20.248598</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">18.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">8.96250481305</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">36143.016</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.17974772727</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">112.486843</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">19</index>
+        <temperature type="dict">
+          <value type="float">20.26298</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">19.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">6.86838889452</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">38196.994</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.13227090909</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">110.807306</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">20</index>
+        <temperature type="dict">
+          <value type="float">20.23002</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">20.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">4.98334177728</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">40166.998</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">3.05340681818</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">108.017408</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">21</index>
+        <temperature type="dict">
+          <value type="float">20.09158</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">21.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">3.22146012767</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">42169.0</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.90741045455</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">102.852636</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">22</index>
+        <temperature type="dict">
+          <value type="float">19.915626</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">22.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">1.8048312899</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">44056.015</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.65649636364</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">93.976287</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">23</index>
+        <temperature type="dict">
+          <value type="float">19.940622</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">23.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">1.40234268923</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">45942.005</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.52337681818</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">89.267054</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">24</index>
+        <temperature type="dict">
+          <value type="float">20.176273</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">24.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">1.11641605026</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">47826.99</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.39037363636</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">84.561924</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+      <item type="dict">
+        <index type="int">25</index>
+        <temperature type="dict">
+          <value type="float">19.936281</value>
+          <unit type="str">C</unit>
+        </temperature>
+        <key type="dict" name="serial #">
+          <value type="float">25.0</value>
+          <unit type="str"/>
+        </key>
+        <measured_pressure type="dict">
+          <value type="float">0.907053602189</value>
+          <unit type="str">bar</unit>
+        </measured_pressure>
+        <time type="dict">
+          <value type="float">49711.998</value>
+          <unit type="str">s (seconds)</unit>
+        </time>
+        <uptake type="dict">
+          <value type="float">2.26338136364</value>
+          <unit type="str">mmol/g</unit>
+        </uptake>
+        <key type="dict" name="volume of gas(@STP)">
+          <value type="float">80.069441</value>
+          <unit type="str">cc</unit>
+        </key>
+      </item>
+    </content>
+    <filename type="str">20150625_DataSet_AMCdes.xlsx</filename>
+  </desorption>
+</root>
