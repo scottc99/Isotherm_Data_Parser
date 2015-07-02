@@ -51,9 +51,10 @@ if __name__ == '__main__':
 				break
 
 	
+		plot_path = '%s/TGA_plots/%s_TGAplot.png'%(os.getcwd(), sequence)
 
-	plt.plot(pressure_list, conc_list, 'ro')
-	plt.axis([-5, 50, 0, 3.5])
-	plt.show()
+		plt.plot(pressure_list, conc_list, 'ro')
+		plt.axis([0, 50, 0, 3.5])
+		plt.savefig('%s'%plot_path)
 
 	print "done" 

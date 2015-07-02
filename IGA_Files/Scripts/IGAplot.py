@@ -49,10 +49,11 @@ if __name__ == '__main__':
 				break
 
 	
+		plot_path = '%s/IGA_plots/%s_IGAplot.png'%(os.getcwd(), sequence)
 
-	plt.plot(pressure_list, conc_list, 'ro')
-	plt.axis([0, 20, 0, 3.5])
-	plt.show()
+		plt.plot(pressure_list, conc_list, 'ro')
+		plt.axis([0, 20, 0, 3.5])
+		plt.savefig('%s'%plot_path)
 
 	print "done" 
 	

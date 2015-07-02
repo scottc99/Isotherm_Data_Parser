@@ -32,6 +32,7 @@ class TGApp:
 			self.sh = self.wb.sheet_by_index(int(self.sheet) - 1)
 			self.button2 = Button(self.root, text = "Init JSON Transfer", command = self.runJSON)
 			self.button2.pack()
+			self.button.destroy()
 			
 		else:
 			print 'Eee Roar!'
@@ -40,7 +41,7 @@ class TGApp:
 		print "Please select a file"
 		self.file_path = tkFileDialog.askopenfilename()
 		self.wb = xlrd.open_workbook(filename = self.file_path)
-		print self.file_path
+		print "File: %s"%self.file_path.split("/")[-1].split(".")[0]
 		self.root.mainloop()
 
 
@@ -211,13 +212,17 @@ class TGApp:
 			x = etree.parse("Data_Files/XML/%s_DataSet_TGA.xml"%sequence)
 
 			with open('Data_Files/XML/%s_DataSet_TGA.xml'%sequence, 'w') as f:
-				f.write(etree.tostring(x, pretty_print = True))				
+				f.write(etree.tostring(x, pretty_print = True))		
+
+		self.root.destroy()
 
 
 if __name__ == '__main__':
 
 	TGInstance = TGApp()
 	TGInstance.run()
+
+	print "done"
 
 
 

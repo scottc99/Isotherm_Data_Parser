@@ -128,7 +128,7 @@ if __name__ == '__main__':
 			desorb_path = file
 		
 		sequence = file.split("/")[-1].split("_")[0]
-		print "Sequence: %s"%sequence
+		
 		if sequence in already:
 			pass
 		else:
@@ -162,6 +162,6 @@ if __name__ == '__main__':
 
 			already.append(sequence)
 
-
+			print "done" 
 
 

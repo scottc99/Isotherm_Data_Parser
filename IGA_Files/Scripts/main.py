@@ -79,7 +79,7 @@ if __name__ == '__main__':
 		with open('Data_Files/XML/%s_DataSet_IGA.xml'%sequence, 'w') as f:
 			f.write(etree.tostring(x, pretty_print = True))
 
-
+		print "done"
 
 
 

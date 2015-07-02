@@ -64,10 +64,10 @@ if __name__ == '__main__':
 			except:
 				break
 
-	
+		plot_path = '%s/AMC_plots/%s_AMCplot.png'%(os.getcwd(), sequence)
 
-	plt.plot(pressure_list, conc_list, 'ro')
-	plt.axis([-5, 50, 0, 3.5])
-	plt.show()
+		plt.plot(pressure_list, conc_list, 'ro')
+		plt.axis([0, 50, 0, 3.5])
+		plt.savefig('%s'%plot_path)
 
 	print "done" 
