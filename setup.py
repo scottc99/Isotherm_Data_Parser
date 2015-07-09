@@ -7,7 +7,7 @@ import os
 setup(
     name = "Isotherm_Data_Parser",
     version = "0.1.0.dev1",
-    packages = ['setuptools', 'setuptools.setup', 'codecs', 'codecs.open', 'collections', 'collections.OrderedDict',
+    packages = ['site-packages', 'setuptools', 'setuptools.setup', 'codecs', 'codecs.open', 'collections', 'collections.OrderedDict',
                 'Tkinter', 'Tkinter.*', 'matplotlib.pyplot', 'matplotlib.pyplot.show', 'matplotlib.pyplot.plot', 
                 'matplotlib.pyplot.ion', 'json', 'lxml'],
     py_modules = ['glob', 'xlrd', 'xlwt', 'simplejson', 'matplotlib', 'pylab', 'numpy', 'dicttoxml', 'lxml', 'time'],
