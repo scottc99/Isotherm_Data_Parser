@@ -7,7 +7,7 @@ setup(
     name = "Isotherm_Data_Parser",
     version = "0.1.0.dev1",
     packages = ['iso_main', 'iso_main.AMC_Files', 
-                'iso_main.IGA_Files', 'iso_main.TGA_Files']
+                'iso_main.IGA_Files', 'iso_main.TGA_Files'],
     url = "https://github.com/scottc99/Isotherm_Data_Parser",
     author = "NIST: Group 642, 643 Contributers",
     author_email = "scottc99@students.rowan.edu",
