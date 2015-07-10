@@ -19,6 +19,6 @@ setup(
                         'libxslt>=1.1.26', 'py2exe==0.6.9'],
                         
     console = ['run.py'],
-	windows = ['GUI.py']
+    windows = ['GUI.py']
                         
 )
