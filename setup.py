@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+from distutils import setup
 import os
 
 setup(
@@ -13,15 +13,12 @@ setup(
     author_email = "scottc99@students.rowan.edu",
     description = "A tool designed to parse through isotherm data and convert", 
                   "data into json and xml formats and plot.",
-    install_requires = ['setuptools >= 17.0', 'matplotlib >= 1.4.3', 'numpy >= 1.9.2', 
+    install_requires = ['setuptools >= 17.0', 'py2exe >= 0.9.2.2', 'matplotlib >= 1.4.3', 'numpy >= 1.9.2', 
                         'simplejson >= 3.7.3', 'xlrd >= 0.9.3', 'xlwt >= 0.7.5', 
                         'pprint >= 0.2.3', 'codecs >= 7.8', 'collections', 
                         'dicttoxml >= 1.6.6', 'lxml >= 3.4.2', 'libxml2 >= 2.9.0', 
-                        'libxslt >= 1.1.26'],
-    entry_points={
-        'console_scripts': [
-            'Isotherm_Data_Parser = Isotherm_Data_Parser.run:main'
-        ]
-    }        
+                        'libxslt >= 1.1.26'], 
+    console = ['run.py']
+    windows = ['GUI.py']
 )
 
