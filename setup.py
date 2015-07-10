@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup
 import os
 
 setup(
@@ -12,16 +12,9 @@ setup(
     author = "NIST: Group 642, 643 Contributers",
     author_email = "scottc99@students.rowan.edu",
     description = "A tool designed to parse through isotherm data and convert data into json and xml formats and plot.",
-    pymodules = ['matplotlib', 'numpy', 
-                'simplejson', 'xlrd', 'xlwt', 
-                'pprint', 'codecs', 'collections', 
-                'dicttoxml', 'lxml', 'libxml2', 
-                'libxslt', 'py2exe'],
+    install_requires = ['setuptools>=17.0', 'matplotlib>=1.4.3', 'numpy>=1.9.2', 
+                        'simplejson>=3.7.3', 'xlrd>=0.9.3', 'xlwt>=0.7.5', 
+                        'pprint>=0.2.3', 'codecs>=7.8', 'collections', 
+                        'dicttoxml>=1.6.6', 'lxml>=3.4.2', 'libxml2>=2.9.0', 
+                        'libxslt>=1.1.26', 'py2exe==0.6.9'],
 )
-
-# install_requires = ['matplotlib >= 1.4.3', 'numpy >= 1.9.2', 
-#                         'simplejson >= 3.7.3', 'xlrd >= 0.9.3', 'xlwt >= 0.7.5', 
-#                         'pprint >= 0.2.3', 'codecs >= 7.8', 'collections', 
-#                         'dicttoxml >= 1.6.6', 'lxml >= 3.4.2', 'libxml2 >= 2.9.0', 
-#                         'libxslt >= 1.1.26', 'py2exe >= 0.9.2.2'],
-#                         
