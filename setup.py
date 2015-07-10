@@ -17,15 +17,6 @@ setup(
                         'pprint >= 0.2.3', 'codecs >= 7.8', 'collections', 
                         'dicttoxml >= 1.6.6', 'lxml >= 3.4.2', 'libxml2 >= 2.9.0', 
                         'libxslt >= 1.1.26', 'py2exe >= 0.9.2.2'],
-    console = [
-              {"script": "main.py",                    
-               "icon_resources": [(0, "icon.ico")]
-        }
-    ],
-    entry_points={
-        'console_scripts': [
-            'Isotherm_Data_Parser = Isotherm_Data_Parser.run:main'
-        ]
-    }        
+    console = ['run.py'],
+    windows = ['GUI.py']
 )
-
