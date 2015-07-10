@@ -17,4 +17,8 @@ setup(
                         'pprint>=0.2.3', 'codecs>=7.8', 'collections', 
                         'dicttoxml>=1.6.6', 'lxml>=3.4.2', 'libxml2>=2.9.0', 
                         'libxslt>=1.1.26', 'py2exe==0.6.9'],
+                        
+    console = ['run.py'],
+	windows = ['GUI.py']
+                        
 )
