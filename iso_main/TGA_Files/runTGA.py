@@ -48,7 +48,8 @@ class TGApp:
 	def runJSON(self):
 
 		os.chdir(os.path.dirname(os.getcwd()))
-		for file in glob.glob("Data_Files/Excel/*.xlsx"):
+
+		for file in glob.glob("TGA_Files/Data_Files/Excel/*.xlsx"):
 
 			self.file_path = file
 			sequence = file.split("/")[-1].split("_")[0]
@@ -202,16 +203,16 @@ class TGApp:
 
 			#End content
 			TGA_Data["content"] = TGA_Content
-
-			with open('Data_Files/JSON/%s_DataSet_TGA.json'%sequence, 'w') as f:
+			print os.getcwd()
+			with open('TGA_Files/Data_Files/JSON/%s_DataSet_TGA.json'%sequence, 'w') as f:
 				f.write(json.dumps(TGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
 
-			with open('Data_Files/XML/%s_DataSet_TGA.xml'%sequence, 'w') as f:
+			with open('TGA_Files/Data_Files/XML/%s_DataSet_TGA.xml'%sequence, 'w') as f:
 				f.write(dicttoxml.dicttoxml(TGA_Data))
 
-			x = etree.parse("Data_Files/XML/%s_DataSet_TGA.xml"%sequence)
+			x = etree.parse("TGA_Files/Data_Files/XML/%s_DataSet_TGA.xml"%sequence)
 
-			with open('Data_Files/XML/%s_DataSet_TGA.xml'%sequence, 'w') as f:
+			with open('TGA_Files/Data_Files/XML/%s_DataSet_TGA.xml'%sequence, 'w') as f:
 				f.write(etree.tostring(x, pretty_print = True))		
 
 		self.root.destroy()

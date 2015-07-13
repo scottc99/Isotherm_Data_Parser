@@ -17,8 +17,8 @@ if __name__ == '__main__':
 
 	
 	os.chdir(os.path.dirname(os.getcwd()))
-
-	for file in glob.glob("Data_Files/JSON/*.json"):
+	
+	for file in glob.glob("IGA_Files/Data_Files/JSON/*.json"):
 		json_file_path = file
 		sequence = file.split("/")[-1].split("_")[0]
 
@@ -26,7 +26,6 @@ if __name__ == '__main__':
 			json_dict = json.load(json_data_file)
 
 		begin = 1
-
 		pressure_list = []
 		conc_list = []
 
@@ -49,13 +48,13 @@ if __name__ == '__main__':
 				break
 
 	
-		plot_path = '%s/IGA_plots/%s_IGAplot.png'%(os.getcwd(), sequence)
+		plot_path = '%s/IGA_Files/IGA_plots/%s_IGAplot.png'%(os.getcwd(), sequence)
 
 		plt.plot(pressure_list, conc_list, 'ro')
 		plt.axis([0, 20, 0, 3.5])
 		plt.savefig('%s'%plot_path)
 
-	print "done" 
+	print "done"
 	
 		
 
