@@ -2,6 +2,8 @@ import glob, os
 from collections import OrderedDict
 import simplejson as json 	
 import matplotlib
+import matplotlib.markers as mark
+from matplotlib.markers import MarkerStyle
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import show, plot, ion
@@ -32,7 +34,7 @@ if __name__ == '__main__':
 			try:
 				adsorption_dictAMC = json_dictAMC.get("adsorbtion")
 				
-				content1_dictAMC = adsorption_dictAMC["content"][begin1 -1]
+				content1_dictAMC = adsorption_dictAMC["content"][begin1 - 1]
 
 				conc1_dictAMC = content1_dictAMC.get("uptake")
 				conc1_valAMC = conc1_dictAMC.get("value")
@@ -45,7 +47,7 @@ if __name__ == '__main__':
 
 				desorption_dictAMC = json_dictAMC.get("desorption")
 				
-				content2_dictAMC = desorption_dictAMC["content"][begin1 -1]
+				content2_dictAMC = desorption_dictAMC["content"][begin1 - 1]
 
 				conc2_dictAMC = content2_dictAMC.get("uptake")
 				conc2_valAMC = conc2_dictAMC.get("value")
@@ -136,21 +138,17 @@ if __name__ == '__main__':
 		plIGA = pressure_listIGA
 		plTGA = pressure_listTGA
 
-		for a in range [len(plAMC)]:
-			if a < plAMC.index(plAMC)/2
-				plt.plot(pressure_listAMC[a], conc_listAMC, 'ro')
+		
+		plt.plot(pressure_listAMC, conc_listAMC, 'ro')
 
-			else: 
-				plt.plot(pressure_listAMC[a], conc_listAMC, 'ro')
+		# plt.plot(pressure2_valAMC, conc2_valAMC, 'ro')
+		mark.MarkerStyle(marker = 'o', fillstyle = u'none')
 
-		for i in range [len(plIGA)]:
-			if i < plAMC.index(plIGA)/2
-				pressure_listIGA, conc_listIGA, 'bs')
+		plt.plot(pressure_listIGA, conc_listIGA, 'bs')
+		mark.MarkerStyle(marker = 's', fillstyle = u'none')
 
-		for t in range [len(plTGA)]:
-			if t < plAMC.index(plAMC)/2
-				pressure_listTGA, conc_listTGA, 'g^')
-
+		plt.plot(pressure_listTGA, conc_listTGA, 'g^')
+		mark.MarkerStyle(marker = '^', fillstyle = u'none')
 
 		plt.axis([0, 50, 0, 3.75])
 		plt.savefig('%s'%plot_pathComp)
