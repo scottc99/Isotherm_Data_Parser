@@ -13,7 +13,7 @@ import lxml.etree as etree
 if __name__ == '__main__':
 
 	os.chdir(os.path.dirname(os.getcwd()))
-	for file in glob.glob("Data_Files/Excel/*.xlsx"):
+	for file in glob.glob("IGA_Files/Data_Files/Excel/*.xlsx"):
 		file_path = file
 		sequence = file.split("/")[-1].split("_")[0]
 		wb = xlrd.open_workbook(filename = file_path)
@@ -68,15 +68,15 @@ if __name__ == '__main__':
 
 		#filename = file_path.split("/")[-1].split(".")[0]
 
-		with open('Data_Files/JSON/%s_DataSet_IGA.json'%sequence, 'w') as f:
+		with open('IGA_Files/Data_Files/JSON/%s_DataSet_IGA.json'%sequence, 'w') as f:
 			f.write(json.dumps(IGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
 				
-		with open('Data_Files/XML/%s_DataSet_IGA.xml'%sequence, 'w') as f:
+		with open('IGA_Files/Data_Files/XML/%s_DataSet_IGA.xml'%sequence, 'w') as f:
 			f.write(dicttoxml.dicttoxml(IGA_Data))
 
-		x = etree.parse("Data_Files/XML/%s_DataSet_IGA.xml"%sequence)
+		x = etree.parse("IGA_Files/Data_Files/XML/%s_DataSet_IGA.xml"%sequence)
 
-		with open('Data_Files/XML/%s_DataSet_IGA.xml'%sequence, 'w') as f:
+		with open('IGA_Files/Data_Files/XML/%s_DataSet_IGA.xml'%sequence, 'w') as f:
 			f.write(etree.tostring(x, pretty_print = True))
 
 		print "done"

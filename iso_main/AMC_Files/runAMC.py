@@ -286,7 +286,7 @@ if __name__ == '__main__':
 
 	os.chdir(os.path.dirname(os.getcwd()))
 	already = []
-	for file in glob.glob("Data_Files/Excel/*"):
+	for file in glob.glob("AMC_Files/Data_Files/Excel/*.xlsx"):
 		absorb_path = ""
 		desorb_path = ""
 
@@ -295,15 +295,15 @@ if __name__ == '__main__':
 		else:
 			desorb_path = file
 		
-		sequence = file.split("%s")[-1].split("_")[0]
+		sequence = file.split("/")[-1].split("_")[0]
 		
 		if sequence in already:
 			pass
 		else:
 			if absorb_path == "":
-				absorb_path = "Data_Files/Excel/%s_DataSet_AMCads"%sequence
+				absorb_path = "AMC_Files/Data_Files/Excel/%s_DataSet_AMCads.xlsx"%sequence
 			else:
-				desorb_path = "Data_Files/Excel/%s_DataSet_AMCdes"%sequence
+				desorb_path = "AMC_Files/Data_Files/Excel/%s_DataSet_AMCdes.xlsx"%sequence
 		
 			amc_data = {}
 			absorb_content = load_set_2(absorb_path)
@@ -317,15 +317,15 @@ if __name__ == '__main__':
 			amc_data["desorption"]["filename"] = desorb_path.split("/")[-1]
 			amc_data["desorption"]["content"] = desorb_content
 
-			with open('C:\Data_Files\JSON\%s_DataSet_AMC'%sequence, 'w') as f:
+			with open('AMC_Files/Data_Files/JSON/%s_DataSet_AMC'%sequence, 'w') as f:
 				f.write(json.dumps(amc_data, sort_keys=True, indent=4, separators=(',', ': ')))
 					
-			with open('C:\Data_Files\XML\%s_DataSet_AMC'%sequence, 'w') as f:
+			with open('AMC_Files/Data_Files/XML/%s_DataSet_AMC'%sequence, 'w') as f:
 				f.write(dicttoxml.dicttoxml(amc_data))
 
-			x = etree.parse("C:\Data_Files\XML\%s_DataSet_AMC"%sequence)
+			x = etree.parse("AMC_Files/Data_Files/XML/%s_DataSet_AMC"%sequence)
 
-			with open('C:\Data_Files\XML\%s_DataSet_AMC'%sequence, 'w') as f:
+			with open('AMC_Files/Data_Files/XML/%s_DataSet_AMC'%sequence, 'w') as f:
 				f.write(etree.tostring(x, pretty_print = True))
 
 			already.append(sequence)

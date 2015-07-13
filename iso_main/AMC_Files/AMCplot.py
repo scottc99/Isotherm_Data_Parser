@@ -92,7 +92,7 @@ if __name__ == '__main__':
 	
 	os.chdir(os.path.dirname(os.getcwd()))
 
-	for file in glob.glob("C:/Data_Files/JSON/*"):
+	for file in glob.glob("AMC_Files/Data_Files/JSON/*"):
 		json_file_path = file
 		sequence = file.split("/")[-1].split("_")[0]
 
@@ -138,7 +138,7 @@ if __name__ == '__main__':
 			except:
 				break
 
-		plot_path = '%s\AMC_plots\%s_AMCplot'%(os.getcwd(), sequence)
+		plot_path = '%s/AMC_Files/AMC_plots/%s_AMCplot'%(os.getcwd(), sequence)
 
 		plt.plot(pressure_list, conc_list, 'ro')
 		plt.axis([0, 50, 0, 3.5])
