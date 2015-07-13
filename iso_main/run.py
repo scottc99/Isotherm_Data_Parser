@@ -1,84 +1,147 @@
-#### Run both file conversion script and plotting script ####
+# #### Script for plotting machine produced data ####
 
-import os
-import tkFileDialog
-import tkSimpleDialog
-import Tkinter as Tk
-from Tkinter import *	
-import time
+# #### AMC (machine 3) ####
 
-time1 = time.sleep(1)
-time2 = time.sleep(2)
+# import glob, os
+# from collections import OrderedDict
+# import simplejson as json 	
+# import matplotlib
+# matplotlib.use('TkAgg')
+# import matplotlib.pyplot as plt
+# from matplotlib.pyplot import show, plot, ion
+# import pylab
+# import numpy as np
 
-def runTGA():
 
-	print "Running TGA file conversion and creating plots"
+# if __name__ == '__main__':
 
-	TGA_files_path =  os.path.dirname('%s/TGA_Files'%curr_path)
-	TGAplot_path = os.chdir(TGA_files_path)
-
-	os.system('python runTGA.py')
-	os.system('python TGAplot.py')
-
-def runIGA():
-
-	print "Running IGA file conversion and creating plots"
-
-	IGA_files_path =  os.path.dirname('%s/IGA_Files'%curr_path)
-	IGAplot_path = os.chdir(IGA_files_path)
-
-	os.system('python runIGA.py')
-	os.system('python IGAplot.py')
-
-def runAMC():
-
-	print "Running AMC file conversion and creating plots"
-
-	AMC_files_path =  os.path.dirname('%s/AMC_Files'%curr_path)
-	AMCplot_path = os.chdir(AMC_files_path)
-
-	os.system('python runAMC.py')
-	os.system('python AMCplot.py')
-
-def machineInit(x):
 	
-	if x == 1: 
-		runTGA()
+# 	os.chdir(os.path.dirname(os.getcwd()))
 
-	elif x == 2: 
-		runIGA()
+# 	for file in glob.glob("Data_Files/JSON/*.json"):
+# 		json_file_path = file
+# 		sequence = file.split("/")[-1].split("_")[0]
 
-	elif x == 3: 
-		runAMC()
+# 		with open('%s'%json_file_path) as json_data_file:    
+# 			json_dict = json.load(json_data_file)
 
-	else: 
-		pass
+	
+# 		begin = 1
+
+# 		pressure_list = []
+# 		conc_list = []
+
+# 		while True: 
+# 			try:
+# 				adsorption_dict = json_dict.get("adsorbtion")
+				
+# 				content1_dict = adsorption_dict["content"][begin -1]
+
+# 				conc1_dict = content1_dict.get("uptake")
+# 				conc1_val = conc1_dict.get("value")
+
+# 				pressure1_dict = content1_dict.get("measured pressure")
+# 				pressure1_val = pressure1_dict.get("value")
+
+# 				conc_list.append(conc1_val)
+# 				pressure_list.append(pressure1_val)
+
+# 				desorption_dict = json_dict.get("desorption")
+				
+# 				content2_dict = desorption_dict["content"][begin -1]
+
+# 				conc2_dict = content2_dict.get("uptake")
+# 				conc2_val = conc2_dict.get("value")
+
+# 				pressure2_dict = content2_dict.get("measured pressure")
+# 				pressure2_val = pressure2_dict.get("value")
+
+# 				conc_list.append(conc2_val)
+# 				pressure_list.append(pressure2_val)
+
+# 				begin +=1
+
+# 			except:
+# 				break
+
+# 		plot_path = '%s/AMC_plots/%s_AMCplot.png'%(os.getcwd(), sequence)
+
+# 		plt.plot(pressure_list, conc_list, 'ro')
+# 		plt.axis([0, 50, 0, 3.5])
+# 		plt.savefig('%s'%plot_path)
+
+# 	print "done" 
+
+#### Script for plotting machine produced data ####
+
+#### AMC (machine 3) ####
+
+import glob, os
+from collections import OrderedDict
+import simplejson as json 	
+import matplotlib
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import show, plot, ion
+import pylab
+import numpy as np
 
 
 if __name__ == '__main__':
-	
-	curr_path = os.getcwd()
 
-	machineInit(1)
-	print "IGA JSON and XML files created. Plots completed"
-	print "Redirecting to main path...."
-	os.chdir(os.path.dirname('%s'%curr_path))
 	
-	machineInit(2)
-	print "IGA JSON and XML files created. Plots completed"
-	print "Redirecting to main path...."
-	os.chdir(os.path.dirname('%s'%curr_path))
-	time1
+	os.chdir(os.path.dirname(os.getcwd()))
+
+	for file in glob.glob("C:/Data_Files/JSON/*"):
+		json_file_path = file
+		sequence = file.split("/")[-1].split("_")[0]
+
+		with open('%s'%json_file_path) as json_data_file:    
+			json_dict = json.load(json_data_file)
+
 	
-	machineInit(3)
-	print "AMC JSON and XML files created. Plots completed"
-	time2
-	
+		begin = 1
 
-	print "File conversion for TGA, IGA, and AMC completed. You will find the"
-	print "corresponding Excel, JSON, and XML files in the individual machine"
-	print "Data_Files folder. The plots can be found in the plots for each"
-	print "machine in the corresponding <machine_name>_Files folder under the"
-	print "folder name <machine_name>_plots"
+		pressure_list = []
+		conc_list = []
 
+		while True: 
+			try:
+				adsorption_dict = json_dict.get("adsorbtion")
+				
+				content1_dict = adsorption_dict["content"][begin -1]
 
+				conc1_dict = content1_dict.get("uptake")
+				conc1_val = conc1_dict.get("value")
+
+				pressure1_dict = content1_dict.get("measured pressure")
+				pressure1_val = pressure1_dict.get("value")
+
+				conc_list.append(conc1_val)
+				pressure_list.append(pressure1_val)
+
+				desorption_dict = json_dict.get("desorption")
+				
+				content2_dict = desorption_dict["content"][begin -1]
+
+				conc2_dict = content2_dict.get("uptake")
+				conc2_val = conc2_dict.get("value")
+
+				pressure2_dict = content2_dict.get("measured pressure")
+				pressure2_val = pressure2_dict.get("value")
+
+				conc_list.append(conc2_val)
+				pressure_list.append(pressure2_val)
+
+				begin +=1
+
+			except:
+				break
+
+		plot_path = '%s\AMC_plots\%s_AMCplot'%(os.getcwd(), sequence)
+
+		plt.plot(pressure_list, conc_list, 'ro')
+		plt.axis([0, 50, 0, 3.5])
+		plt.savefig('%s'%plot_path)
+
+	print "done" 
