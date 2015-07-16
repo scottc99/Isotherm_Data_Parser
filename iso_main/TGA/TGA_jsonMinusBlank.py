@@ -199,6 +199,8 @@ class TGApp:
 				row["Z"]["unit"] = self.sh.cell_value(22, 6)
 				row["Z"]["value"] = self.sh.cell_value(begin, 6)
 
+				row["delta_mass-zeolite"]
+
 				TGA_Content.append(row)
 				begin += 1
 			except:
@@ -221,32 +223,25 @@ class TGApp:
 		# print sequence3
 		# print sequence4
 		# print sequence5
-		excelPath = '%s_%s_%s_%s_CO2_20C_%s_%s.xlsx'%(sequence1, sequence2, sequence3, 
-														     sequence4, sequence5, sequence6)
-		jsonPath = '%s_%s_%s_%s_CO2_20C_%s_%s.json'%(sequence1, sequence2, sequence3, 
-													    sequence4, sequence5, sequence6)
-		xmlPath = '%s_%s_%s_%s_CO2_20C_%s_%s.xml'%(sequence1, sequence2, sequence3, 
-													  sequence4, sequence5, sequence6)
+
 
 		if sequence1 and sequence2 and sequence3 and sequence4 and\
 						 sequence5 and sequence6 in already:
 			pass
 
-		elif sequence3 == 'SiShot':
-			with open('TGA/Data_Files/JSON/json_blankRuns/%s'%jsonPath, 'w') as f:
-				f.write(json.dumps(TGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
-
-			with open('TGA/Data_Files/XML/xml_blankRuns/%s'%xmlPath, 'w') as f:
-				f.write(dicttoxml.dicttoxml(TGA_Data))
-
-			x = etree.parse("TGA/Data_Files/XML/xml_blankRuns/%s"%xmlPath)
-
-			with open('TGA/Data_Files/XML/xml_blankRuns/%s'%xmlPath, 'w') as f:
-				f.write(etree.tostring(x, pretty_print = True))	
-
 		else:
+			print "hi"
+			excelPath = '%s_%s_%s_%s_CO2_20C_%s_%s.xlsx'%(sequence1, sequence2, sequence3, 
+														     sequence4, sequence5, sequence6)
+			jsonPath = '%s_%s_%s_%s_CO2_20C_%s_%s.json'%(sequence1, sequence2, sequence3, 
+														    sequence4, sequence5, sequence6)
+			xmlPath = '%s_%s_%s_%s_CO2_20C_%s_%s.xml'%(sequence1, sequence2, sequence3, 
+														  sequence4, sequence5, sequence6)
 
-			with open('TGA/Data_Files/JSON/json_original/%s'%jsonPath, 'w') as f:
+			TGA_Data["content"] = TGA_Content
+
+
+			with open('TGA/Data_Files/JSON/json_minusBlank/%s'%jsonPath, 'w') as f:
 				f.write(json.dumps(TGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
 
 			with open('TGA/Data_Files/XML/xml_minusBlank/%s'%xmlPath, 'w') as f:
@@ -271,7 +266,3 @@ if __name__ == '__main__':
 	
 	print "done"
 
-
-
-
-			

@@ -1,0 +1,1450 @@
+{
+    "content": [
+        {
+            "Z": {
+                "unit": "---",
+                "value": 1.000006216992908
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 313.3
+            },
+            "index": 1,
+            "pressure": {
+                "unit": "Bar",
+                "value": 0.00021063858152246367
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 19.77
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 88.4121
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 0.0
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 88.41212429282622
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 0.0
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9978926974824469
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 360.5
+            },
+            "index": 2,
+            "pressure": {
+                "unit": "Bar",
+                "value": 0.4042727636315158
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.16
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 94.0279
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 6.352
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 94.07456117128008
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 1.4555893579861625
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9964963553186283
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 401.9
+            },
+            "index": 3,
+            "pressure": {
+                "unit": "Bar",
+                "value": 0.6697453672843621
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.15
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 95.3428
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 7.839
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 95.42021298382839
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 1.8015034052320091
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.995060841183092
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 433.2
+            },
+            "index": 4,
+            "pressure": {
+                "unit": "Bar",
+                "value": 0.9421650446607118
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.15
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 96.1854
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 8.792
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 96.29445790620593
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 2.0262373197288466
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9930595480154101
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 464.5
+            },
+            "index": 5,
+            "pressure": {
+                "unit": "Bar",
+                "value": 1.32087854952673
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.14
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 97.1297
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 9.86
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 97.28290826934075
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 2.2803289520702665
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9903458910181147
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 495.9
+            },
+            "index": 6,
+            "pressure": {
+                "unit": "Bar",
+                "value": 1.8334342087721636
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.17
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 97.7022
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 10.508
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 97.91542033319568
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 2.442922875624342
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9825640364643846
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 527.4
+            },
+            "index": 7,
+            "pressure": {
+                "unit": "Bar",
+                "value": 3.2917011065191306
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.19
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 98.5423
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 11.458
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 98.92811589009402
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 2.7032469917500452
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9644332952986108
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 559.3
+            },
+            "index": 8,
+            "pressure": {
+                "unit": "Bar",
+                "value": 6.615515264631382
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.07
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 99.1742
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 12.173
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 99.96449594566089
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 2.9696594590487804
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9460738169263941
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 591.1
+            },
+            "index": 9,
+            "pressure": {
+                "unit": "Bar",
+                "value": 9.912359685375284
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.23
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 99.2739
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 12.285
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 100.48036130114933
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.1022681110692436
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9267342536962313
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 623.0
+            },
+            "index": 10,
+            "pressure": {
+                "unit": "Bar",
+                "value": 13.255157978936142
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.12
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 99.1638
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 12.161
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 100.81140810080473
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.1873671963071435
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9069320792436526
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 654.8
+            },
+            "index": 11,
+            "pressure": {
+                "unit": "Bar",
+                "value": 16.60016131182509
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.21
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 98.9287
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 11.895
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.0364957157328
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.245228351130869
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.8866180080301693
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 686.7
+            },
+            "index": 12,
+            "pressure": {
+                "unit": "Bar",
+                "value": 19.900782562325023
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.2
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 98.6051
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 11.529
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.18997403036357
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.284681577057019
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.8651341426706337
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 718.5
+            },
+            "index": 13,
+            "pressure": {
+                "unit": "Bar",
+                "value": 23.260739901346486
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.18
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 98.2183
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 11.092
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.31483119287459
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.316777432767293
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.8425531844723494
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 750.4
+            },
+            "index": 14,
+            "pressure": {
+                "unit": "Bar",
+                "value": 26.661057192374347
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.2
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 97.7449
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 10.556
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.38896251519878
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.335833674132054
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.8195831483741584
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 782.3
+            },
+            "index": 15,
+            "pressure": {
+                "unit": "Bar",
+                "value": 29.955817890947873
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.18
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 97.2213
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 9.964
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.43073247786594
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.3465710853291912
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.7931986969242348
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 814.2
+            },
+            "index": 16,
+            "pressure": {
+                "unit": "Bar",
+                "value": 33.56512998266898
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.2
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 96.5374
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 9.19
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.41057623897159
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.3413897106911277
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.7732165790683868
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 845.9
+            },
+            "index": 17,
+            "pressure": {
+                "unit": "Bar",
+                "value": 36.160337288361546
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.21
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 96.0149
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 8.599
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.40035359534588
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.3387618719016685
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.7412322662987105
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 878.2
+            },
+            "index": 18,
+            "pressure": {
+                "unit": "Bar",
+                "value": 40.03304492734302
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.16
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 95.0745
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 7.536
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.29505744626802
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.3116943818219373
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.7062952956069389
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 910.8
+            },
+            "index": 19,
+            "pressure": {
+                "unit": "Bar",
+                "value": 43.96345420610585
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.22
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 93.9093
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 6.218
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.07703042615987
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.255648227659859
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.75151541065795
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 943.3
+            },
+            "index": 20,
+            "pressure": {
+                "unit": "Bar",
+                "value": 38.84830422610319
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.23
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 95.3493
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 7.846
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.30174706476139
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.313414019090651
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.7675922365409675
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 975.0
+            },
+            "index": 21,
+            "pressure": {
+                "unit": "Bar",
+                "value": 36.87718170910545
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.23
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 95.846
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 8.408
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.37808081906859
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.3330364189177435
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.7880726046223474
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1006.9
+            },
+            "index": 22,
+            "pressure": {
+                "unit": "Bar",
+                "value": 34.241098520197305
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.2
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 96.4126
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 9.049
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.41625359087756
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.342849134114871
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.8139601011330728
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1039.0
+            },
+            "index": 23,
+            "pressure": {
+                "unit": "Bar",
+                "value": 30.747862951606454
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.2
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 97.0864
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 9.811
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.4366838630718
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.3481009519143523
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.833325682205081
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1070.9
+            },
+            "index": 24,
+            "pressure": {
+                "unit": "Bar",
+                "value": 27.999276096520465
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.18
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 97.562
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 10.349
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.43161201236586
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.346797178985605
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.8603829604336833
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1103.4
+            },
+            "index": 25,
+            "pressure": {
+                "unit": "Bar",
+                "value": 23.989861351819755
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.19
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 98.1504
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 11.015
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.36151987291062
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.328779252347385
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.8774044055545704
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1135.6
+            },
+            "index": 26,
+            "pressure": {
+                "unit": "Bar",
+                "value": 21.360185308625514
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.2
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 98.4704
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 11.377
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.27396727532869
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.3062729300624993
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9024640614465587
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1168.5
+            },
+            "index": 27,
+            "pressure": {
+                "unit": "Bar",
+                "value": 17.332590321290493
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.19
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 98.896
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 11.858
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 101.1078421857551
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.2635687167232006
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.918705131156835
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1201.0
+            },
+            "index": 28,
+            "pressure": {
+                "unit": "Bar",
+                "value": 14.634507399013463
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.22
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 99.0978
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 12.086
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 100.93213281749047
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.2184007630604117
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9343986094872571
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1233.9
+            },
+            "index": 29,
+            "pressure": {
+                "unit": "Bar",
+                "value": 11.947443007598986
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.19
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 99.2259
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 12.231
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 100.69842733375127
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.1583242938059457
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9491818952474842
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1267.4
+            },
+            "index": 30,
+            "pressure": {
+                "unit": "Bar",
+                "value": 9.360653246233836
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.21
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 99.2615
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 12.271
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 100.39715831376763
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 3.0808799021434563
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9715599165627059
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1304.9
+            },
+            "index": 31,
+            "pressure": {
+                "unit": "Bar",
+                "value": 5.328201573123583
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.24
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 99.0173
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 11.995
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 99.64877712298929
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 2.8885005925993616
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.9896509999273834
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1355.8
+            },
+            "index": 32,
+            "pressure": {
+                "unit": "Bar",
+                "value": 1.9642514331422476
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.17
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 97.7614
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 10.575
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 97.98999419748148
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 2.4620928770863184
+                }
+            ]
+        },
+        {
+            "Z": {
+                "unit": "---",
+                "value": 0.993723497690974
+            },
+            "elap_time": {
+                "unit": "min",
+                "value": 1412.5
+            },
+            "index": 33,
+            "pressure": {
+                "unit": "Bar",
+                "value": 1.1955899213438208
+            },
+            "sample_temp": {
+                "unit": "\u00b0C",
+                "value": 20.16
+            },
+            "weights": [
+                {
+                    "prefix": "",
+                    "unit": "mg",
+                    "value": 96.8831
+                },
+                {
+                    "prefix": "",
+                    "unit": "% chg",
+                    "value": 9.581
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "g",
+                    "value": 97.02167397769571
+                },
+                {
+                    "prefix": "Corr.",
+                    "unit": "mmol/g",
+                    "value": 2.2131759112467195
+                }
+            ]
+        }
+    ],
+    "dataset": "20150623_8852_Aliq3_CO2_20C_45Bar_TGA_JH071515.xlsx",
+    "header": {
+        "absorbate": "CO2",
+        "data_logging_interval": {
+            "unit1": "min or",
+            "unit2": "wt %",
+            "value1": 2.0,
+            "value2": 0.01
+        },
+        "equil_crit": [
+            {
+                "unit1": "wt % in",
+                "unit2": "min",
+                "value1": 0.01,
+                "value2": 2.0
+            },
+            {
+                "unit1": "wt % in",
+                "unit2": "min",
+                "value1": 0.01,
+                "value2": 5.0
+            }
+        ],
+        "experiment": {
+            "id": "062315v1",
+            "name": "GHP ST Isotherm",
+            "started": "06-23-2015"
+        },
+        "filename": "062315v1.GIs~",
+        "heating_rate": {
+            "unit": "\u00b0C/min",
+            "value": 1.0
+        },
+        "max_time": {
+            "drying": {
+                "unit": "min",
+                "value": 60.0
+            },
+            "equil": {
+                "unit": "min",
+                "value": 30.0
+            }
+        },
+        "notes": "Aliq #3 with Kalrez (Jarod)",
+        "operator": "JH",
+        "pressure_steps": [
+            "300.000",
+            "500.000",
+            "700.000",
+            "1000.000",
+            "1400.000",
+            "2500.000",
+            "5000.000",
+            "7500.000",
+            "10000.000",
+            "12500.000",
+            "15000.000",
+            "17500.000",
+            "20000.000",
+            "22500.000",
+            "25000.000",
+            "27000.000",
+            "30000.000",
+            "33000.000",
+            "29000.000",
+            "27500.000",
+            "25500.000",
+            "23000.000",
+            "21000.000",
+            "18000.000",
+            "16000.000",
+            "13000.000",
+            "11000.000",
+            "9000.000",
+            "7000.000",
+            "4000.000",
+            "1500.000",
+            "900.000"
+        ],
+        "pump": "New pump - Run 4",
+        "run_started": "12:11:28",
+        "sample": {
+            "lot": "20 degC (Repeat with HT outgas)",
+            "name": "RM8852 with UHPCO2 up to 45 bar"
+        },
+        "temperature": {
+            "drying": 110.0,
+            "run": {
+                "unit": "\u00b0C",
+                "value": 20.0
+            }
+        }
+    }
+}
