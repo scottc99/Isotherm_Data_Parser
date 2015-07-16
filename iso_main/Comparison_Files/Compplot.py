@@ -1,5 +1,5 @@
 import glob, os
-from collections import OrderedDict
+from collections import OrderedDict, Counter
 import simplejson as json 	
 import matplotlib
 import matplotlib.markers as mark
@@ -45,6 +45,9 @@ if __name__ == '__main__':
 				conc_listAMC.append(conc1_valAMC)
 				pressure_listAMC.append(pressure1_valAMC)
 
+				plt.plot(pressure1_valAMC, conc1_valAMC, 'o', 
+						 markerfacecolor = 'r', markeredgecolor = 'r')
+
 				desorption_dictAMC = json_dictAMC.get("desorption")
 				
 				content2_dictAMC = desorption_dictAMC["content"][begin1 - 1]
@@ -57,6 +60,9 @@ if __name__ == '__main__':
 
 				conc_listAMC.append(conc2_valAMC)
 				pressure_listAMC.append(pressure2_valAMC)
+
+				plt.plot(pressure2_valAMC, conc2_valAMC, 'o', 
+						 markerfacecolor = 'w', markeredgecolor = 'r')
 
 				begin1 +=1
 
@@ -78,7 +84,7 @@ if __name__ == '__main__':
 
 		pressure_listIGA = []
 		conc_listIGA = []
-
+		
 		while True: 
 			try:
 				content_dictIGA = json_dictIGA["content"][begin2 - 1]
@@ -91,11 +97,41 @@ if __name__ == '__main__':
 
 				pressure_listIGA.append(pressure_valIGA)
 				conc_listIGA.append(conc_valIGA)
-					
-				begin2 +=1
+	
+				begin2 += 1
 
 			except:
 				break
+
+		total = len(pressure_listIGA)
+
+		pressure_listIGA1 = []
+		conc_listIGA1 = []
+
+		pressure_listIGA2 = []
+		conc_listIGA2 = []
+		
+		boundary = -1
+		for i in range(total):
+			if i == total - 1:
+				break
+			elif i > 0:
+				if pressure_listIGA[i] >= pressure_listIGA[i + 1] and pressure_listIGA[i] >= pressure_listIGA[i - 1]:
+					boundary = i
+					break
+				if pressure_listIGA[i] <= pressure_listIGA[i + 1] and pressure_listIGA[i] <= pressure_listIGA[i - 1]:
+					boundary = i
+					break
+
+		pressure_listIGA1 = list(pressure_listIGA[0:boundary])
+		pressure_listIGA2 = list(pressure_listIGA[boundary + 1:len(pressure_listIGA) - 1])
+
+		conc_listIGA1 = list(conc_listIGA[0:boundary])
+		conc_listIGA2 = list(conc_listIGA[boundary + 1:len(conc_listIGA) - 1])
+
+		plt.plot(pressure_listIGA1, conc_listIGA1, 'sb', mfc = 'b', mec = 'k', mew = .25)
+		plt.plot(pressure_listIGA2, conc_listIGA2, 'sb', mfc = 'none', mec = 'b', mew = 1)
+
 
 #### TGA metadata for comp. plot ####
 
@@ -107,12 +143,12 @@ if __name__ == '__main__':
 		with open('%s'%json_file_pathTGA) as json_data_fileTGA:    
 			json_dictTGA = json.load(json_data_fileTGA)
 
-	
 
 		begin3 = 1
 
 		pressure_listTGA = []
 		conc_listTGA = []
+
 
 		while True: 
 			try:
@@ -131,24 +167,43 @@ if __name__ == '__main__':
 
 			except:
 				break
+
+
+		total = len(pressure_listTGA)
+
+		pressure_listTGA1 = []
+		conc_listTGA1 = []
+
+		pressure_listTGA2 = []
+		conc_listTGA2 = []
 		
+		boundary = -1
+		for t in range(total):
+			if t == total - 1:
+				break
+			elif t > 0:
+				if pressure_listTGA[t] >= pressure_listTGA[t + 1] and pressure_listTGA[t] >= pressure_listTGA[t - 1]:
+					boundary = t
+					break
+				if pressure_listTGA[t] <= pressure_listTGA[t + 1] and pressure_listTGA[t] <= pressure_listTGA[t - 1]:
+					boundary = t
+					break
+
+		pressure_listTGA1 = list(pressure_listTGA[0:boundary])
+		pressure_listTGA2 = list(pressure_listTGA[boundary + 1:len(pressure_listTGA) - 1])
+
+		conc_listTGA1 = list(conc_listTGA[0:boundary])
+		conc_listTGA2 = list(conc_listTGA[boundary + 1:len(conc_listTGA) - 1])
+
+		plt.plot(pressure_listTGA1, conc_listTGA1, '^g', mfc = 'g', mec = 'k', mew = .25)
+		plt.plot(pressure_listTGA2, conc_listTGA2, '^g', mfc = 'none', mec = 'g', mew = 1)
+
+
 		plot_pathComp = '%s/Comparison_Files/Comparison_plots/%s_Compplot.png'%(os.getcwd(), sequence)
 
 		plAMC = pressure_listAMC
-		plIGA = pressure_listIGA
+		plIGA= pressure_listIGA
 		plTGA = pressure_listTGA
-
-		
-		plt.plot(pressure_listAMC, conc_listAMC, 'ro')
-
-		# plt.plot(pressure2_valAMC, conc2_valAMC, 'ro')
-		mark.MarkerStyle(marker = 'o', fillstyle = u'none')
-
-		plt.plot(pressure_listIGA, conc_listIGA, 'bs')
-		mark.MarkerStyle(marker = 's', fillstyle = u'none')
-
-		plt.plot(pressure_listTGA, conc_listTGA, 'g^')
-		mark.MarkerStyle(marker = '^', fillstyle = u'none')
 
 		plt.axis([0, 50, 0, 3.75])
 		plt.savefig('%s'%plot_pathComp)
