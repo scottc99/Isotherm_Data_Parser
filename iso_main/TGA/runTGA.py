@@ -11,48 +11,48 @@ from Tkinter import *
 import dicttoxml
 import lxml.etree as etree
 
-class TGApp:
-	def __init__(self):
-		self.sh = None
-		self.root = Tk()
-		self.label = Label(self.root, text = "Enter Sheet Number")
-		self.label.pack()
+# class TGApp:
+# 	def __init__(self):
+# 		self.sh = None
+# 		self.root = Tk()
+# 		self.label = Label(self.root, text = "Enter Sheet Number")
+# 		self.label.pack()
 
-		self.entry = Entry(self.root)
-		self.entry.pack()
+# 		self.entry = Entry(self.root)
+# 		self.entry.pack()
 
-		self.button = Button(self.root, text = "Load", command = self.load_sheet)
-		self.button.pack()
+# 		self.button = Button(self.root, text = "Load", command = self.load_sheet)
+# 		self.button.pack()
 
-	def load_sheet(self):
-		self.sheet = self.entry.get()
-		print "Sheet No: %s"%self.sheet
-		if self.sheet.__class__ == type(""):
+# 	def load_sheet(self):
+# 		self.sheet = self.entry.get()
+# 		print "Sheet No: %s"%self.sheet
+# 		if self.sheet.__class__ == type(""):
 			
-			self.sh = self.wb.sheet_by_index(int(self.sheet) - 1)
-			self.button2 = Button(self.root, text = "Init JSON Transfer", command = self.runJSON)
-			self.button2.pack()
-			self.button.destroy()
+# 			self.sh = self.wb.sheet_by_index(int(self.sheet) - 1)
+# 			self.button2 = Button(self.root, text = "Init JSON Transfer", command = self.runJSON)
+# 			self.button2.pack()
+# 			self.button.destroy()
 			
-		else:
-			print 'Eee Roar!'
+# 		else:
+# 			print 'Eee Roar!'
 
-	def run(self):
-		print "Please select a file"
-		self.file_path = tkFileDialog.askopenfilename()
-		self.wb = xlrd.open_workbook(filename = self.file_path)
-		print "File: %s"%self.file_path.split("/")[-1].split(".")[0]
-		self.root.mainloop()
+# 	def run(self):
+# 		print "Please select a file"
+# 		self.file_path = tkFileDialog.askopenfilename()
+# 		self.wb = xlrd.open_workbook(filename = self.file_path)
+# 		file = self.file_path 
 
+# 		self.root.mainloop()
+
+if __name__ == '__main__':
 
 	def runJSON(self):
 
 		os.chdir(os.path.dirname(os.getcwd()))
+		already = []
 
-		for file in glob.glob("TGA_Files/Data_Files/Excel/*.xlsx"):
-
-			self.file_path = file
-			sequence = file.split("/")[-1].split("_")[0]
+		for file in glob.glob("TGA/Data_Files/Excel/*.xlsx"):
 
 			TGA_Data = {"dataset":self.file_path.split("/")[-1]}
 
@@ -203,27 +203,52 @@ class TGApp:
 
 			#End content
 			TGA_Data["content"] = TGA_Content
-			print os.getcwd()
-			with open('TGA_Files/Data_Files/JSON/%s_DataSet_TGA.json'%sequence, 'w') as f:
-				f.write(json.dumps(TGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
+			
+			sequence1 = file.split("/")[-1].split("_")[0]
+			sequence2 = file.split("/")[-1].split("_")[1]
+			sequence3 = file.split("/")[-1].split("_")[2]
+			sequence4 = file.split("/")[-1].split("_")[5]
+			sequence5 = file.split("/")[-1].split("_")[6].split(".")[0]
 
-			with open('TGA_Files/Data_Files/XML/%s_DataSet_TGA.xml'%sequence, 'w') as f:
-				f.write(dicttoxml.dicttoxml(TGA_Data))
+			if sequence1 and sequence2 and sequence3 and sequence4 and sequence5 in already:
+				pass
 
-			x = etree.parse("TGA_Files/Data_Files/XML/%s_DataSet_TGA.xml"%sequence)
+			else:
+				print "hi"
+				excelPath = '%s_%s_%s_CO2_20C_%s_%s.xlsx'%(sequence1, sequence2, sequence3, sequence4, sequence5)
+				jsonPath = '%s_%s_%s_CO2_20C_%s_%s.json'%(sequence1, sequence2, sequence3, sequence4, sequence5)
+				xmlPath = '%s_%s_%s_CO2_20C_%s_%s.xml'%(sequence1, sequence2, sequence3, sequence4, sequence5)
 
-			with open('TGA_Files/Data_Files/XML/%s_DataSet_TGA.xml'%sequence, 'w') as f:
-				f.write(etree.tostring(x, pretty_print = True))		
+				TGA_Data["content"] = TGA_Content
 
-		self.root.destroy()
+				with open('TGA/Data_Files/JSON/sheet%s_%s'%(self.sheet, jsonPath), 'w') as f:
+					f.write(json.dumps(TGA_Data, sort_keys=True, indent=4, separators=(',', ': ')))
+
+				with open('TGA/Data_Files/XML/sheet%s_%s'%(self.sheet, xmlPath), 'w') as f:
+					f.write(dicttoxml.dicttoxml(TGA_Data))
+
+				x = etree.parse("TGA/Data_Files/XML/sheet%s_%s"%(self.sheet, xmlPath))
+
+				with open('TGA/Data_Files/XML/sheet%s_%s'%(self.sheet, xmlPath), 'w') as f:
+					f.write(etree.tostring(x, pretty_print = True))	
+
+				already.append(sequence1)
+				already.append(sequence2)
+				already.append(sequence3)
+				already.append(sequence4)	
+				already.append(sequence5)
 
 
-if __name__ == '__main__':
+		# self.root.destroy()
 
-	TGInstance = TGApp()
-	TGInstance.run()
 
-	print "done"
+
+# if __name__ == '__main__':
+
+# 	TGInstance = TGApp()
+# 	TGInstance.run()
+
+# 	print "done"
 
 
 
