@@ -18,7 +18,7 @@ if __name__ == '__main__':
 	
 	os.chdir(os.path.dirname(os.getcwd()))
 
-	for file in glob.glob("TGA_Files/Data_Files/JSON/*.json"):
+	for file in glob.glob("TGA/Data_Files/JSON/*.json"):
 		json_file_path = file
 		sequence = file.split("/")[-1].split("_")[0]
 
@@ -51,7 +51,7 @@ if __name__ == '__main__':
 				break
 
 	
-		plot_path = '%s/TGA_Files/TGA_plots/%s_TGAplot.png'%(os.getcwd(), sequence)
+		plot_path = '%s/TGA/TGA_plots/%s_TGAplot.png'%(os.getcwd(), sequence)
 
 		plt.plot(pressure_list, conc_list, 'ro')
 		plt.axis([0, 50, 0, 3.5])
