@@ -15,9 +15,20 @@ import pylab
 import numpy as np
 
 
-if __name__ == '__main__':
+class createSimplePlot: 
+	
+	def __init__(self, congo, horn):
+		
+		self.simpleAdsorption_list = []
+		self.simpleDesorption_list = []
+
+	def simplePlot(adsorption, desorption):
+
+
+
 
 	os.chdir(os.path.dirname(os.getcwd()))
+	print os.getcwd()
 
 	for file in glob.glob("TGA/Data_Files/JSON/json_aliq/*.json"):
 		json_file_pathTGA = file
@@ -96,3 +107,6 @@ if __name__ == '__main__':
 
 
 	print "done"
+
+if __name__ == '__main__':
+
