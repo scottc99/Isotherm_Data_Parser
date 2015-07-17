@@ -18,11 +18,31 @@ import numpy as np
 class createSimplePlot: 
 	
 	def __init__(self, congo, horn):
-		
-		self.simpleAdsorption_list = []
-		self.simpleDesorption_list = []
+		continue
 
-	def simplePlot(adsorption, desorption):
+	def adsPlotVals(self):
+		for i in range(len(adsMainList)):
+			self.adsPresList_x = tuple(adsMainList[i])
+			self.adsPresVals_x = adsPresList_x[0]
+
+			self.adsConcList_y = tuple(adsMainList[i])
+			self.adsConcVals_y = adsConcList_y[1]
+
+	
+	def desPlotVals(self):
+		for j in range(len(desMainList)):
+			self.desPresList_x = tuple(desMainList[i])
+			self.desPresVals_x = desPresList_x[0]
+
+			self.desConcList_y = tuple(desMainList[i])
+			self.desConcVals_y = desConcList_y[1]
+
+
+
+
+
+	def simplePlot(presList, concList):
+
 
 
 
