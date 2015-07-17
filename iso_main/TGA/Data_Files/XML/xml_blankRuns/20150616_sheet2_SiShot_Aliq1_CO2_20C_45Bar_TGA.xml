@@ -31,6 +31,11 @@
           <value type="float">0.0</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.0</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">359.8</value>
@@ -71,6 +76,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.00521963850298</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.0233232491332</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -113,6 +123,11 @@
           <value type="float">0.00703645083113</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.0314439422931</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">422.4</value>
@@ -153,6 +168,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.00948644288781</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.042396844037</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -195,6 +215,11 @@
           <value type="float">0.00928097509807</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.0414781918319</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">485.1</value>
@@ -235,6 +260,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.013193394884</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.0589735803396</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -277,6 +307,11 @@
           <value type="float">0.0239085213799</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.106919825106</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">548.0</value>
@@ -317,6 +352,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.0473810594558</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.212108524317</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -359,6 +399,11 @@
           <value type="float">0.0711053176199</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.318645363037</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">611.7</value>
@@ -399,6 +444,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.0932884812969</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.418461892489</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -441,6 +491,11 @@
           <value type="float">0.115838925616</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.520129342563</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">675.4</value>
@@ -481,6 +536,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.138867707998</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.624159672878</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -523,6 +583,11 @@
           <value type="float">0.163083515984</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.733777159187</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">739.1</value>
@@ -563,6 +628,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.182264173494</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.820765687463</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -605,6 +675,11 @@
           <value type="float">0.201963107813</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.910255260696</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">802.8</value>
@@ -645,6 +720,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.219140300821</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.98841341544</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -687,6 +767,11 @@
           <value type="float">0.227002890877</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">1.02422778087</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">866.6</value>
@@ -727,6 +812,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.230659993704</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">1.04089428971</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -769,6 +859,11 @@
           <value type="float">0.225784492487</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">1.01867634349</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">931.4</value>
@@ -809,6 +904,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.236649966289</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">1.06820374069</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -851,6 +951,11 @@
           <value type="float">0.239157418208</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">1.07963989021</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">995.6</value>
@@ -891,6 +996,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.229208730979</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">1.03427982317</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -933,6 +1043,11 @@
           <value type="float">0.212775100353</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.959437511844</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">1059.6</value>
@@ -973,6 +1088,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.202640192483</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.913333875887</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -1015,6 +1135,11 @@
           <value type="float">0.181954823176</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.819361567778</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">1124.1</value>
@@ -1055,6 +1180,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.162632794332</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.731734775953</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -1097,6 +1227,11 @@
           <value type="float">0.133819464803</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.601336873179</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">1189.1</value>
@@ -1137,6 +1272,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.115239402926</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.517423840384</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -1179,6 +1319,11 @@
           <value type="float">0.097377942458</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.436884165804</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">1254.5</value>
@@ -1219,6 +1364,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.0751549868632</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.336853033126</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
@@ -1261,6 +1411,11 @@
           <value type="float">0.0480877054921</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.215278612256</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">1325.5</value>
@@ -1302,6 +1457,11 @@
           <value type="float">0.0165132933601</value>
           <unit type="str">mmol/g</unit>
         </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.0738240774303</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
       </weights>
       <elap_time type="dict">
         <value type="float">1376.6</value>
@@ -1342,6 +1502,11 @@
           <prefix type="str">Corr.</prefix>
           <value type="float">0.00724038752379</value>
           <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.0323555689094</value>
+          <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
       <elap_time type="dict">
