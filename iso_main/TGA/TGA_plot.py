@@ -15,83 +15,72 @@ import pylab
 import numpy as np
 import TGA_fileConvert
 
-os.chdir(os.path.dirname(os.getcwd()))
 
-class simplePlotsTGA: 
-	
+class simplePlotsTGA(): 
+
 	def __init__(self):
-		
+
+		self.root = "I think I'm an instance"
+
 		if sequence3 == '8852':
 			self.adsAliqMainList = adsMainList
 			self.desAliqMainList = desMainList
 			
-			self.adsAliqPlotVals(start1)
+			self.aliqPlotVals(start1)
 			self.plotSimpleAliq
 
 		else: 
 			self.adsBlankMainList = adsMainList
 			self.desBlankMainList = desMainList
 
-			self.adsBlankPlotVals(start2)
+			self.blankPlotVals(start2)
 			self.plotSimpleBlank
 
 
-	def adsAliqPlotVals(self, firstNum):
+	def aliqPlotVals(self, firstNum):
 		self.adsAliqIndivList = self.adsAliqMainList[firstNum]
+		
 		self.adsAliqPresVals = self.adsAliqIndivList[0]
 		self.adsAliqConcVals = self.adsAliqIndivList[1]
-		
-		self.desAliqPlotVals
 	
-	def desAliqPlotVals(self, firstNum):
 		self.desAliqIndivList = self.desAliqMainList[firstNum]
-		
+
 		self.desAliqPresVals = self.desAliqPresList[0]
 		self.desAliqConcVals = self.desAliqConcList[1]
 
-	def adsBlankPlotVals(self, firstNum):
-		self.adsBlankIndivList = self.adsMainList[firstNum]
+	def blankPlotVals(self, firstNum):
+		self.adsBlankIndivList = self.adsBlankMainList[firstNum]
+
 		self.adsBlankPresVals = self.adsBlankIndivList[0]
 		self.adsBlankConcVals = self.adsBlankIndivList[1]
-		
-		self.desBlankPlotVals
 	
-	def desBlankPlotVals(self, firstNum):
 		self.desBlankIndivList = self.desBlankMainList[firstNum]
 		
 		self.desBlankPresVals = self.desBlankPresList[0]
 		self.desBlankConcVals = self.desBlankConcList[1]
 
 		
-			
-
 	def plotSimpleAliq(self):
 		plt.figure(indexAliq)
-		plt.plot(self.adsPresVals, self.adsConcVals, mfc = 'r', mew = .25)
-		plt.plot(self.desPresVals, self.desConcVals  mfc = 'b', mew = .25)
+		plt.plot(self.adsAliqPresVals, self.adsAliqConcVals, mfc = 'r', mew = .25)
+		plt.plot(self.desAliqPresVals, self.desAliqConcVals, mfc = 'b', mew = .25)
 		
 		plot_AliqPath = '%s/TGA/TGA_plots/Aliq_plots/Simple_plots/%s_simplePlot_%s.png'\
 							 %(os.getcwd(), sequence1, indexAliq)
 		plt.savefig('%s'%plot_simplePath)
 
-		start1 += 1
-		indexAliq += 1
-
-		self.destroy()
 
 	def plotSimpleBlank(self):
 		plt.figure(indexBlank)
 		plt.plot(self.adsPresVals, self.adsConcVals, mfc = 'r', mew = .25)
-		plt.plot(self.desPresVals, self.desConcVals  mfc = 'b', mew = .25)
+		plt.plot(self.desPresVals, self.desConcVals,  mfc = 'b', mew = .25)
 		
 		plot_blankPath = '%s/TGA/TGA_plots/Blank_plots/Simple_plots/%s_simplePlot_%s.png'\
-							%(os.getcwd(), sequence1, indexBlank)
+							 %(os.getcwd(), sequence1, indexBlank)
 		plt.savefig('%s'%plot_blankPath)
 
 		start2 += 1
 		indexBlank += 1
-
-		self.destroy()
 
 # class multiPlotsTGA	
 	
@@ -99,6 +88,8 @@ class simplePlotsTGA:
 
 
 if __name__ == '__main__':
+
+	os.chdir(os.path.dirname(os.getcwd()))
 
 	start1 = 0
 	start2 = 0
@@ -112,8 +103,10 @@ if __name__ == '__main__':
 				sequence2 = file.split("/")[-1].split("_")[1]
 				sequence3 = file.split("/")[-1].split("_")[2]
 
-				with open('%s'%json_AliqPathTGA) as json_AliqDataTGA:    
-					json_AliqDictTGA = json.load(json_AliqDataTGA)
+				json_aliqPathTGA = file
+
+				with open('%s'%json_aliqPathTGA) as json_aliqDataTGA:    
+					json_aliqDictTGA = json.load(json_aliqDataTGA)
 
 
 				begin3 = 1
@@ -167,10 +160,14 @@ if __name__ == '__main__':
 				concAliq_listTGA1 = list(concAliq_listTGA[0:boundary])
 				concAliq_listTGA2 = list(concAliq_listTGA[boundary + 1:len(concAliq_listTGA) - 1])
 				
-				TGhay = simplePlotsTGA
-				TGhay.mainloop()
+				TGhay = simplePlotsTGA()
+				TGhay.root.mainloop()
+				self.root.mainloop()
+				
+				self.root.destroy()
 
 				start1 += 1
+				indexAliq += 1
 
 		except:
 			for file in glob.glob("TGA/Data_Files/JSON/json_blankRuns/*.json"):
@@ -178,14 +175,16 @@ if __name__ == '__main__':
 				sequence2 = file.split("/")[-1].split("_")[1]
 				sequence3 = file.split("/")[-1].split("_")[2]
 
-				with open('%s'%json_BlankPathTGA) as json_BlankDataTGA:    
-					json_BlankDictTGA = json.load(json_BlankDataTGA)
+				json_blankPathTGA = file
+
+				with open('%s'%json_blankPathTGA) as json_blankDataTGA:    
+					json_blankDictTGA = json.load(json_blankDataTGA)
 
 
 				begin4 = 1
 
-				pressureBlank_blanklistTGA = []
-				concBlank_blanklistTGA = []
+				pressureBlank_listTGA = []
+				concBlank_listTGA = []
 
 
 				while True: 
@@ -233,10 +232,14 @@ if __name__ == '__main__':
 				concBlank_listTGA1 = list(concBlank_listTGA[0:boundary])
 				concBlank_listTGA2 = list(concBlank_listTGA[boundary + 1:len(concBlank_listTGA) - 1])
 				
-				TGhay = simplePlotsTGA
-				TGhay.mainloop()
+				TGhay = simplePlotsTGA()
+				TGhay.root.mainloop()
+				self.root.mainloop()
+				
+				self.root.destroy()
 
 				start2 += 1
+				indexBlank += 1
 			
 
 
