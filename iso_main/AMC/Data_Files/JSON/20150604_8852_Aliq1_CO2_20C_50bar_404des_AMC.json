@@ -1,0 +1,1470 @@
+{
+    "adsorbtion": {
+        "content": [
+            {
+                "index": 0,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 51.09192420711319
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 0.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.436223
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 0.979
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 5.08322
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 201.631355
+                }
+            },
+            {
+                "index": 1,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 49.03241463167494
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 1.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.686547
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 1986.991
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 5.038436590909091
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 199.85498
+                }
+            },
+            {
+                "index": 2,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 46.95696625797953
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 2.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.310268
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 3959.984
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.961619545454545
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 196.807943
+                }
+            },
+            {
+                "index": 3,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 44.71781335494985
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 3.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.376865
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 5904.977
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.910913181818182
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 194.796621
+                }
+            },
+            {
+                "index": 4,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 42.52236295470666
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 4.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.264962
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 7891.986
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.871267727272727
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 193.224046
+                }
+            },
+            {
+                "index": 5,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 40.278579390009114
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 5.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.818237
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 9849.995
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.882364318181819
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 193.664202
+                }
+            },
+            {
+                "index": 6,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 38.02265680413416
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 6.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.123049
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 11830.971
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.832737045454546
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 191.695684
+                }
+            },
+            {
+                "index": 7,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 35.810061809707165
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 7.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.155665
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 13857.981
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.825175000000001
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 191.395727
+                }
+            },
+            {
+                "index": 8,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 33.59418380788327
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 8.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.195923
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 15896.983
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.81403340909091
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 190.953782
+                }
+            },
+            {
+                "index": 9,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 31.41803627520519
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 9.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.209567
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 17884.977
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.812522727272728
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 190.893865
+                }
+            },
+            {
+                "index": 10,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 29.173178640186443
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 10.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.48368
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 19935.995
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.799177272727272
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 190.364496
+                }
+            },
+            {
+                "index": 11,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 26.865406829466007
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 11.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.400699
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 21893.975
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.782485227272727
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 189.702389
+                }
+            },
+            {
+                "index": 12,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 24.61742831087243
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 12.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.208835
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 23989.976
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.764684090909091
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 188.996287
+                }
+            },
+            {
+                "index": 13,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 22.325250785287263
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 13.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.229999
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 25978.981
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.739738863636363
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 188.006808
+                }
+            },
+            {
+                "index": 14,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 20.190120579592666
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 14.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.456011
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 28023.978
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.718810227272727
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 187.176659
+                }
+            },
+            {
+                "index": 15,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 17.856814266896343
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 15.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.58645
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 30012.977
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.690402954545454
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 186.049853
+                }
+            },
+            {
+                "index": 16,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 15.637440470159083
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 16.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.335184
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 32096.983
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.651874318181819
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 184.52157
+                }
+            },
+            {
+                "index": 17,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 13.337227682642618
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 17.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.575734
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 34090.981
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.601268181818182
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 182.514222
+                }
+            },
+            {
+                "index": 18,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 11.078569257270239
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 18.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.325142
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 36103.975
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.543718636363637
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 180.231461
+                }
+            },
+            {
+                "index": 19,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 8.847538757726213
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 19.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.535839
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 38191.975
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.469148409090909
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 177.273553
+                }
+            },
+            {
+                "index": 20,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 6.573286047218563
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 20.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.470796
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 40304.98
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.360903636363636
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 172.979903
+                }
+            },
+            {
+                "index": 21,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 4.662576755497011
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 21.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.479908000000002
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 42309.994
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.226191590909091
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 167.636407
+                }
+            },
+            {
+                "index": 22,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 2.7296950045597326
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 22.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.662903
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 44254.978
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.9924049999999998
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 158.363011
+                }
+            },
+            {
+                "index": 23,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 1.6007569155942851
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 23.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.134726
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 46141.992
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.7185845454545454
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 147.501635
+                }
+            },
+            {
+                "index": 24,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 1.2688296686594387
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 24.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.599717
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 48026.989
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.584821818181818
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 142.195788
+                }
+            },
+            {
+                "index": 25,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 1.028362549397102
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 25.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.279691
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 49913.0
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.4553252272727275
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 137.059171
+                }
+            },
+            {
+                "index": 26,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 0.8513882865538556
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 26.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.555244
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 51798.0
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.3330663636363638
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 132.209642
+                }
+            }
+        ],
+        "filename": "20150604_8852_Aliq1_CO2_20C_50bar_404des_AMC.xlsx"
+    },
+    "desorption": {
+        "content": [
+            {
+                "index": 0,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 51.09192420711319
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 0.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.436223
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 0.979
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 5.08322
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 201.631355
+                }
+            },
+            {
+                "index": 1,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 49.03241463167494
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 1.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.686547
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 1986.991
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 5.038436590909091
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 199.85498
+                }
+            },
+            {
+                "index": 2,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 46.95696625797953
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 2.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.310268
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 3959.984
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.961619545454545
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 196.807943
+                }
+            },
+            {
+                "index": 3,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 44.71781335494985
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 3.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.376865
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 5904.977
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.910913181818182
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 194.796621
+                }
+            },
+            {
+                "index": 4,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 42.52236295470666
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 4.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.264962
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 7891.986
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.871267727272727
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 193.224046
+                }
+            },
+            {
+                "index": 5,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 40.278579390009114
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 5.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.818237
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 9849.995
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.882364318181819
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 193.664202
+                }
+            },
+            {
+                "index": 6,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 38.02265680413416
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 6.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.123049
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 11830.971
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.832737045454546
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 191.695684
+                }
+            },
+            {
+                "index": 7,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 35.810061809707165
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 7.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.155665
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 13857.981
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.825175000000001
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 191.395727
+                }
+            },
+            {
+                "index": 8,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 33.59418380788327
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 8.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.195923
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 15896.983
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.81403340909091
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 190.953782
+                }
+            },
+            {
+                "index": 9,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 31.41803627520519
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 9.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.209567
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 17884.977
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.812522727272728
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 190.893865
+                }
+            },
+            {
+                "index": 10,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 29.173178640186443
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 10.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.48368
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 19935.995
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.799177272727272
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 190.364496
+                }
+            },
+            {
+                "index": 11,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 26.865406829466007
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 11.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.400699
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 21893.975
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.782485227272727
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 189.702389
+                }
+            },
+            {
+                "index": 12,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 24.61742831087243
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 12.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.208835
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 23989.976
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.764684090909091
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 188.996287
+                }
+            },
+            {
+                "index": 13,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 22.325250785287263
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 13.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.229999
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 25978.981
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.739738863636363
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 188.006808
+                }
+            },
+            {
+                "index": 14,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 20.190120579592666
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 14.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.456011
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 28023.978
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.718810227272727
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 187.176659
+                }
+            },
+            {
+                "index": 15,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 17.856814266896343
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 15.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.58645
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 30012.977
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.690402954545454
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 186.049853
+                }
+            },
+            {
+                "index": 16,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 15.637440470159083
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 16.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.335184
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 32096.983
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.651874318181819
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 184.52157
+                }
+            },
+            {
+                "index": 17,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 13.337227682642618
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 17.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.575734
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 34090.981
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.601268181818182
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 182.514222
+                }
+            },
+            {
+                "index": 18,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 11.078569257270239
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 18.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.325142
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 36103.975
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.543718636363637
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 180.231461
+                }
+            },
+            {
+                "index": 19,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 8.847538757726213
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 19.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.535839
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 38191.975
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.469148409090909
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 177.273553
+                }
+            },
+            {
+                "index": 20,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 6.573286047218563
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 20.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.470796
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 40304.98
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.360903636363636
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 172.979903
+                }
+            },
+            {
+                "index": 21,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 4.662576755497011
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 21.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.479908000000002
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 42309.994
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 4.226191590909091
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 167.636407
+                }
+            },
+            {
+                "index": 22,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 2.7296950045597326
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 22.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.662903
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 44254.978
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.9924049999999998
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 158.363011
+                }
+            },
+            {
+                "index": 23,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 1.6007569155942851
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 23.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.134726
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 46141.992
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.7185845454545454
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 147.501635
+                }
+            },
+            {
+                "index": 24,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 1.2688296686594387
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 24.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.599717
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 48026.989
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.584821818181818
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 142.195788
+                }
+            },
+            {
+                "index": 25,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 1.028362549397102
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 25.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.279691
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 49913.0
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.4553252272727275
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 137.059171
+                }
+            },
+            {
+                "index": 26,
+                "measured pressure": {
+                    "unit": "bar",
+                    "value": 0.8513882865538556
+                },
+                "serial #": {
+                    "unit": "",
+                    "value": 26.0
+                },
+                "temperature": {
+                    "unit": "C",
+                    "value": 19.555244
+                },
+                "time": {
+                    "unit": "s (seconds)",
+                    "value": 51798.0
+                },
+                "uptake": {
+                    "unit": "mmol/g",
+                    "value": 3.3330663636363638
+                },
+                "volume of gas(@STP)": {
+                    "unit": "cc",
+                    "value": 132.209642
+                }
+            }
+        ],
+        "filename": "20150604_8852_Aliq1_CO2_20C_50bar_404des_AMC.xlsx"
+    }
+}

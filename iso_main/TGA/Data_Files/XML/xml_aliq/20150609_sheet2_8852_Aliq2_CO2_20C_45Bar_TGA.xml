@@ -1,0 +1,1615 @@
+<root>
+  <content type="list">
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">19.77</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">1</index>
+      <pressure type="dict">
+        <value type="float">0.000175976536462</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">83.2281</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">0.0</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">83.2281203705</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.0</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">0.0</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">355.7</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">1.00000621699</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.16</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">2</index>
+      <pressure type="dict">
+        <value type="float">0.402940941208</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">88.5922</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">6.445</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">88.6388794268</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">1.47752702076</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">5.76251893551</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">387.1</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.997899693719</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.16</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">3</index>
+      <pressure type="dict">
+        <value type="float">0.669045460605</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">89.8377</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">7.942</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">89.9153156221</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">1.82608605827</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">7.22449658842</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">418.3</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.996500435616</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.16</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">4</index>
+      <pressure type="dict">
+        <value type="float">0.937300359952</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">90.623</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">8.885</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">90.7318901794</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">2.04906973955</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">8.18030270548</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">449.6</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.995087057281</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.13</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">5</index>
+      <pressure type="dict">
+        <value type="float">1.320119984</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">91.5235</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">9.967</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">91.6771923074</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">2.30720532133</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">9.30679666118</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">481.0</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.993062775128</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.18</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">6</index>
+      <pressure type="dict">
+        <value type="float">1.83235968538</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">92.0628</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">10.615</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">92.2766760909</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">2.47090758185</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">10.0323140975</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">512.4</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.990352691576</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.18</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">7</index>
+      <pressure type="dict">
+        <value type="float">3.33139714705</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">92.8692</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">11.584</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">93.2612144226</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">2.73975747388</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">11.2425768065</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">543.9</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.982348892518</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.03</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">8</index>
+      <pressure type="dict">
+        <value type="float">6.69492067724</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">93.4564</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">12.289</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">94.2596336625</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.01239785384</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">12.4936907985</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">575.8</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.963977872094</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.22</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">9</index>
+      <pressure type="dict">
+        <value type="float">9.9705852553</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">93.5282</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">12.376</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">94.7467191811</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.1454072907</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">13.1127489364</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">607.7</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.945737175209</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.19</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">10</index>
+      <pressure type="dict">
+        <value type="float">13.2021997067</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">93.4181</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">12.243</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.0641510945</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.23208907129</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">13.5192553683</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">639.5</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.927106395561</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.19</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">11</index>
+      <pressure type="dict">
+        <value type="float">16.5132702306</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">93.193</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">11.973</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.2965104623</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.2955399182</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">13.8183519889</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">671.4</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.907433905913</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.18</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">12</index>
+      <pressure type="dict">
+        <value type="float">19.8193040928</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">92.8984</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">11.619</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.4810032875</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.34591975057</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.056758087</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">703.2</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.887099016091</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.17</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">13</index>
+      <pressure type="dict">
+        <value type="float">23.2998360219</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">92.4992</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">11.139</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.6135144253</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.38210483748</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.2284969053</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">735.1</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.864861587419</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.21</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">14</index>
+      <pressure type="dict">
+        <value type="float">26.4881735769</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">92.075</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">10.63</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.7035737625</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.40669752452</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.3454576243</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">767.0</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.843748551765</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.18</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">15</index>
+      <pressure type="dict">
+        <value type="float">29.9173323557</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">91.5276</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">9.972</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.7457888546</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.41822528591</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.4003497652</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">798.9</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.819857251186</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.18</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">16</index>
+      <pressure type="dict">
+        <value type="float">33.3876789761</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">90.9052</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">9.224</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.7630944806</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.42295096851</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.422864588</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">830.9</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.794473741631</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.21</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">17</index>
+      <pressure type="dict">
+        <value type="float">36.1618104253</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">90.3543</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">8.562</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.76000724</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.42210792944</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.4188475244</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">862.6</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.773204950757</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.2</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">18</index>
+      <pressure type="dict">
+        <value type="float">40.046297827</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">89.432</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">7.454</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.6763366173</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.39925982169</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.3100639858</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">894.9</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.741289506954</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.22</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">19</index>
+      <pressure type="dict">
+        <value type="float">43.9477136382</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">88.3113</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">6.108</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.5015015564</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.35151725472</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.083296934</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">927.5</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.706443446335</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.19</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">20</index>
+      <pressure type="dict">
+        <value type="float">38.8594547394</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">89.7309</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">7.813</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.7099436787</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.40843697055</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.3537376613</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">959.9</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.751262251224</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.18</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">21</index>
+      <pressure type="dict">
+        <value type="float">36.8872870284</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">90.2008</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">8.378</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.75774293</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.42148960967</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.4159013892</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">991.6</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.767329993615</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.19</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">22</index>
+      <pressure type="dict">
+        <value type="float">34.241687775</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">90.7553</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">9.044</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.7779800662</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.42701580576</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.4422366673</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1023.5</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.78803632765</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.23</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">23</index>
+      <pressure type="dict">
+        <value type="float">30.5699386748</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">91.4423</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">9.869</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.7757513551</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.42640720707</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.439335887</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1055.7</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.815319854154</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.18</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">24</index>
+      <pressure type="dict">
+        <value type="float">28.0122290361</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">91.8627</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">10.375</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.7488634459</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.41906487083</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.4043493189</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1087.6</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.833235955276</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.16</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">25</index>
+      <pressure type="dict">
+        <value type="float">23.9494734035</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">92.4412</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">11.07</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.6583356206</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.39434425278</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.2866821567</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1120.1</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.860592598416</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.19</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">26</index>
+      <pressure type="dict">
+        <value type="float">21.304747367</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">92.7549</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">11.447</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.5605689877</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.36764691874</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">14.159827251</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1152.2</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.877741329093</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.18</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">27</index>
+      <pressure type="dict">
+        <value type="float">17.2096707106</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">93.1519</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">11.924</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.3544710367</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.31136733057</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">13.8931619294</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1185.1</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.903200215275</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.2</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">28</index>
+      <pressure type="dict">
+        <value type="float">14.6045900547</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">93.3543</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">12.167</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">95.1914756169</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.26685783854</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">13.6829888044</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1217.6</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.918862409024</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.21</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">29</index>
+      <pressure type="dict">
+        <value type="float">11.9838141581</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">93.4847</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">12.323</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">94.9673893724</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.20566615033</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">13.3950848018</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1250.5</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.934204324835</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.22</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">30</index>
+      <pressure type="dict">
+        <value type="float">9.29038261565</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">93.5321</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">12.38</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">94.6628907698</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">3.12251609532</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">13.0058016026</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1284.0</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.949584298264</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">19.88</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">31</index>
+      <pressure type="dict">
+        <value type="float">5.33435541928</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">93.3176</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">12.123</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">93.9530279512</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">2.92867240635</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">12.10693618</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1321.4</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.971407409715</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.17</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">32</index>
+      <pressure type="dict">
+        <value type="float">1.96755499267</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">92.1497</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">10.719</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">92.3795310589</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">2.49899439791</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">10.1576609463</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1372.5</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.9896334427</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+    <item type="dict">
+      <sample_temp type="dict">
+        <value type="float">20.16</value>
+        <unit type="str">&#176;C</unit>
+      </sample_temp>
+      <index type="int">33</index>
+      <pressure type="dict">
+        <value type="float">1.19273830156</value>
+        <unit type="str">Bar</unit>
+      </pressure>
+      <weights type="list">
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">91.3209</value>
+          <unit type="str">mg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str"/>
+          <value type="float">9.724</value>
+          <unit type="str">% chg</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">91.4596535259</value>
+          <unit type="str">g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">2.2478015622</value>
+          <unit type="str">mmol/g</unit>
+        </item>
+        <item type="dict">
+          <prefix type="str">Corr.</prefix>
+          <value type="float">9.04565869126</value>
+          <unit type="str">mass change(mg)</unit>
+        </item>
+      </weights>
+      <elap_time type="dict">
+        <value type="float">1429.3</value>
+        <unit type="str">min</unit>
+      </elap_time>
+      <Z type="dict">
+        <value type="float">0.993738566385</value>
+        <unit type="str">---</unit>
+      </Z>
+    </item>
+  </content>
+  <header type="dict">
+    <temperature type="dict">
+      <drying type="float">110.0</drying>
+      <run type="dict">
+        <unit type="str">&#176;C</unit>
+        <value type="float">20.0</value>
+      </run>
+    </temperature>
+    <notes type="str">Aliq #2 with Kalrez (Jarod)</notes>
+    <data_logging_interval type="dict">
+      <unit2 type="str">wt %</unit2>
+      <unit1 type="str">min or</unit1>
+      <value2 type="float">0.01</value2>
+      <value1 type="float">2.0</value1>
+    </data_logging_interval>
+    <equil_crit type="list">
+      <item type="dict">
+        <unit2 type="str">min</unit2>
+        <unit1 type="str">wt % in</unit1>
+        <value2 type="float">2.0</value2>
+        <value1 type="float">0.01</value1>
+      </item>
+      <item type="dict">
+        <unit2 type="str">min</unit2>
+        <unit1 type="str">wt % in</unit1>
+        <value2 type="float">5.0</value2>
+        <value1 type="float">0.01</value1>
+      </item>
+    </equil_crit>
+    <run_started type="str">12:50:01</run_started>
+    <filename type="str">060915v1.GIs~</filename>
+    <sample type="dict">
+      <name type="str">RM8852 with UHPCO2 up to 45 bar</name>
+      <lot type="str">20 degC (Repeat with HT outgas)</lot>
+    </sample>
+    <pump type="str">New pump - Run 2</pump>
+    <experiment type="dict">
+      <started type="str">06-09-2015</started>
+      <name type="str">GHP ST Isotherm</name>
+      <id type="str">060915v1</id>
+    </experiment>
+    <pressure_steps type="list">
+      <item type="str">300.000</item>
+      <item type="str">500.000</item>
+      <item type="str">700.000</item>
+      <item type="str">1000.000</item>
+      <item type="str">1400.000</item>
+      <item type="str">2500.000</item>
+      <item type="str">5000.000</item>
+      <item type="str">7500.000</item>
+      <item type="str">10000.000</item>
+      <item type="str">12500.000</item>
+      <item type="str">15000.000</item>
+      <item type="str">17500.000</item>
+      <item type="str">20000.000</item>
+      <item type="str">22500.000</item>
+      <item type="str">25000.000</item>
+      <item type="str">27000.000</item>
+      <item type="str">30000.000</item>
+      <item type="str">33000.000</item>
+      <item type="str">29000.000</item>
+      <item type="str">27500.000</item>
+      <item type="str">25500.000</item>
+      <item type="str">23000.000</item>
+      <item type="str">21000.000</item>
+      <item type="str">18000.000</item>
+      <item type="str">16000.000</item>
+      <item type="str">13000.000</item>
+      <item type="str">11000.000</item>
+      <item type="str">9000.000</item>
+      <item type="str">7000.000</item>
+      <item type="str">4000.000</item>
+      <item type="str">1500.000</item>
+      <item type="str">900.000</item>
+    </pressure_steps>
+    <max_time type="dict">
+      <drying type="dict">
+        <unit type="str">min</unit>
+        <value type="float">60.0</value>
+      </drying>
+      <equil type="dict">
+        <unit type="str">min</unit>
+        <value type="float">30.0</value>
+      </equil>
+    </max_time>
+    <operator type="str">JH</operator>
+    <heating_rate type="dict">
+      <unit type="str">&#176;C/min</unit>
+      <value type="float">1.0</value>
+    </heating_rate>
+    <absorbate type="str">CO2</absorbate>
+  </header>
+  <dataset type="str">20150609_8852_Aliq2_CO2_20C_45Bar_TGA.xlsx</dataset>
+</root>
