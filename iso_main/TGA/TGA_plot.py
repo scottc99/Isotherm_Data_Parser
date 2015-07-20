@@ -10,122 +10,210 @@ import matplotlib.markers as mark
 from matplotlib.markers import MarkerStyle
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-from matplotlib.pyplot import show, plot, ion
+from matplotlib.pyplot import show, plot, ion, figure
 import pylab
 import numpy as np
+import random
+
+# Fix pyplot imports.
 
 
-class TGA_Plot(): 
+class TGA_Plot: 
 
 	def __init__(self):
+	 
+		self.plotIni = "TGininstance"
 
-		print "hi"
-		pass 
-		if sequence3 == '8852':
-			self.adsAliqMainList = adsMainList
-			self.desAliqMainList = desMainList
-			
-			self.aliqPlotVals(start1)
-			self.plotSimpleAliq
-
-		else: 
-			self.adsBlankMainList = adsMainList
-			self.desBlankMainList = desMainList
-
-			self.blankPlotVals(start2)
-			self.plotSimpleBlank
-
-
-	def aliqManyPlot(self, manyList, branch):
-		x = 0 
-		while True: 
-			try:	
-				self.indivLists = manyList[x]
-				
-				self.presVals = self.indivLists[0]
-				self.concVals = self.indivLists[1]
-
-				if branch == 'adsorption':
-					plt.figure(1)
-					plt.plot(self.presVals, self.concVals, mfc = 'r', mew = .25)
-					plot_manyPath = '%s/TGA/TGA_plots/Aliq_plots/Many_plots/%s_manyPlot_%s.png'\
-								 	 %(os.getcwd(), x + 1)
-					plt.savefig('%s'%plot_manyPath)
-
-				elif branch == 'desorption':
-					plt.figure(2)
-					plt.plot(self.presVals, self.concVals, mfc = 'r', mew = .25)
-					plot_manyPath = '%s/TGA/TGA_plots/Aliq_plots/Many_plots/%s_manyPlot_%s.png'\
-								 	 %(os.getcwd(), x + 1)
-					plt.savefig('%s'%plot_manyPath)
-				print "hi"
-				x += 1
-
-			except:
-				break
-
-	def blankManyPlot(self, manyList, branch):
+	def htmlcolor(self, r, g, b):
+	    def _chkarg(a):
+	        if isinstance(a, int): # clamp to range 0--255
+	            if a < 0:
+	                a = 0
+	            elif a > 255:
+	                a = 255
+	        elif isinstance(a, float): # clamp to range 0.0--1.0 and convert to integer 0--255
+	            if a < 0.0:
+	                a = 0
+	            elif a > 1.0:
+	                a = 255
+	            else:
+	                a = int(round(a*255))
+	        else:
+	            raise ValueError('Arguments must be integers or floats.')
+	        return a
+	    r = _chkarg(r)
+	    g = _chkarg(g)
+	    b = _chkarg(b)
+	    return '#{:02x}{:02x}{:02x}'.format(r,g,b)
 	
-		self.indivLists = manyList[0]
+	def ads_aliqManyPlot(self, manyList, label='unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		for num in manyList:
+
+			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), mew = .25)
+			plt.legend(['Line Number: %s'%manyList.index(num)])
+		self.ads_aliqManyPath = '%s/TGA/TGA_plots/Aliq_plots/Many_plots/Adsorption/many_plot_%s.png'%(os.getcwd(), label)
+		plt.savefig('%s'%self.ads_aliqManyPath)
+		plt.close()
+
+	def des_aliqManyPlot(self, manyList, label='unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		for num in manyList:
+			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), mew = .25)
+			plt.legend(['Line Number: %s'%manyList.index(num)])
 		
-		self.presVals = self.indivLists[0]
-		self.concVals = self.indivLists[1]
+		self.des_aliqManyPath = '%s/TGA/TGA_plots/Aliq_plots/Many_plots/Desorption/many_plot_%s.png'%(os.getcwd(), label)
+		plt.savefig('%s'%self.des_aliqManyPath)
+		plt.close()
 
-		if branch == 'adsorption':
-			
-			plt.plot(self.presVals, self.concVals, mfc = 'r', mew = .25)
-			plot_manyPath = '%s/TGA/TGA_plots/Blank_plots/Many_plots/%s_manyPlot_%s.png'\
-						 	 %(os.getcwd(), y + 1)
-			plt.savefig('%s'%plot_manyPath)
+	def ads_blankManyPlot(self, manyList, label='unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		for num in manyList:
 
-		elif branch == 'desorption':
-			
-			plt.plot(self.presVals, self.concVals, mfc = 'r', mew = .25)
-			plot_manyPath = '%s/TGA/TGA_plots/Blank_plots/Many_plots/%s_manyPlot_%s.png'\
-						 	 %(os.getcwd(), y + 1)
-			plt.savefig('%s'%plot_manyPath)
-			plt.show()
-		print "hi"
-				
+			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), mew = .25)
+			plt.legend(['Line Number: %s'%manyList.index(num)])
+		
+		self.ads_blankManyPath = '%s/TGA/TGA_plots/Blank_plots/Many_plots/Adsorption/many_plot_%s.png'%(os.getcwd(), label)
+		plt.savefig('%s'%self.ads_blankManyPath)
+		plt.close()
+
+	def des_blankManyPlot(self, manyList, label='unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		for num in manyList:
+			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), mew = .25)
+			plt.legend(['Line Number: %s'%manyList.index(num)])
+		
+		self.des_blankManyPath = '%s/TGA/TGA_plots/Blank_plots/Many_plots/Desorption/many_plot_%s.png'%(os.getcwd(), label)
+		plt.savefig('%s'%self.des_blankManyPath)
+		plt.close()
+	
+	def des_blankDiffPlot(self, listOne, listTwo, listDiff, label='unkown', index=0,\
+						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
+										 mew = .25)
+		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
+										 mew = .25)
+		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
+										   mew = .25)
+		plt.legend([legendOne, legendTwo, legendDiff])
+		self.des_blankDiffPath = '%s/TGA/TGA_plots/Blank_plots/Diff_plots/Desorption/diff_plot_%s_%d.png'\
+					 	 			  %(os.getcwd(), label, index)
+		plt.savefig('%s'%self.des_blankDiffPath)	
+		plt.close()			
+
+	def ads_blankDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
+						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+										 mew = .25)
+		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), \
+										 mew = .25)
+		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+										   mew = .25)
+		plt.legend([legendOne, legendTwo, legendDiff])
+		self.ads_blankDiffPath = '%s/TGA/TGA_plots/Blank_plots/Diff_plots/Adsorption/diff_plot_%s_%d.png'\
+					 	 			  %(os.getcwd(), label, index)
+		plt.savefig('%s'%self.ads_blankDiffPath)
+		plt.close()
+
+	def des_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown',\
+						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+										 mew = .25)
+		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+										 mew = .25)
+		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+										   mew = .25)
+		plt.legend([legendOne, legendTwo, legendDiff])
+		self.des_aliqDiffPath = '%s/TGA/TGA_plots/Aliq_plots/Diff_plots/Desorption/diff_plot_%s_%d.png'\
+					 	 			  %(os.getcwd(), label, index)
+		plt.savefig('%s'%self.des_aliqDiffPath)	
+		plt.close()			
+
+	def ads_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown',\
+						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+										 mew = .25)
+		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+										 mew = .25)
+		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+										   mew = .25)
+		plt.legend([legendOne, legendTwo, legendDiff])
+		self.ads_aliqDiffPath = '%s/TGA/TGA_plots/Aliq_plots/Diff_plots/Adsorption/diff_plot_%s_%d.png'\
+					 	 			  %(os.getcwd(), label, index)
+		plt.savefig('%s'%self.ads_aliqDiffPath)
+		plt.close()
+
+	def aliqSimplePlot(self, listOne, listTwo, label='unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		
+		plt.plot(listOne[0], listOne[1], 'r', label = 'unknown')
+		plt.plot(listTwo[0], listTwo[1], 'b', label = 'unknown')
+
+		self.aliq_SimplePath = '%s/TGA/TGA_plots/Aliq_plots/Simple_plots/simple_plot_%s.png'\
+					 	 		 %(os.getcwd(), label)
+		plt.savefig('%s'%self.aliq_SimplePath)
+		plt.close()
+
+	def blankSimplePlot(self, listOne, listTwo, label='unknown'):
+		fig = plt.figure()
+		ax = fig.add_subplot(111)
+		
+		plt.plot(listOne[0], listOne[1], 'r', label = 'unknown')
+		plt.plot(listTwo[0], listTwo[1], 'b', label = 'unknown')
+
+		self.blank_SimplePath = '%s/TGA/TGA_plots/Blank_plots/Simple_plots/simple_plot_%s.png'\
+					 	 		 %(os.getcwd(), label)
+		plt.savefig('%s'%self.blank_SimplePath)
+		plt.close()
+
+#self.adsBlankIndivList = self.adsBlankMainList[firstNum]
+
+# 		self.adsBlankPresVals = self.adsBlankIndivList[0]
+# 		self.adsBlankConcVals = self.adsBlankIndivList[1]
+
+# 		self.desBlankIndivList = self.desBlankMainList[firstNum]
+
+# 		self.desBlankPresVals = self.desBlankPresList[0]
+# 		self.desBlankConcVals = self.desBlankConcList[1]
 
 	
-
-	# def blankPlotVals(self, firstNum):
-	# 	self.adsBlankIndivList = self.adsBlankMainList[firstNum]
-
-	# 	self.adsBlankPresVals = self.adsBlankIndivList[0]
-	# 	self.adsBlankConcVals = self.adsBlankIndivList[1]
+# 	def plotSimpleAliq(self):
+# 		plt.figure(indexAliq)
+# 		plt.plot(self.adsAliqPresVals, self.adsAliqConcVals, mfc = 'r', mew = .25)
+# 		plt.plot(self.desAliqPresVals, self.desAliqConcVals, mfc = 'b', mew = .25)
 	
-	# 	self.desBlankIndivList = self.desBlankMainList[firstNum]
-		
-	# 	self.desBlankPresVals = self.desBlankPresList[0]
-	# 	self.desBlankConcVals = self.desBlankConcList[1]
-
-		
-	# def plotSimpleAliq(self):
-	# 	plt.figure(indexAliq)
-	# 	plt.plot(self.adsAliqPresVals, self.adsAliqConcVals, mfc = 'r', mew = .25)
-	# 	plt.plot(self.desAliqPresVals, self.desAliqConcVals, mfc = 'b', mew = .25)
-		
-	# 	plot_AliqPath = '%s/TGA/TGA_plots/Aliq_plots/Simple_plots/%s_simplePlot_%s.png'\
-	# 						 %(os.getcwd(), sequence1, indexAliq)
-	# 	plt.savefig('%s'%plot_simplePath)
+# 		plot_AliqPath = '%s/TGA/TGA_plots/Aliq_plots/Simple_plots/%s_simplePlot_%s.png'\
+# 							 %(os.getcwd(), sequence1, indexAliq)
+# 		plt.savefig('%s'%plot_simplePath)
 
 
-	# def plotSimpleBlank(self):
-	# 	plt.figure(indexBlank)
-	# 	plt.plot(self.adsPresVals, self.adsConcVals, mfc = 'r', mew = .25)
-	# 	plt.plot(self.desPresVals, self.desConcVals,  mfc = 'b', mew = .25)
-		
-	# 	plot_blankPath = '%s/TGA/TGA_plots/Blank_plots/Simple_plots/%s_simplePlot_%s.png'\
-	# 						 %(os.getcwd(), sequence1, indexBlank)
-	# 	plt.savefig('%s'%plot_blankPath)
+# 	def plotSimpleBlank(self):
+# 		plt.figure(indexBlank)
+# 		plt.plot(self.adsPresVals, self.adsConcVals, mfc = 'r', mew = .25)
+# 		plt.plot(self.desPresVals, self.desConcVals,  mfc = 'b', mew = .25)
+	
+# 		plot_blankPath = '%s/TGA/TGA_plots/Blank_plots/Simple_plots/%s_simplePlot_%s.png'\
+# 							 %(os.getcwd(), sequence1, indexBlank)
+# 		plt.savefig('%s'%plot_blankPath)
 
-	# 	start2 += 1
-	# 	indexBlank += 1
+# 		start2 += 1
+# 		indexBlank += 1
 
 # class multiPlotsTGA	
-	
+
 # 	def plotMany(self):
 
 
@@ -169,7 +257,7 @@ class TGA_Plot():
 
 # 						pressureAliq_listTGA.append(pressure_valTGA)
 # 						concAliq_listTGA.append(conc_valTGA)
-							
+						
 # 						begin3 +=1
 
 # 					except:
@@ -183,7 +271,7 @@ class TGA_Plot():
 
 # 				pressureAliq_listTGA2 = []
 # 				concAliq_listTGA2 = []
-				
+			
 # 				boundary = -1
 # 				for t in range(total):
 # 					if t == total - 1:
@@ -201,11 +289,11 @@ class TGA_Plot():
 
 # 				concAliq_listTGA1 = list(concAliq_listTGA[0:boundary])
 # 				concAliq_listTGA2 = list(concAliq_listTGA[boundary + 1:len(concAliq_listTGA) - 1])
-				
+			
 # 				TGhay = simplePlotsTGA()
 # 				TGhay.root.mainloop()
 # 				self.root.mainloop()
-				
+			
 # 				self.root.destroy()
 
 # 				start1 += 1
@@ -241,7 +329,7 @@ class TGA_Plot():
 
 # 						pressureBlank_listTGA.append(pressureBlank_valTGA)
 # 						concBlank_listTGA.append(concBlank_valTGA)
-							
+						
 # 						begin4 +=1
 
 # 					except:
@@ -255,7 +343,7 @@ class TGA_Plot():
 
 # 				pressureBlank_listTGA2 = []
 # 				concBlank_listTGA2 = []
-				
+			
 # 				boundary = -1
 # 				for t in range(total):
 # 					if t == total - 1:
@@ -273,16 +361,16 @@ class TGA_Plot():
 
 # 				concBlank_listTGA1 = list(concBlank_listTGA[0:boundary])
 # 				concBlank_listTGA2 = list(concBlank_listTGA[boundary + 1:len(concBlank_listTGA) - 1])
-				
+			
 # 				TGhay = simplePlotsTGA()
 # 				TGhay.root.mainloop()
 # 				self.root.mainloop()
-				
+			
 # 				self.root.destroy()
 
 # 				start2 += 1
 # 				indexBlank += 1
-			
+		
 
 
 

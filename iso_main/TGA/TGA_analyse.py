@@ -5,6 +5,9 @@ import simplejson as json
 class TGA_Analyse:
 	def __init__(self):
 
+		self.origin_blanks = []
+		self.origin_aliqs = []
+
 		# blanks data
 		self.ads_blank = []
 		self.des_blank = []
@@ -61,6 +64,11 @@ class TGA_Analyse:
 			blocks = self.split(raw)
 			self.ads_aliq.append(blocks[0])
 			self.des_aliq.append(blocks[1])
+			filePart = file.split("/")[-1].split("_")[:4]
+			
+			aliqLabel = '_'.join(filePart)
+			self.origin_aliqs.append(aliqLabel)
+
 			index += 1
 
 		# os.chdir(os.path.dirname(os.getcwd()))
@@ -75,6 +83,11 @@ class TGA_Analyse:
 			blocks = self.split(raw)
 			self.ads_blank.append(blocks[0])
 			self.des_blank.append(blocks[1])
+			filePart = file.split("/")[-1].split("_")[:4]
+			
+			blankLabel = '_'.join(filePart)
+			self.origin_blanks.append(blankLabel)
+			
 			index += 1
 
 	def split(self, raw):

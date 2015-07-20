@@ -13,66 +13,94 @@ if __name__ == '__main__':
 
 	# Note: Replace all the prints by the plots. To see run this like: python run.py > check.txt
 
-	# Many plots: blank diffs.
-	print "blanks_diffs+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps([ diff['diff'] for diff in analyse.diff_ads_blank])
-	plot.blankManyPlot(json.dumps([ diff['diff'] for diff in analyse.diff_ads_blank]), 'adsorption')
-	plot.blankManyPlot(json.dumps([ diff['diff'] for diff in analyse.diff_des_blank]), 'desorption')
-	print "+++++++++++++++++++++++++++++++++++++++++++++++blanks_diffs"
+	plot.ads_blankManyPlot(analyse.ads_blank, 'many_blank_ads_all')
+	plot.des_blankManyPlot(analyse.des_blank, 'many_blank_des_all')
 
-	# Diff plot: blanks and their diffs.
-	print "blanks_and_diffs+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps([ {'blank1':analyse.ads_blank[diff['i']], 'blank2':analyse.ads_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_blank])
-	print json.dumps([ {'blank1':analyse.des_blank[diff['i']], 'blank2':analyse.des_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_blank])
-	print "+++++++++++++++++++++++++++++++++++++++++++++++blanks_and_diffs"
+######################################### Many plots: blank diffs. #########################################
 
-	# Simple plot: blanks average diffs.
-	print "average_diff_ads_blank+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps(analyse.average_diff_ads_blank)
-	print "+++++++++++++++++++++++++++++++++++++++++++++++average_diff_ads_blank"
+	# print json.dumps([ diff['diff'] for diff in analyse.diff_ads_blank])
+	plot.ads_blankManyPlot([ diff['diff'] for diff in analyse.diff_ads_blank], 'many_blank_diffs_ads')
+	plot.des_blankManyPlot([ diff['diff'] for diff in analyse.diff_des_blank], 'many_blank_diffs_des')
+	
+######################################### Diff plot: blanks and their diffs. #########################################
 
-	print "average_diff_des_blank+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps(analyse.average_diff_des_blank)
-	print "+++++++++++++++++++++++++++++++++++++++++++++++average_diff_des_blank"
+	index = 0
+	for diff in analyse.diff_ads_blank:
+		origin1 = "Blank Line 1: %s" %analyse.origin_blanks[diff['i']]
+		origin2 = "Blank Line 2: %s" %analyse.origin_blanks[diff['j']]
 
-	# Simple plot: blanks average.
-	print "average_ads_blank+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps(analyse.average_ads_blank)
-	print "+++++++++++++++++++++++++++++++++++++++++++++++average_ads_blank"
+		plot.ads_blankDiffPlot(analyse.ads_blank[diff['i']], analyse.ads_blank[diff['j']], diff['diff'], 'blanks_diffs_ads',\
+							   index, '%s'%origin1, '%s'%origin2, 'Difference between lines')
+		index += 1
 
-	print "average_des_blank+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps(analyse.average_des_blank)
-	print "+++++++++++++++++++++++++++++++++++++++++++++++average_des_blank"
+	index = 0
+	for diff in analyse.diff_des_blank:
+		origin1 = "Blank Line 1: %s" %analyse.origin_blanks[diff['i']]
+		origin2 = "Blank Line 2: %s" %analyse.origin_blanks[diff['j']]
 
-	# Many plots: aliq diffs.
-	print "aliqs_diffs+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps([ diff['diff'] for diff in analyse.diff_ads_aliq])
-	print json.dumps(analyse.average_ads_blank)
-	print json.dumps([ diff['diff'] for diff in analyse.diff_des_aliq])
-	print json.dumps(analyse.average_des_blank)
-	print "+++++++++++++++++++++++++++++++++++++++++++++++aliqs_diffs"
+		plot.des_blankDiffPlot(analyse.des_blank[diff['i']], analyse.des_blank[diff['j']], diff['diff'], 'blanks_diffs_des',\
+							   index, '%s'%origin1, '%s'%origin2, 'Difference between lines')
+		index += 1
 
-	# Diff plot: aliqs and their diffs.
-	print "aliqs_and_diffs+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps([ {'aliq1':analyse.ads_aliq[diff['i']], 'aliq2':analyse.ads_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_aliq])
-	print json.dumps([ {'aliq1':analyse.des_aliq[diff['i']], 'aliq2':analyse.des_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_aliq])
-	print "+++++++++++++++++++++++++++++++++++++++++++++++aliqs_and_diffs"
+	# print json.dumps([ {'blank1':analyse.ads_blank[diff['i']], 'blank2':analyse.ads_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_blank])
+	# print json.dumps([ {'blank1':analyse.des_blank[diff['i']], 'blank2':analyse.des_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_blank])
 
-	# Many plots: aliqs corrected.
-	print "corrected_ads_aliq+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps(analyse.corrected_ads_aliq)
-	print "+++++++++++++++++++++++++++++++++++++++++++++++corrected_ads_aliq"
+######################################### Simple plot: blanks average diffs.blanksblanks #########################################
 
-	print "corrected_des_aliq+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps(analyse.corrected_des_aliq)
-	print "+++++++++++++++++++++++++++++++++++++++++++++++corrected_des_aliq"
+	plot.blankSimplePlot(analyse.average_diff_ads_blank,\
+					 	 analyse.average_diff_des_blank, 'blanks_avg_diffs')
+	
+######################################### Simple plot: blanks average. #########################################
 
-	# Simple plot: aliqs corrected average.
-	print "average_corrected_ads_aliq+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps(analyse.average_corrected_ads_aliq)
-	print "+++++++++++++++++++++++++++++++++++++++++++++++average_corrected_ads_aliq"
+	
+	plot.blankSimplePlot(analyse.average_ads_blank,\
+					 	 analyse.average_des_blank, 'blanks_avg')
 
-	print "average_corrected_des_aliq+++++++++++++++++++++++++++++++++++++++++++++++"
-	print json.dumps(analyse.average_corrected_des_aliq)
-	print "+++++++++++++++++++++++++++++++++++++++++++++++average_corrected_des_aliq"
+	# plot.ads_aliqManyPlot(analyse.ads_aliq, 'many_blank_ads_all')
+	# plot.des_aliqManyPlot(analyse.des_aliq, 'many_blank_des_all')
+
+######################################### Many plots: aliq diffs. #########################################
+
+	plot.ads_aliqManyPlot([ diff['diff'] for diff in analyse.diff_ads_aliq], 'aliq_diffs_ads')
+	plot.des_aliqManyPlot([ diff['diff'] for diff in analyse.diff_des_aliq], 'aliq_diffs_des')
+
+	# print json.dumps([ diff['diff'] for diff in analyse.diff_ads_aliq])
+	# print json.dumps([ diff['diff'] for diff in analyse.diff_des_aliq])
+	
+######################################### Diff plot: aliqs and their diffs. #########################################
+
+	index  = 0
+	for diff in analyse.diff_ads_aliq:
+		origin1 = "Aliq Line 1: %s" %analyse.origin_aliq[diff['i']]
+		origin2 = "Aliq Line 2: %s" %analyse.origin_aliq[diff['j']]
+
+		plot.ads_aliqDiffPlot(analyse.ads_aliq[diff['i']], analyse.ads_aliq[diff['j']], diff['diff'], 'aliqs_diffs_ads',\
+							  index, '%s'%origin1, '%s'%origin2, 'Difference between lines')
+		index += 1
+
+	index  = 0
+	for diff in analyse.diff_des_blank:
+		origin1 = "Aliq Line 1: %s" %analyse.origin_aliq[diff['i']]
+		origin2 = "Aliq Line 2: %s" %analyse.origin_aliq[diff['j']]
+
+		plot.des_aliqDiffPlot(analyse.des_aliq[diff['i']], analyse.des_aliq[diff['j']], diff['diff'], 'aliqs_diffs_des',\
+							  index, '%s'%origin1, '%s'%origin2, 'Difference between lines')
+		index += 1
+
+	# print json.dumps([ {'aliq1':analyse.ads_aliq[diff['i']], 'aliq2':analyse.ads_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_aliq])
+	# print json.dumps([ {'aliq1':analyse.des_aliq[diff['i']], 'aliq2':analyse.des_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_aliq])
+
+######################################### Many plots: aliqs corrected. #########################################
+
+	
+	plot.ads_aliqManyPlot(analyse.corrected_ads_aliq, 'aliq_ads_corrected')
+	plot.des_aliqManyPlot(analyse.corrected_des_aliq, 'aliq_des_corrected')
+
+
+######################################### Simple plot: aliqs corrected average. #########################################
+
+	plot.aliqSimplePlot(analyse.average_corrected_ads_aliq,\
+						analyse.average_corrected_des_aliq, 'aliq_corr_avg')
+	
+	
 
