@@ -182,9 +182,11 @@ class TGA_Analyse:
 
 		average = [float(d/len(averageY)) for d in averageY]
 
-		# print "average+++++++++++++++++++++++++++++++++++++++++++++++"
-		# print json.dumps(average)
-		# print "+++++++++++++++++++++++++++++++++++++++++++++++average"
+		print "average+++++++++++++++++++++++++++++++++++++++++++++++"
+		print json.dumps(len(averageY))
+		print json.dumps(averageY)
+		print json.dumps(average)
+		print "+++++++++++++++++++++++++++++++++++++++++++++++average"
 
 		return average
 

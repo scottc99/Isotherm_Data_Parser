@@ -48,58 +48,74 @@ class TGA_Plot:
 
 ######################################### Many_plot Functions #########################################
 
-	def ads_aliqManyPlot(self, manyList, label='unknown', lineNum = 0, xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+	def ads_aliqManyPlot(self, manyList, label='unknown', xmin = 0, ymin = 0, xmax = 45, ymax = 20):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		for num in manyList:
+			# index = manyList.index(num)
 			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 									 mew = .25)
-			plt.legend(['Line Number: %s'%lineNum], loc)
+			# plt.legend(['Line Number: %s'%index], loc = 2)
 
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.grid(b=True, which='major', color='k', linestyle='-')
+
 		self.ads_aliqManyPath = '%s/TGA/TGA_plots/Aliq_plots/Many_plots/Adsorption/many_plot_%s.png'%(os.getcwd(), label)
 		plt.savefig('%s'%self.ads_aliqManyPath)
 		plt.close()
 
-	def des_aliqManyPlot(self, manyList, label='unknown', lineNum = 0, xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+	def des_aliqManyPlot(self, manyList, label='unknown', xmin = 0, ymin = 0, xmax = 45, ymax = 20):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		for num in manyList:
+			# index = manyList.index(num)
 			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 									 mew = .25)
-			plt.legend(['Line Number: %s'%lineNum], loc)
+			# plt.legend(['Line Number: %s'%index], loc = 2)
 		
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.grid(b=True, which='major', color='k', linestyle='-')
+
 		self.des_aliqManyPath = '%s/TGA/TGA_plots/Aliq_plots/Many_plots/Desorption/many_plot_%s.png'%(os.getcwd(), label)
 		plt.savefig('%s'%self.des_aliqManyPath)
 		plt.close()
 
-	def ads_blankManyPlot(self, manyList, label='unknown', lineNum = 0, xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+	def ads_blankManyPlot(self, manyList, label='unknown', xmin = 0, ymin = 0, xmax = 45, ymax = 1.2):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		for num in manyList:
+			# index = manyList.index(num)
 			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 									 mew = .25)
-			plt.legend(['Line Number: %s'%lineNum], loc)
+			# plt.legend(['Line Number: %s'%index], loc = 2)
 		
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.grid(b=True, which='major', color='k', linestyle='-')
+
 		self.ads_blankManyPath = '%s/TGA/TGA_plots/Blank_plots/Many_plots/Adsorption/many_plot_%s.png'%(os.getcwd(), label)
 		plt.savefig('%s'%self.ads_blankManyPath)
 		plt.close()
 
-	def des_blankManyPlot(self, manyList, label='unknown', lineNum = 0, xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+	def des_blankManyPlot(self, manyList, label='unknown', xmin = 0, ymin = 0, xmax = 45, ymax = 1.2):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		for num in manyList:
+			index = manyList.index(num)
 			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 									 mew = .25)
-			plt.legend(['Line Number: %s'%lineNum], loc)
+			# plt.legend(['Line Number: %s'%index], loc = 2)
 		
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.grid(b=True, which='major', color='k', linestyle='-')
+
 		self.des_blankManyPath = '%s/TGA/TGA_plots/Blank_plots/Many_plots/Desorption/many_plot_%s.png'%(os.getcwd(), label)
 		plt.savefig('%s'%self.des_blankManyPath)
 		plt.close()
@@ -108,9 +124,9 @@ class TGA_Plot:
 	
 	def des_blankDiffPlot(self, listOne, listTwo, listDiff, label='unkown', index=0,\
 						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
-						  xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+						  xvalue = 45, yvalue = 0.5):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
 										 mew = .25)
 		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
@@ -120,7 +136,10 @@ class TGA_Plot:
 		
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([0, xvalue, 0, yvalue])
-		plt.legend([legendOne, legendTwo, legendDiff], loc, fontsize = 10)
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
+		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
+
 		self.des_blankDiffPath = '%s/TGA/TGA_plots/Blank_plots/Diff_plots/Desorption/diff_plot_%s_%d.png'\
 					 	 			  %(os.getcwd(), label, index)
 		plt.savefig('%s'%self.des_blankDiffPath)	
@@ -128,9 +147,9 @@ class TGA_Plot:
 
 	def ads_blankDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
 						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
-						  xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+						  xvalue = 45, yvalue = 0.5):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										 mew = .25)
 		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), \
@@ -140,7 +159,10 @@ class TGA_Plot:
 		
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([0, xvalue, 0, yvalue])
-		plt.legend([legendOne, legendTwo, legendDiff], loc, fontsize = 10)
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
+		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
+
 		self.ads_blankDiffPath = '%s/TGA/TGA_plots/Blank_plots/Diff_plots/Adsorption/diff_plot_%s_%d.png'\
 					 	 			  %(os.getcwd(), label, index)
 		plt.savefig('%s'%self.ads_blankDiffPath)
@@ -148,9 +170,9 @@ class TGA_Plot:
 
 	def des_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
 						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
-						  xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+						  xvalue = 45, yvalue = 1.2):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										 mew = .25)
 		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
@@ -160,7 +182,10 @@ class TGA_Plot:
 		
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([0, xvalue, 0, yvalue])
-		plt.legend([legendOne, legendTwo, legendDiff], loc, fontsize = 10)
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
+		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
+
 		self.des_aliqDiffPath = '%s/TGA/TGA_plots/Aliq_plots/Diff_plots/Desorption/diff_plot_%s_%d.png'\
 					 	 			  %(os.getcwd(), label, index)
 		plt.savefig('%s'%self.des_aliqDiffPath)	
@@ -168,9 +193,9 @@ class TGA_Plot:
 
 	def ads_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
 						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
-						  xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+						  xvalue = 45, yvalue = 1.2):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										 mew = .25)
 		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
@@ -180,7 +205,10 @@ class TGA_Plot:
 		
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([0, xvalue, 0, yvalue])
-		plt.legend([legendOne, legendTwo, legendDiff], loc, fontsize = 10)
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
+		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
+
 		self.ads_aliqDiffPath = '%s/TGA/TGA_plots/Aliq_plots/Diff_plots/Adsorption/diff_plot_%s_%d.png'\
 					 	 			  %(os.getcwd(), label, index)
 		plt.savefig('%s'%self.ads_aliqDiffPath)
@@ -188,29 +216,39 @@ class TGA_Plot:
 
 ######################################### Simple_plot Functions #########################################
 
-	def aliqSimplePlot(self, listOne, listTwo, label='unknown', xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+	def aliqSimplePlot(self, listOne, listTwo, label='unknown', legendOne = 'unknown',\
+					   legendTwo = 'unknown', xvalue = 45, yvalue = 20):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		
 		plt.plot(listOne[0], listOne[1], 'r', label = 'unknown')
 		plt.plot(listTwo[0], listTwo[1], 'b', label = 'unknown')
 
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([0, xvalue, 0, yvalue])
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
+		plt.legend([legendOne, legendTwo], loc = 2, fontsize = 10)
+
 		self.aliq_SimplePath = '%s/TGA/TGA_plots/Aliq_plots/Simple_plots/simple_plot_%s.png'\
 					 	 		 %(os.getcwd(), label)
 		plt.savefig('%s'%self.aliq_SimplePath)
 		plt.close()
 
-	def blankSimplePlot(self, listOne, listTwo, label='unknown', xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+	def blankSimplePlot(self, listOne, listTwo, label='unknown', legendOne = 'unknown',\
+					    legendTwo = 'unknown', xvalue = 45, yvalue = 1.2):
 		fig = plt.figure()
-		ax = fig.add_subplot(subplot)
+		ax = fig.add_subplot(111)
 		
 		plt.plot(listOne[0], listOne[1], 'r', label = 'unknown')
 		plt.plot(listTwo[0], listTwo[1], 'b', label = 'unknown')
 
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([0, xvalue, 0, yvalue])
+		plt.xlabel('Pressure (Bar)')
+		plt.ylabel('Uptake (\delta Mass (mg)')
+		plt.legend([legendOne, legendTwo], loc = 2, fontsize = 10)
+
 		self.blank_SimplePath = '%s/TGA/TGA_plots/Blank_plots/Simple_plots/simple_plot_%s.png'\
 					 	 		 %(os.getcwd(), label)
 		plt.savefig('%s'%self.blank_SimplePath)
