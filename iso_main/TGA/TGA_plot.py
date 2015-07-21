@@ -10,6 +10,7 @@ import matplotlib.markers as mark
 from matplotlib.markers import MarkerStyle
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+from matplotlib import lines as plotline
 from matplotlib.pyplot import show, plot, ion, figure
 import pylab
 import numpy as np
@@ -54,7 +55,7 @@ class TGA_Plot:
 		for num in manyList:
 			# index = manyList.index(num)
 			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-									 mew = .25)
+									 mew = .25, ms = float(4.5), ls = '-', lw = float(1.5))
 			# plt.legend(['Line Number: %s'%index], loc = 2)
 
 		plt.axis([xmin, xmax, ymin, ymax])
@@ -72,7 +73,7 @@ class TGA_Plot:
 		for num in manyList:
 			# index = manyList.index(num)
 			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-									 mew = .25)
+									 mew = .25, ms = float(4.5), ls = '-', lw = float(1.5))
 			# plt.legend(['Line Number: %s'%index], loc = 2)
 		
 		plt.axis([xmin, xmax, ymin, ymax])
@@ -84,7 +85,8 @@ class TGA_Plot:
 		plt.savefig('%s'%self.des_aliqManyPath)
 		plt.close()
 
-	def ads_blankManyPlot(self, manyList, label='unknown', xmin = 0, ymin = 0, xmax = 45, ymax = 1.2):
+	def ads_blankManyPlot(self, manyList, label='unknown', xmin = 0, ymin = 0, xmax = 45, ymax = 1.2,\
+						  ms = float(4.5)):
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
 		for num in manyList:
@@ -102,7 +104,8 @@ class TGA_Plot:
 		plt.savefig('%s'%self.ads_blankManyPath)
 		plt.close()
 
-	def des_blankManyPlot(self, manyList, label='unknown', xmin = 0, ymin = 0, xmax = 45, ymax = 1.2):
+	def des_blankManyPlot(self, manyList, label='unknown', xmin = 0, ymin = 0, xmax = 45, ymax = 1.2,\
+						  ms = float(4.5)):
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
 		for num in manyList:
@@ -124,18 +127,18 @@ class TGA_Plot:
 	
 	def des_blankDiffPlot(self, listOne, listTwo, listDiff, label='unkown', index=0,\
 						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
-						  xvalue = 45, yvalue = 0.5):
+						  xmin = 0, xmax = 45, ymin = 0, ymax = 0.5):
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
-		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
-										 mew = .25)
-		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
-										 mew = .25)
-		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
-										   mew = .25)
+		plt.plot(listOne[0], listOne[1], 'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
+		plt.plot(listTwo[0], listTwo[1], 'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
+		plt.plot(listDiff[0], listDiff[1], 'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
 		
 		plt.grid(b=True, which='major', color='k', linestyle='-')
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
 		plt.xlabel('Pressure (Bar)')
 		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
@@ -147,18 +150,18 @@ class TGA_Plot:
 
 	def ads_blankDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
 						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
-						  xvalue = 45, yvalue = 0.5):
+						  xmin = 0, xmax = 45, ymin = 0, ymax = 0.5):
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
-		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-										 mew = .25)
-		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), \
-										 mew = .25)
-		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-										   mew = .25)
+		plt.plot(listOne[0], listOne[1], 'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
+		plt.plot(listTwo[0], listTwo[1], 'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
+		plt.plot(listDiff[0], listDiff[1], 'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
 		
 		plt.grid(b=True, which='major', color='k', linestyle='-')
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
 		plt.xlabel('Pressure (Bar)')
 		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
@@ -170,18 +173,18 @@ class TGA_Plot:
 
 	def des_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
 						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
-						  xvalue = 45, yvalue = 1.2):
+						  xmin = 0, xmax = 45, ymin = 0, ymax = 1.2):
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
-		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-										 mew = .25)
-		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-										 mew = .25)
-		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-										   mew = .25)
+		plt.plot(listOne[0], listOne[1],  'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
+		plt.plot(listTwo[0], listTwo[1],  'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
+		plt.plot(listDiff[0], listDiff[1],  'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
 		
 		plt.grid(b=True, which='major', color='k', linestyle='-')
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
 		plt.xlabel('Pressure (Bar)')
 		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
@@ -193,18 +196,18 @@ class TGA_Plot:
 
 	def ads_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
 						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
-						  xvalue = 45, yvalue = 1.2):
+						  xmin = 0, xmax = 45, ymin = 0, ymax = 1.2):
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
-		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-										 mew = .25)
-		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-										 mew = .25)
-		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
-										   mew = .25)
+		plt.plot(listOne[0], listOne[1], 'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
+		plt.plot(listTwo[0], listTwo[1], 'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
+		plt.plot(listDiff[0], listDiff[1], 'o', ms = float(4.5), mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255),\
+											  random.randint(0,255)), mew = .25, ls = '-', lw = float(1.5))
 		
 		plt.grid(b=True, which='major', color='k', linestyle='-')
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
 		plt.xlabel('Pressure (Bar)')
 		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
@@ -217,18 +220,20 @@ class TGA_Plot:
 ######################################### Simple_plot Functions #########################################
 
 	def aliqSimplePlot(self, listOne, listTwo, label='unknown', legendOne = 'unknown',\
-					   legendTwo = 'unknown', xvalue = 45, yvalue = 20):
+					   legendTwo = 'unknown', xmin = 0, xmax = 45, ymin = 0, ymax = 20):
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
 		
-		plt.plot(listOne[0], listOne[1], 'r', label = 'unknown')
-		plt.plot(listTwo[0], listTwo[1], 'b', label = 'unknown')
+		plt.plot(listOne[0], listOne[1], 'ro', mec = 'r', ms = float(4.5), ls = '-', lw = float(1.5), label = 'unknown')
+		plt.plot(listTwo[0], listTwo[1], 'bo', mec = 'b', ms = float(4.5), ls = '-', lw = float(1.5), label = 'unknown')
 
 		plt.grid(b=True, which='major', color='k', linestyle='-')
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
 		plt.xlabel('Pressure (Bar)')
 		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.legend([legendOne, legendTwo], loc = 2, fontsize = 10)
+		# plotline.Line2D(listOne[0], listOne[1], 'r', linestyle = '-')
+		# plotline.Line2D(listTwo[0], listTwo[1], 'b', linestyle = '-')
 
 		self.aliq_SimplePath = '%s/TGA/TGA_plots/Aliq_plots/Simple_plots/simple_plot_%s.png'\
 					 	 		 %(os.getcwd(), label)
@@ -236,18 +241,20 @@ class TGA_Plot:
 		plt.close()
 
 	def blankSimplePlot(self, listOne, listTwo, label='unknown', legendOne = 'unknown',\
-					    legendTwo = 'unknown', xvalue = 45, yvalue = 1.2):
+					    legendTwo = 'unknown', xmin = 0, xmax = 45, ymin = 0, ymax = 1.2):
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
 		
-		plt.plot(listOne[0], listOne[1], 'r', label = 'unknown')
-		plt.plot(listTwo[0], listTwo[1], 'b', label = 'unknown')
+		plt.plot(listOne[0], listOne[1], 'ro', mec = 'r', ms = float(4.5), ls = '-', lw = float(1.5), label = 'unknown')
+		plt.plot(listTwo[0], listTwo[1], 'bo', mec = 'b', ms = float(4.5), ls = '-', lw = float(1.5), label = 'unknown')
 
 		plt.grid(b=True, which='major', color='k', linestyle='-')
-		plt.axis([0, xvalue, 0, yvalue])
+		plt.axis([xmin, xmax, ymin, ymax])
 		plt.xlabel('Pressure (Bar)')
 		plt.ylabel('Uptake (\delta Mass (mg)')
 		plt.legend([legendOne, legendTwo], loc = 2, fontsize = 10)
+		plotline.Line2D(listOne[0], listOne[1], 'r', linestyle = '-')
+		plotline.Line2D(listTwo[0], listTwo[1], 'b', linestyle = '-')
 
 		self.blank_SimplePath = '%s/TGA/TGA_plots/Blank_plots/Simple_plots/simple_plot_%s.png'\
 					 	 		 %(os.getcwd(), label)
