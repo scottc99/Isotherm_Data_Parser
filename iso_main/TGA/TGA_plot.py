@@ -45,135 +45,172 @@ class TGA_Plot:
 	    g = _chkarg(g)
 	    b = _chkarg(b)
 	    return '#{:02x}{:02x}{:02x}'.format(r,g,b)
-	
-	def ads_aliqManyPlot(self, manyList, label='unknown'):
-		fig = plt.figure()
-		ax = fig.add_subplot(111)
-		for num in manyList:
 
-			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), mew = .25)
-			plt.legend(['Line Number: %s'%manyList.index(num)])
+######################################### Many_plot Functions #########################################
+
+	def ads_aliqManyPlot(self, manyList, label='unknown', lineNum = 0, xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
+		fig = plt.figure()
+		ax = fig.add_subplot(subplot)
+		for num in manyList:
+			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+									 mew = .25)
+			plt.legend(['Line Number: %s'%lineNum], loc)
+
+		plt.axis([0, xvalue, 0, yvalue])
+		plt.grid(b=True, which='major', color='k', linestyle='-')
 		self.ads_aliqManyPath = '%s/TGA/TGA_plots/Aliq_plots/Many_plots/Adsorption/many_plot_%s.png'%(os.getcwd(), label)
 		plt.savefig('%s'%self.ads_aliqManyPath)
 		plt.close()
 
-	def des_aliqManyPlot(self, manyList, label='unknown'):
+	def des_aliqManyPlot(self, manyList, label='unknown', lineNum = 0, xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
 		fig = plt.figure()
-		ax = fig.add_subplot(111)
+		ax = fig.add_subplot(subplot)
 		for num in manyList:
-			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), mew = .25)
-			plt.legend(['Line Number: %s'%manyList.index(num)])
+			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+									 mew = .25)
+			plt.legend(['Line Number: %s'%lineNum], loc)
 		
+		plt.axis([0, xvalue, 0, yvalue])
+		plt.grid(b=True, which='major', color='k', linestyle='-')
 		self.des_aliqManyPath = '%s/TGA/TGA_plots/Aliq_plots/Many_plots/Desorption/many_plot_%s.png'%(os.getcwd(), label)
 		plt.savefig('%s'%self.des_aliqManyPath)
 		plt.close()
 
-	def ads_blankManyPlot(self, manyList, label='unknown'):
+	def ads_blankManyPlot(self, manyList, label='unknown', lineNum = 0, xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
 		fig = plt.figure()
-		ax = fig.add_subplot(111)
+		ax = fig.add_subplot(subplot)
 		for num in manyList:
-
-			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), mew = .25)
-			plt.legend(['Line Number: %s'%manyList.index(num)])
+			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+									 mew = .25)
+			plt.legend(['Line Number: %s'%lineNum], loc)
 		
+		plt.axis([0, xvalue, 0, yvalue])
+		plt.grid(b=True, which='major', color='k', linestyle='-')
 		self.ads_blankManyPath = '%s/TGA/TGA_plots/Blank_plots/Many_plots/Adsorption/many_plot_%s.png'%(os.getcwd(), label)
 		plt.savefig('%s'%self.ads_blankManyPath)
 		plt.close()
 
-	def des_blankManyPlot(self, manyList, label='unknown'):
+	def des_blankManyPlot(self, manyList, label='unknown', lineNum = 0, xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
 		fig = plt.figure()
-		ax = fig.add_subplot(111)
+		ax = fig.add_subplot(subplot)
 		for num in manyList:
-			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), mew = .25)
-			plt.legend(['Line Number: %s'%manyList.index(num)])
+			plt.plot(num[0], num[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
+									 mew = .25)
+			plt.legend(['Line Number: %s'%lineNum], loc)
 		
+		plt.axis([0, xvalue, 0, yvalue])
+		plt.grid(b=True, which='major', color='k', linestyle='-')
 		self.des_blankManyPath = '%s/TGA/TGA_plots/Blank_plots/Many_plots/Desorption/many_plot_%s.png'%(os.getcwd(), label)
 		plt.savefig('%s'%self.des_blankManyPath)
 		plt.close()
 	
+######################################### Diff_plot Functions #########################################
+	
 	def des_blankDiffPlot(self, listOne, listTwo, listDiff, label='unkown', index=0,\
-						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown'):
+						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
+						  xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
 		fig = plt.figure()
-		ax = fig.add_subplot(111)
+		ax = fig.add_subplot(subplot)
 		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
 										 mew = .25)
 		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
 										 mew = .25)
 		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), 
 										   mew = .25)
-		plt.legend([legendOne, legendTwo, legendDiff])
+		
+		plt.grid(b=True, which='major', color='k', linestyle='-')
+		plt.axis([0, xvalue, 0, yvalue])
+		plt.legend([legendOne, legendTwo, legendDiff], loc, fontsize = 10)
 		self.des_blankDiffPath = '%s/TGA/TGA_plots/Blank_plots/Diff_plots/Desorption/diff_plot_%s_%d.png'\
 					 	 			  %(os.getcwd(), label, index)
 		plt.savefig('%s'%self.des_blankDiffPath)	
 		plt.close()			
 
 	def ads_blankDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
-						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown'):
+						  legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
+						  xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
 		fig = plt.figure()
-		ax = fig.add_subplot(111)
+		ax = fig.add_subplot(subplot)
 		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										 mew = .25)
 		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)), \
 										 mew = .25)
 		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										   mew = .25)
-		plt.legend([legendOne, legendTwo, legendDiff])
+		
+		plt.grid(b=True, which='major', color='k', linestyle='-')
+		plt.axis([0, xvalue, 0, yvalue])
+		plt.legend([legendOne, legendTwo, legendDiff], loc, fontsize = 10)
 		self.ads_blankDiffPath = '%s/TGA/TGA_plots/Blank_plots/Diff_plots/Adsorption/diff_plot_%s_%d.png'\
 					 	 			  %(os.getcwd(), label, index)
 		plt.savefig('%s'%self.ads_blankDiffPath)
 		plt.close()
 
-	def des_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown',\
-						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown'):
+	def des_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
+						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
+						  xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
 		fig = plt.figure()
-		ax = fig.add_subplot(111)
+		ax = fig.add_subplot(subplot)
 		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										 mew = .25)
 		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										 mew = .25)
 		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										   mew = .25)
-		plt.legend([legendOne, legendTwo, legendDiff])
+		
+		plt.grid(b=True, which='major', color='k', linestyle='-')
+		plt.axis([0, xvalue, 0, yvalue])
+		plt.legend([legendOne, legendTwo, legendDiff], loc, fontsize = 10)
 		self.des_aliqDiffPath = '%s/TGA/TGA_plots/Aliq_plots/Diff_plots/Desorption/diff_plot_%s_%d.png'\
 					 	 			  %(os.getcwd(), label, index)
 		plt.savefig('%s'%self.des_aliqDiffPath)	
 		plt.close()			
 
-	def ads_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown',\
-						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown'):
+	def ads_aliqDiffPlot(self, listOne, listTwo, listDiff, label='unknown', index=0,\
+						 legendOne = 'unknown', legendTwo = 'unknown', legendDiff = 'unknown',\
+						  xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
 		fig = plt.figure()
-		ax = fig.add_subplot(111)
+		ax = fig.add_subplot(subplot)
 		plt.plot(listOne[0], listOne[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										 mew = .25)
 		plt.plot(listTwo[0], listTwo[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										 mew = .25)
 		plt.plot(listDiff[0], listDiff[1], mfc = self.htmlcolor(random.randint(0,255), random.randint(0,255), random.randint(0,255)),\
 										   mew = .25)
-		plt.legend([legendOne, legendTwo, legendDiff])
+		
+		plt.grid(b=True, which='major', color='k', linestyle='-')
+		plt.axis([0, xvalue, 0, yvalue])
+		plt.legend([legendOne, legendTwo, legendDiff], loc, fontsize = 10)
 		self.ads_aliqDiffPath = '%s/TGA/TGA_plots/Aliq_plots/Diff_plots/Adsorption/diff_plot_%s_%d.png'\
 					 	 			  %(os.getcwd(), label, index)
 		plt.savefig('%s'%self.ads_aliqDiffPath)
 		plt.close()
 
-	def aliqSimplePlot(self, listOne, listTwo, label='unknown'):
+######################################### Simple_plot Functions #########################################
+
+	def aliqSimplePlot(self, listOne, listTwo, label='unknown', xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
 		fig = plt.figure()
-		ax = fig.add_subplot(111)
+		ax = fig.add_subplot(subplot)
 		
 		plt.plot(listOne[0], listOne[1], 'r', label = 'unknown')
 		plt.plot(listTwo[0], listTwo[1], 'b', label = 'unknown')
 
+		plt.grid(b=True, which='major', color='k', linestyle='-')
+		plt.axis([0, xvalue, 0, yvalue])
 		self.aliq_SimplePath = '%s/TGA/TGA_plots/Aliq_plots/Simple_plots/simple_plot_%s.png'\
 					 	 		 %(os.getcwd(), label)
 		plt.savefig('%s'%self.aliq_SimplePath)
 		plt.close()
 
-	def blankSimplePlot(self, listOne, listTwo, label='unknown'):
+	def blankSimplePlot(self, listOne, listTwo, label='unknown', xvalue = 20, yvalue = 45, loc = 7, subplot = 111):
 		fig = plt.figure()
-		ax = fig.add_subplot(111)
+		ax = fig.add_subplot(subplot)
 		
 		plt.plot(listOne[0], listOne[1], 'r', label = 'unknown')
 		plt.plot(listTwo[0], listTwo[1], 'b', label = 'unknown')
 
+		plt.grid(b=True, which='major', color='k', linestyle='-')
+		plt.axis([0, xvalue, 0, yvalue])
 		self.blank_SimplePath = '%s/TGA/TGA_plots/Blank_plots/Simple_plots/simple_plot_%s.png'\
 					 	 		 %(os.getcwd(), label)
 		plt.savefig('%s'%self.blank_SimplePath)
