@@ -117,11 +117,11 @@
 
 # 		total = len(pressure_list)
 
-# 		pressure_list1 = []
+# 		pressure_listA1 = []
 # 		conc_list1 = []
 
 # 		pressure_list2 = []
-# 		conc_list2 = []
+# 		conc_listA2 = []
 		
 # 		boundary = -1
 # 		for t in range(total):
@@ -135,13 +135,13 @@
 # 					boundary = t
 # 					break
 
-# 		pressure_list1 = list(pressure_list[0:boundary])
+# 		pressure_listA1 = list(pressure_list[0:boundary])
 # 		pressure_list2 = list(pressure_list[boundary + 1:len(pressure_list) - 1])
 
 # 		conc_list1 = list(conc_list[0:boundary])
-# 		conc_list2 = list(conc_list[boundary + 1:len(conc_list) - 1])
+# 		conc_listA2 = list(conc_list[boundary + 1:len(conc_list) - 1])
 
-# 		return [[pressure_list1, conc_list1], [pressure_list2, conc_list2]]
+# 		return [[pressure_listA1, conc_list1], [pressure_list2, conc_listA2]]
 
 # 	# x array to interpolate
 # 	# The sampling.
@@ -587,6 +587,10 @@ import simplejson as json
 class TGA_Analyse:
 	def __init__(self):
 
+
+		self.diff_ads_blankMain = []
+		self.diff_des_blankMain = []
+
 		self.origin_blanks = []
 		self.origin_aliqs = []
 
@@ -644,7 +648,7 @@ class TGA_Analyse:
 
 				raw = json.loads(content)
 				# alisqs.append(raw)
-				blocks = self.split(raw)
+				blocks = self.split(raw, 0)
 				
 				self.ads_aliq.append(blocks[0])
 				self.des_aliq.append(blocks[1])
@@ -662,20 +666,20 @@ class TGA_Analyse:
 			with open(file, "r") as blank_file:
 				content = blank_file.read()
 
-			raw = json.loads(content)
-			# blanks.append(raw)
-			blocks = self.split(raw)
+				raw = json.loads(content)
+				# blanks.append(raw)
+				blocks = self.split(raw, 1)
 
-			self.ads_blank.append(blocks[0])
-			self.des_blank.append(blocks[1])
-			filePart = file.split("/")[-1].split("_")[:4]
-			
-			blankLabel = '_'.join(filePart)
-			self.origin_blanks.append(blankLabel)
-			
-			index += 1
+				self.ads_blank.append(blocks[0])
+				self.des_blank.append(blocks[1])
+				filePart = file.split("/")[-1].split("_")[:4]
+				
+				blankLabel = '_'.join(filePart)
+				self.origin_blanks.append(blankLabel)
+				
+				index += 1
 
-	def split(self, raw):
+	def split(self, raw, run = 0):
 
 		begin3 = 1
 
@@ -685,8 +689,12 @@ class TGA_Analyse:
 		while True: 
 			try:
 				content= raw["content"][begin3 - 1]
-
-				conc_dict = content.get('weights')[4] # Before it was 3 but corrected to 4th.
+				
+				if run == 0:
+					conc_dict = content.get('weights')[1] # Before it was 3 but corrected to 4th and now second
+				elif run == 1:
+					conc_dict = content.get('weights')[4]
+				
 				conc_val = conc_dict.get('value')
 
 				pressure_dict = content.get('pressure')
@@ -700,7 +708,8 @@ class TGA_Analyse:
 			except:
 				break
 
-		total = len(pressure_list)
+		total = len(pressure_list) + 1
+
 		pressure_list1 = []
 		conc_list1 = []
 
@@ -719,14 +728,13 @@ class TGA_Analyse:
 					boundary = t
 					break
 
-
 		pressure_list1 = list(pressure_list[0:boundary])
-		pressure_list2 = list(pressure_list[boundary + 1:len(pressure_list)])
+		pressure_list2 = list(pressure_list[boundary + 1:len(pressure_list) - 1])
 
 		conc_list1 = list(conc_list[0:boundary])
-		conc_list2 = list(conc_list[boundary + 1:len(conc_list)])
+		conc_list2 = list(conc_list[boundary + 1:len(conc_list) - 1])
 
-		if max(pressure_list) != max(pressure_list1) and max(conc_list) != max(conc_list1):
+		if max(pressure_list1) != max(pressure_list):  
 			pressure_list1.append(max(pressure_list))
 			conc_list1.append(max(conc_list))
 
@@ -796,10 +804,49 @@ class TGA_Analyse:
 		#Align all the rest
 		for index in range(1, len(self.ads_blank)):
 			#(pressure, concentration): [0], [1]
+			for val in range(1, (len(self.ads_blank[index][1]) + 1)):
+				condition = self.ads_blank[index][1][val + 1] < self.ads_blank[index][1][val]	
+				if condition:
+					while True: 
+						try: 
+							self.blank_ads_incrDict = []
+							self.blank_ads_incrList = []
+
+							pres_list_adsIncr = []
+							conc_list_adsIncr = []
+							pres_list_adsIncr.extend(self.ads_blank[index][0][:pos]) 
+							conc_list_adsIncr.extend(self.ads_blank[index][1][:pos])
+							
+							self.blank_ads_incrDict = {'fixPres_%s'%pos: pres_list_adsIncr,\
+													   'fixConc_%s'%pos: conc_list_adsIncr}
+							self.blank_ads_incrList = [self.blank_ads_incrDict['fixPres_%s'%pos],\
+													   self.blank_ads_incrDict['fixConc_%s'%pos]]
+							
+							self.align(refPressure[:pos], self.blank_ads_incrList)
+
+							print index
+							print pos
+						except:
+							break
+				else:
+					pass
+
+			print max(self.ads_blank[0][0])
 			aligned_ads_blank.append([refPressure, self.align(refPressure, self.ads_blank[index])])
-
-		self.average_ads_blank = [refPressure, self.average([data[1] for data in aligned_ads_blank])]
-
+			
+			# print self.align(refPressure, self.ads_blank[index])
+			# print '"""""""""""""""""""""""""""""""""""""""""""""'
+			# print '"""""""""""""""""""""""""""""""""""""""""""""'
+			# print refPressure
+			# print '"""""""""""""""""""""""""""""""""""""""""""""'
+			# print '"""""""""""""""""""""""""""""""""""""""""""""'
+			# print self.ads_blank[0]
+			# print '#############################################'
+			# print '#############################################'
+			# self.average_ads_blank = [refPressure, self.average([data[1] for data in aligned_ads_blank])]
+			# print '####################################################'
+			# print '####################################################'
+			# print '####################################################'
 		#Desorbtion align
 		refPressure= None
 		aligned_des_blank = []
@@ -810,10 +857,19 @@ class TGA_Analyse:
 
 		#Align all the rest
 		for index in range(1, len(self.des_blank)):
+		
 			#(pressure, concentration): [0], [1]
 			aligned_des_blank.append([refPressure, self.align(refPressure, self.des_blank[index], True)])
-
-		self.average_des_blank = [refPressure, self.average([data[1] for data in aligned_des_blank])]
+			# print self.align(refPressure, self.des_blank[index], True)
+			# print '"""""""""""""""""""""""""""""""""""""""""""""'
+			# print '"""""""""""""""""""""""""""""""""""""""""""""'
+			# print refPressure
+			# print '"""""""""""""""""""""""""""""""""""""""""""""'
+			# print '"""""""""""""""""""""""""""""""""""""""""""""'
+			# print self.des_blank[0]
+			# print '#############################################'
+			# print '#############################################'
+			# self.average_des_blank = [refPressure, self.average([data[1] for data in aligned_des_blank])]
 
 		##
 		#Comabinatorial diff computations
@@ -823,22 +879,38 @@ class TGA_Analyse:
 
 		for indexI in range(0, len(self.ads_blank)):
 			for indexJ in range(0, len(self.ads_blank)):
+
 				if indexI == indexJ:
 					# Do not compute same element case
-					already[indexI][indexJ] = 1
-				if already[indexI][indexJ] == 1 or already[indexJ][indexI] == 1:
+					already[indexI][indexJ] = 0
+					already[indexJ][indexI] = 0
+				else:
+					if already[indexI][indexJ] == 1 or already[indexJ][indexI] == 1:
 					# Leave asymetric stuff for now. Later we could use it to average
 					# for better approximation??? More dig is needed.
-					already[indexI][indexJ] = 1
-					already[indexJ][indexI] = 1
-				else:
-					# Computing self.ads_blank[indexI] - self.ads_blank[indexJ]
-					# self.ads_blank[indexJ] as to be aligned.
+						already[indexJ][indexI] = 0
+						already[indexI][indexJ] = 0
+					else:
+						# Computing self.ads_blank[indexI] - self.ads_blank[indexJ]
+						# self.ads_blank[indexJ] as to be aligned.
 
-					interpolateK = self.align(self.ads_blank[indexJ][0], self.ads_blank[indexI])
-					diffJK = self.diff(self.ads_blank[indexJ][1], interpolateK)
+						interpolateK = self.align(self.ads_blank[indexJ][0], self.ads_blank[indexI])
+						diffJK = self.diff(self.ads_blank[indexJ][1], interpolateK)
 
-					self.diff_ads_blank.append({'i':indexI, 'j':indexJ, 'diff':[self.ads_blank[indexJ][0], diffJK]})
+						d = diffJK
+						upperQR = np.percentile(d, 75, interpolation='higher')
+						lowerQR = np.percentile(d, 25, interpolation='lower')
+						innerQR = upperQR - lowerQR
+						limit = upperQR + (6*innerQR)
+
+						problem = False
+						for el in diffJK:
+							if el > limit:
+								problem = True
+
+						if not problem:
+							self.diff_ads_blank.append({'i':indexI, 'j':indexJ, 'diff':[self.ads_blank[indexJ][0], diffJK]})
+				
 
 		# print "diff_ads_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.diff_ads_blank)
@@ -849,22 +921,37 @@ class TGA_Analyse:
 
 		for indexI in range(0, len(self.des_blank)):
 			for indexJ in range(0, len(self.des_blank)):
+
 				if indexI == indexJ:
 					# Do not compute same element case
-					already[indexI][indexJ] = 1
-				if already[indexI][indexJ] == 1 or already[indexJ][indexI] == 1:
+					already[indexI][indexJ] = 0
+					already[indexJ][indexI] = 0
+				else:
+					if already[indexI][indexJ] == 1 or already[indexJ][indexI] == 1:
 					# Leave asymetric stuff for now. Later we could use it to average
 					# for better approximation??? More dig is needed.
-					already[indexI][indexJ] = 1
-					already[indexJ][indexI] = 1
-				else:
-					# Computing self.ads_blank[indexI] - self.ads_blank[indexJ]
-					# self.ads_blank[indexJ] as to be aligned.
+						already[indexJ][indexI] = 0
+						already[indexI][indexJ] = 0
+					else:
+						# Computing self.des_blank[indexI] - self.des_blank[indexJ]
+						# self.des_blank[indexJ] as to be aligned.
 
-					interpolateK = self.align(self.des_blank[indexJ][0], self.des_blank[indexI], True)
-					diffJK = self.diff(self.des_blank[indexJ][1], interpolateK)
+						interpolateK = self.align(self.des_blank[indexJ][0], self.des_blank[indexI])
+						diffJK = self.diff(self.des_blank[indexJ][1], interpolateK)
 
-					self.diff_des_blank.append({'i':indexI, 'j':indexJ, 'diff':[self.des_blank[indexJ][0], diffJK]})
+						d = diffJK
+						upperQR = np.percentile(d, 75, interpolation='higher')
+						lowerQR = np.percentile(d, 25, interpolation='lower')
+						innerQR = upperQR - lowerQR
+						limit = upperQR + (6*innerQR)
+
+						problem = False
+						for el in diffJK:
+							if el > limit:
+								problem = True
+
+						if not problem:
+							self.diff_des_blank.append({'i':indexI, 'j':indexJ, 'diff':[self.des_blank[indexJ][0], diffJK]})
 
 		# print "diff_des_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.diff_des_blank)
@@ -886,7 +973,7 @@ class TGA_Analyse:
 			aligned_ads_blank.append([refPressure, self.align(refPressure, self.diff_ads_blank[index]['diff'])])
 
 		self.average_diff_ads_blank = [refPressure, self.average([data[1] for data in aligned_ads_blank])]
-
+		
 		# print "average_diff_ads_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.average_diff_ads_blank)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++average_diff_ads_blank"
@@ -906,13 +993,11 @@ class TGA_Analyse:
 			aligned_des_blank.append([refPressure, self.align(refPressure, self.diff_des_blank[index]['diff'], True)])
 
 		self.average_diff_des_blank = [refPressure, self.average([data[1] for data in aligned_des_blank])]
-
+		
 		# print "average_diff_des_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.average_diff_des_blank)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++average_diff_des_blank"
-
-
-
+	
 
 	def analyseAliq(self):
 		##
@@ -957,40 +1042,39 @@ class TGA_Analyse:
 
 		for indexI in range(0, len(self.ads_aliq)):
 			for indexJ in range(0, len(self.ads_aliq)):
+
 				if indexI == indexJ:
 					# Do not compute same element case
 					already[indexI][indexJ] = 0
 					already[indexJ][indexI] = 0
-				if already[indexI][indexJ] == 1:
-				# Leave asymetric stuff for now. Later we could use it to average
-				# for better approximation??? More dig is needed.
-					already[indexJ][indexI] = 0
-					
 				else:
-					# Computing self.ads_aliq[indexI] - self.ads_aliq[indexJ]
-					# self.ads_aliq[indexJ] as to be aligned.
+					if already[indexI][indexJ] == 1 or already[indexJ][indexI] == 1:
+					# Leave asymetric stuff for now. Later we could use it to average
+					# for better approximation??? More dig is needed.
+						already[indexJ][indexI] = 0
+						already[indexI][indexJ] = 0
+					else:
+						# Computing self.ads_aliq[indexI] - self.ads_aliq[indexJ]
+						# self.ads_aliq[indexJ] as to be aligned.
 
-					interpolateK = self.align(self.ads_aliq[indexJ][0], self.ads_aliq[indexI])
-					
-					# print '#################################################################################'
-					# print 'this is self.ads_aliq[indexJ][0]: %s'%self.ads_aliq[indexJ][0]
-					# print '#################################################################################'
-					# print 'this is self.ads_aliq[indexI]: %s'%self.ads_aliq[indexI]
-					# print '#################################################################################'
-					# print 'this is InterpK: %s'%interpolateK
-					print '"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
-					print '"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
-					diffJK = self.diff(self.ads_aliq[indexJ][1], interpolateK)
-					# print self.ads_aliq[indexJ][1]
-					
-					self.diff_ads_aliq.append({'i':indexI, 'j':indexJ, 'diff':[self.ads_aliq[indexJ][0], diffJK]})
-					
-					
-					
-					print self.diff_ads_aliq
+						interpolateK = self.align(self.ads_aliq[indexJ][0], self.ads_aliq[indexI])
+						diffJK = self.diff(self.ads_aliq[indexJ][1], interpolateK)
 
+						d = diffJK
+						upperQR = np.percentile(d, 75, interpolation='higher')
+						lowerQR = np.percentile(d, 25, interpolation='lower')
+						innerQR = upperQR - lowerQR
+						limit = upperQR + (6*innerQR)
 
-					
+						problem = False
+						for el in diffJK:
+							if el > limit:
+								problem = True
+
+						if not problem:
+							self.diff_ads_aliq.append({'i':indexI, 'j':indexJ, 'diff':[self.ads_aliq[indexJ][0], diffJK]})
+						
+
 		# print "diff_ads_aliq+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.diff_ads_aliq)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++diff_ads_aliq"
@@ -1000,22 +1084,38 @@ class TGA_Analyse:
 
 		for indexI in range(0, len(self.des_aliq)):
 			for indexJ in range(0, len(self.des_aliq)):
+
 				if indexI == indexJ:
 					# Do not compute same element case
-					already[indexI][indexJ] = 1
-				if already[indexI][indexJ] == 1:
+					already[indexI][indexJ] = 0
+					already[indexJ][indexI] = 0
+				else:
+					if already[indexI][indexJ] == 1 or already[indexJ][indexI] == 1:
 					# Leave asymetric stuff for now. Later we could use it to average
 					# for better approximation??? More dig is needed.
-					already[indexI][indexJ] = 1
-					already[indexJ][indexI] != 1
-				else:
-					# Computing self.ads_aliq[indexI] - self.ads_aliq[indexJ]
-					# self.ads_aliq[indexJ] as to be aligned.
+						already[indexJ][indexI] = 0
+						already[indexI][indexJ] = 0
+					else:
+						# Computing self.ads_aliq[indexI] - self.ads_aliq[indexJ]
+						# self.ads_aliq[indexJ] as to be aligned.
+						# Computing self.ads_aliq[indexI] - self.ads_aliq[indexJ]
+						# self.ads_aliq[indexJ] as to be aligned.
+						interpolateK = self.align(self.des_aliq[indexJ][0], self.des_aliq[indexI], True)
+						diffJK = self.diff(self.des_aliq[indexJ][1], interpolateK)
 
-					interpolateK = self.align(self.des_aliq[indexJ][0], self.des_aliq[indexI], True)
-					diffJK = self.diff(self.des_aliq[indexJ][1], interpolateK)
+						d = diffJK
+						upperQR = np.percentile(d, 75, interpolation='higher')
+						lowerQR = np.percentile(d, 25, interpolation='lower')
+						innerQR = upperQR - lowerQR
+						limit = upperQR + (6*innerQR)
 
-					self.diff_des_aliq.append({'i':indexI, 'j':indexJ, 'diff':[self.des_aliq[indexJ][0], diffJK]})
+						problem = False
+						for el in diffJK:
+							if el > limit:
+								problem = True
+
+						if not problem:
+							self.diff_des_aliq.append({'i':indexI, 'j':indexJ, 'diff':[self.des_aliq[indexJ][0], diffJK]})
 
 		# print "diff_des_aliq+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.diff_des_aliq)
@@ -1053,10 +1153,15 @@ class TGA_Analyse:
 
 		self.average_diff_des_aliq = [refPressure, self.average([data[1] for data in aligned_des_aliq])]
 
+	# def analyseCombine(self): 
+
+	
+
 
 	def analyseAll(self):
 		self.analyseAliq()
 		self.analyseBlank()
+		# self.analyseCombine()
 
 		# Plot average blank ads and des
 		# print "average_ads_blank+++++++++++++++++++++++++++++++++++++++++++++++"
@@ -1129,38 +1234,51 @@ class TGA_Analyse:
 		# substracted with the aliqs should eliminates differences residus.
 
 		# Compute the corrected
-		for aliq in self.ads_aliq:
-			aligned_average_ads_blank = self.align(aliq[0], self.average_ads_blank)
-			corrected_aliq = [aliq[0], self.diff(aliq[1], aligned_average_ads_blank)]
-			self.corrected_ads_aliq.append(corrected_aliq)
+		# for aliq in self.ads_aliq:
+		# 	# d = diffJK
+		# 	# upperQR = np.percentile(d, 75, interpolation='higher')
+		# 	# lowerQR = np.percentile(d, 25, interpolation='lower')
+		# 	# innerQR = upperQR - lowerQR
+		# 	# limit = upperQR + (6*innerQR)
 
-		for aliq in self.des_aliq:
-			aligned_average_des_blank = self.align(aliq[0], self.average_des_blank, True)
-			corrected_aliq = [aliq[0], self.diff(aliq[1], aligned_average_des_blank)]
-			self.corrected_des_aliq.append(corrected_aliq)
+		# 	# problem = False
+		# 	# for el in diffJK:
+		# 	# 	if el > limit:
+		# 	# 		problem = True
 
-		# Computing the average corrected
-		refPressure= None
-		aligned_corrected_ads_aliq = []
+		# 	# if not problem:
+				
+		# 	aligned_average_ads_blank = self.align(aliq[0], self.average_ads_blank)
+		# 	corrected_aliq = [aliq[0], self.diff(aliq[1], aligned_average_ads_blank)]
+		# 	self.corrected_ads_aliq.append(corrected_aliq)
 
-		if len(self.corrected_ads_aliq) > 0:
-			refPressure = self.corrected_ads_aliq[0][0]
+		# for aliq in self.des_aliq:
+		# 	aligned_average_des_blank = self.align(aliq[0], self.average_des_blank, True)
+		# 	corrected_aliq = [aliq[0], self.diff(aliq[1], aligned_average_des_blank)]
+		# 	self.corrected_des_aliq.append(corrected_aliq)
 
-		for index in range(1, len(self.corrected_ads_aliq)):
-			aligned_corrected_ads_aliq.append([refPressure, self.align(refPressure, self.corrected_ads_aliq[index])])
+		# # Computing the average corrected
+		# refPressure= None
+		# aligned_corrected_ads_aliq = []
 
-		self.average_corrected_ads_aliq = [refPressure, self.average([data[1] for data in aligned_corrected_ads_aliq])]
+		# if len(self.corrected_ads_aliq) > 0:
+		# 	refPressure = self.corrected_ads_aliq[0][0]
 
-		refPressure= None
-		aligned_corrected_des_aliq = []
+		# for index in range(1, len(self.corrected_ads_aliq)):
+		# 	aligned_corrected_ads_aliq.append([refPressure, self.align(refPressure, self.corrected_ads_aliq[index])])
 
-		if len(self.corrected_des_aliq) > 0:
-			refPressure = self.corrected_des_aliq[0][0]
+		# self.average_corrected_ads_aliq = [refPressure, self.average([data[1] for data in aligned_corrected_ads_aliq])]
 
-		for index in range(1, len(self.corrected_des_aliq)):
-			aligned_corrected_des_aliq.append([refPressure, self.align(refPressure, self.corrected_des_aliq[index], True)])
+		# refPressure= None
+		# aligned_corrected_des_aliq = []
 
-		self.average_corrected_des_aliq = [refPressure, self.average([data[1] for data in aligned_corrected_des_aliq])]
+		# if len(self.corrected_des_aliq) > 0:
+		# 	refPressure = self.corrected_des_aliq[0][0]
+
+		# for index in range(1, len(self.corrected_des_aliq)):
+		# 	aligned_corrected_des_aliq.append([refPressure, self.align(refPressure, self.corrected_des_aliq[index], True)])
+
+		# self.average_corrected_des_aliq = [refPressure, self.average([data[1] for data in aligned_corrected_des_aliq])]
 
 		# print "corrected_ads_aliq+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.corrected_ads_aliq)

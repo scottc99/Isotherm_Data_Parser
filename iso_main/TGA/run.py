@@ -1,7 +1,7 @@
 from TGA_analyse import TGA_Analyse
 import simplejson as json 
 from TGA_plot import TGA_Plot
-
+import numpy as np
 
 
 if __name__ == '__main__':
@@ -22,7 +22,7 @@ if __name__ == '__main__':
 # 	plot.des_blankManyPlot([diff['diff'] for diff in analyse.diff_des_blank], 'many_blank_diffs_des',\
 # 						   													   xmax = 45, ymax = 0.2)
 	
-# ######################################### Diff plot: blanks and their diffs. #########################################
+# # ######################################### Diff plot: blanks and their diffs. #########################################
 
 # 	index = 0
 # 	for diff in analyse.diff_ads_blank:
@@ -97,10 +97,11 @@ if __name__ == '__main__':
 
 # 		plot.des_aliqDiffPlot(analyse.des_aliq[diff['i']], analyse.des_aliq[diff['j']], diff['diff'], 'aliqs_diffs_des',\
 # 							  index, '%s'%origin1, '%s'%origin2, 'Difference between lines', xmax = 45, ymax = 20)
+
 # 		index += 1
 
-# 	# print json.dumps([ {'aliq1':analyse.ads_aliq[diff['i']], 'aliq2':analyse.ads_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_aliq])
-# 	# print json.dumps([ {'aliq1':analyse.des_aliq[diff['i']], 'aliq2':analyse.des_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_aliq])
+	# print json.dumps([ {'aliq1':analyse.ads_aliq[diff['i']], 'aliq2':analyse.ads_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_aliq])
+	# print json.dumps([ {'aliq1':analyse.des_aliq[diff['i']], 'aliq2':analyse.des_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_aliq])
 
 # ######################################### Many plots: aliqs corrected. #########################################
 
@@ -116,22 +117,4 @@ if __name__ == '__main__':
 
 	
 
-	index = 0
-	for diff in analyse.diff_ads_blank:
-		origin1 = "Blank Line 1: %s" %analyse.origin_blanks[diff['i']]
-		origin2 = "Blank Line 2: %s" %analyse.origin_blanks[diff['j']]
-
-		plot.ads_blankDiffPlot(analyse.ads_blank[diff['i']], analyse.ads_blank[diff['j']], diff['diff'], 'blanks_diffs_ads',\
-							   index, '%s'%origin1, '%s'%origin2, 'Difference between lines', xmax = 45, ymax = 1.2)
-		index += 1
-
-	index = 0
-	for diff in analyse.diff_des_blank:
-		origin1 = "Blank Line 1: %s" %analyse.origin_blanks[diff['i']]
-		origin2 = "Blank Line 2: %s" %analyse.origin_blanks[diff['j']]
-
-		plot.des_blankDiffPlot(analyse.des_blank[diff['i']], analyse.des_blank[diff['j']], diff['diff'], 'blanks_diffs_des',\
-							   index, '%s'%origin1, '%s'%origin2, 'Difference between lines', xmax = 45, ymax = 1.2)
-		index += 1
-	# print json.dumps([ {'blank1':analyse.ads_blank[diff['i']], 'blank2':analyse.ads_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_blank])
-	# print json.dumps([ {'blank1':analyse.des_blank[diff['i']], 'blank2':analyse.des_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_blank])
+# 	
