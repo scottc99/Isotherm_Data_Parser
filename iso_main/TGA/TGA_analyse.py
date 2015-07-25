@@ -679,7 +679,52 @@ class TGA_Analyse:
 				
 				index += 1
 
-	def split(self, raw, run = 0):
+	def load(self):
+		# blanks = []
+		# alisqs = []
+		os.chdir(os.path.dirname(os.getcwd()))
+		
+		index = 0
+		for file in glob.glob("TGA/Data_Files/JSON/json_aliq/*.json"):
+			
+			content = None
+			with open(file, "r") as aliq_file:
+				content = aliq_file.read()
+
+				raw = json.loads(content)
+				# alisqs.append(raw)
+				blocks = self.split(raw, run = 0)
+				
+				self.ads_aliq.append(blocks[0])
+				self.des_aliq.append(blocks[1])
+				filePart = file.split("/")[-1].split("_")[:4]
+				
+				aliqLabel = '_'.join(filePart)
+				self.origin_aliqs.append(aliqLabel)
+
+				index += 1
+
+		# os.chdir(os.path.dirname(os.getcwd()))
+		index = 0
+		for file in glob.glob("TGA/Data_Files/JSON/json_blankRuns/*.json"):
+			content = None
+			with open(file, "r") as blank_file:
+				content = blank_file.read()
+
+				raw = json.loads(content)
+				# blanks.append(raw)
+				blocks = self.split(raw, run = 1)
+				
+				self.ads_blank.append(blocks[0])
+				self.des_blank.append(blocks[1])
+				filePart = file.split("/")[-1].split("_")[:4]
+				
+				blankLabel = '_'.join(filePart)
+				self.origin_blanks.append(blankLabel)
+				
+				index += 1
+
+	def split(self, raw, run):
 
 		begin3 = 1
 
@@ -688,13 +733,13 @@ class TGA_Analyse:
 
 		while True: 
 			try:
-				content= raw["content"][begin3 - 1]
-				
+				content= raw["content"][begin3 - 1]				
+
 				if run == 0:
-					conc_dict = content.get('weights')[1] # Before it was 3 but corrected to 4th and now second
-				elif run == 1:
+					conc_dict = content.get('weights')[1] # Before it was 3 but corrected to 4th and now second	
+				elif run == 1: 
 					conc_dict = content.get('weights')[4]
-				
+
 				conc_val = conc_dict.get('value')
 
 				pressure_dict = content.get('pressure')
@@ -709,6 +754,9 @@ class TGA_Analyse:
 				break
 
 		total = len(pressure_list) + 1
+
+		corr_pres_index = pressure_list.index(max(pressure_list))
+		corr_conc_value = conc_list[corr_pres_index]
 
 		pressure_list1 = []
 		conc_list1 = []
@@ -736,9 +784,10 @@ class TGA_Analyse:
 
 		if max(pressure_list1) != max(pressure_list):  
 			pressure_list1.append(max(pressure_list))
-			conc_list1.append(max(conc_list))
+			conc_list1.append(corr_conc_value)
 
 		return [[pressure_list1, conc_list1], [pressure_list2, conc_list2]]
+
 
 	# x array to interpolate
 	# The sampling.
@@ -803,50 +852,28 @@ class TGA_Analyse:
 
 		#Align all the rest
 		for index in range(1, len(self.ads_blank)):
-			#(pressure, concentration): [0], [1]
-			for val in range(1, (len(self.ads_blank[index][1]) + 1)):
-				condition = self.ads_blank[index][1][val + 1] < self.ads_blank[index][1][val]	
-				if condition:
-					while True: 
-						try: 
-							self.blank_ads_incrDict = []
-							self.blank_ads_incrList = []
+			x1 = []
+			x2 = []
 
-							pres_list_adsIncr = []
-							conc_list_adsIncr = []
-							pres_list_adsIncr.extend(self.ads_blank[index][0][:pos]) 
-							conc_list_adsIncr.extend(self.ads_blank[index][1][:pos])
-							
-							self.blank_ads_incrDict = {'fixPres_%s'%pos: pres_list_adsIncr,\
-													   'fixConc_%s'%pos: conc_list_adsIncr}
-							self.blank_ads_incrList = [self.blank_ads_incrDict['fixPres_%s'%pos],\
-													   self.blank_ads_incrDict['fixConc_%s'%pos]]
-							
-							self.align(refPressure[:pos], self.blank_ads_incrList)
-
-							print index
-							print pos
-						except:
-							break
+			x1.extend(self.align(refPressure, self.ads_blank[index]))
+			x2.extend(self.align(refPressure, self.ads_blank[index], True))
+			
+			for val in x1:
+				pos = x1.index(val)
+				if x1[pos] < 0:
+					del x1[pos]
+					for val in x2:
+						pos = x2.index(val)
+						if x2[pos] > 0:
+							x1.append(x2[pos])
 				else:
 					pass
-
-			print max(self.ads_blank[0][0])
-			aligned_ads_blank.append([refPressure, self.align(refPressure, self.ads_blank[index])])
+			aligned_ads_blank.append([refPressure, x1])
 			
-			# print self.align(refPressure, self.ads_blank[index])
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print refPressure
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print self.ads_blank[0]
-			# print '#############################################'
-			# print '#############################################'
-			# self.average_ads_blank = [refPressure, self.average([data[1] for data in aligned_ads_blank])]
-			# print '####################################################'
-			# print '####################################################'
-			# print '####################################################'
+			#(pressure, concentration): [0], [1]
+		self.average_ads_blank = [refPressure, self.average([data[1] for data in aligned_ads_blank])]
+
+			
 		#Desorbtion align
 		refPressure= None
 		aligned_des_blank = []
@@ -857,19 +884,26 @@ class TGA_Analyse:
 
 		#Align all the rest
 		for index in range(1, len(self.des_blank)):
-		
+			x1 = []
+			x2 = []
+
+			x1.extend(self.align(refPressure, self.des_blank[index], True))
+			x2.extend(self.align(refPressure, self.des_blank[index]))
+			
+			for val in x2:
+				pos = x2.index(val)
+				if x2[pos] < 0:
+					del x2[pos]
+					for val in x1:
+						pos = x1.index(val)
+						if x1[pos] > 0:
+							x2.append(x1[pos])
+				else:
+					pass
+			aligned_des_blank.append([refPressure, x2])
+			
 			#(pressure, concentration): [0], [1]
-			aligned_des_blank.append([refPressure, self.align(refPressure, self.des_blank[index], True)])
-			# print self.align(refPressure, self.des_blank[index], True)
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print refPressure
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print self.des_blank[0]
-			# print '#############################################'
-			# print '#############################################'
-			# self.average_des_blank = [refPressure, self.average([data[1] for data in aligned_des_blank])]
+		self.average_des_blank = [refPressure, self.average([data[1] for data in aligned_des_blank])]
 
 		##
 		#Comabinatorial diff computations
@@ -936,7 +970,7 @@ class TGA_Analyse:
 						# Computing self.des_blank[indexI] - self.des_blank[indexJ]
 						# self.des_blank[indexJ] as to be aligned.
 
-						interpolateK = self.align(self.des_blank[indexJ][0], self.des_blank[indexI])
+						interpolateK = self.align(self.des_blank[indexJ][0], self.des_blank[indexI], True)
 						diffJK = self.diff(self.des_blank[indexJ][1], interpolateK)
 
 						d = diffJK
@@ -1014,9 +1048,27 @@ class TGA_Analyse:
 
 		#Align all the rest
 		for index in range(1, len(self.ads_aliq)):
+			x1 = []
+			x2 = []
+
+			x1.extend(self.align(refPressure, self.ads_aliq[index]))
+			x2.extend(self.align(refPressure, self.ads_aliq[index], True))
+			print len(x1)
+			
+			for val in x1:
+				pos = x1.index(val)
+				if x1[pos] < 0:
+					del x1[pos]
+					for val in x2:
+						pos = x2.index(val)
+						if x2[pos] > 0:
+							x1.append(x2[pos])
+				else:
+					pass
+			aligned_ads_aliq.append([refPressure, x1])
+			
+			
 			#(pressure, concentration): [0], [1]
-			# print json.dumps(self.align(refPressure, self.ads_aliq[index]))
-			aligned_ads_aliq.append([refPressure, self.align(refPressure, self.ads_aliq[index])])
 		self.average_ads_aliq = [refPressure, self.average([data[1] for data in aligned_ads_aliq])]
 
 		#Desorbtion align
@@ -1030,8 +1082,25 @@ class TGA_Analyse:
 		#Align all the rest
 		for index in range(1, len(self.des_aliq)):
 			#(pressure, concentration): [0], [1]
-			aligned_des_aliq.append([refPressure, self.align(refPressure, self.des_aliq[index], True)])
-
+			x1 = []
+			x2 = []
+			
+			x1.extend(self.align(refPressure, self.des_aliq[index], True))
+			x2.extend(self.align(refPressure, self.des_aliq[index]))
+			print len(x1)
+			for val in x2:
+				pos = x2.index(val)
+				if x2[pos] < 0:
+					del x2[pos]
+					for val in x1:
+						pos = x1.index(val)
+						if x1[pos] > 0:
+							x2.append(x1[pos])
+				else:
+					pass
+			aligned_des_aliq.append([refPressure, x2])
+			
+			#(pressure, concentration): [0], [1]
 		self.average_des_aliq = [refPressure, self.average([data[1] for data in aligned_des_aliq])]
 
 		##
@@ -1064,7 +1133,7 @@ class TGA_Analyse:
 						upperQR = np.percentile(d, 75, interpolation='higher')
 						lowerQR = np.percentile(d, 25, interpolation='lower')
 						innerQR = upperQR - lowerQR
-						limit = upperQR + (6*innerQR)
+						limit = upperQR + (12*innerQR)
 
 						problem = False
 						for el in diffJK:
@@ -1107,7 +1176,7 @@ class TGA_Analyse:
 						upperQR = np.percentile(d, 75, interpolation='higher')
 						lowerQR = np.percentile(d, 25, interpolation='lower')
 						innerQR = upperQR - lowerQR
-						limit = upperQR + (6*innerQR)
+						limit = upperQR + (12*innerQR)
 
 						problem = False
 						for el in diffJK:
@@ -1116,7 +1185,7 @@ class TGA_Analyse:
 
 						if not problem:
 							self.diff_des_aliq.append({'i':indexI, 'j':indexJ, 'diff':[self.des_aliq[indexJ][0], diffJK]})
-
+			
 		# print "diff_des_aliq+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.diff_des_aliq)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++diff_des_aliq"
