@@ -1302,6 +1302,10 @@ class TGA_Analyse:
 		# We use here the average to correct the data because being constant or not or needing approximation,
 		# substracted with the aliqs should eliminates differences residus.
 
+		# Compute the 
+
+
+
 		# Compute the corrected
 		# for aliq in self.ads_aliq:
 		# 	# d = diffJK

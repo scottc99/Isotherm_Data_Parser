@@ -103,18 +103,18 @@ if __name__ == '__main__':
 	# print json.dumps([ {'aliq1':analyse.ads_aliq[diff['i']], 'aliq2':analyse.ads_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_aliq])
 	# print json.dumps([ {'aliq1':analyse.des_aliq[diff['i']], 'aliq2':analyse.des_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_aliq])
 
-# # ######################################### Many plots: aliqs corrected. #########################################
+# ######################################### Many plots: aliqs corrected. #########################################
 
 	
-# # 	plot.ads_aliqManyPlot(analyse.corrected_ads_aliq, 'aliq_ads_corrected', xmax = 45, ymax = 16)
-# # 	plot.des_aliqManyPlot(analyse.corrected_des_aliq, 'aliq_des_corrected', xmin = 0, xmax = 45, ymin = 10, ymax = 16)
+# 	plot.ads_aliqManyPlot(analyse.corrected_ads_aliq, 'aliq_ads_corrected', xmax = 45, ymax = 16)
+# 	plot.des_aliqManyPlot(analyse.corrected_des_aliq, 'aliq_des_corrected', xmin = 0, xmax = 45, ymin = 10, ymax = 16)
 
 
-# # ######################################### Simple plot: aliqs corrected average. #########################################
+# ######################################### Simple plot: aliqs corrected average. #########################################
 
-# 	# plot.aliqSimplePlot(analyse.average_corrected_ads_aliq, analyse.average_corrected_des_aliq, 'aliq_corr_avg', 'Adsorption',\
-# 	# 														'Desorption', xmax = 45, ymax = 20)
+	# plot.aliqSimplePlot(analyse.average_corrected_ads_aliq, analyse.average_corrected_des_aliq, 'aliq_corr_avg', 'Adsorption',\
+	# 														'Desorption', xmax = 45, ymax = 20)
 
 	
 
-# # 	
+# 	
