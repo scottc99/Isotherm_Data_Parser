@@ -634,50 +634,6 @@ class TGA_Analyse:
 		self.average_corrected_ads_aliq = []
 		self.average_corrected_des_aliq = []
 
-	def load(self):
-		# blanks = []
-		# alisqs = []
-		os.chdir(os.path.dirname(os.getcwd()))
-		
-		index = 0
-		for file in glob.glob("TGA/Data_Files/JSON/json_aliq/*.json"):
-			
-			content = None
-			with open(file, "r") as aliq_file:
-				content = aliq_file.read()
-
-				raw = json.loads(content)
-				# alisqs.append(raw)
-				blocks = self.split(raw, 0)
-				
-				self.ads_aliq.append(blocks[0])
-				self.des_aliq.append(blocks[1])
-				filePart = file.split("/")[-1].split("_")[:4]
-				
-				aliqLabel = '_'.join(filePart)
-				self.origin_aliqs.append(aliqLabel)
-
-				index += 1
-
-		# os.chdir(os.path.dirname(os.getcwd()))
-		index = 0
-		for file in glob.glob("TGA/Data_Files/JSON/json_blankRuns/*.json"):
-			content = None
-			with open(file, "r") as blank_file:
-				content = blank_file.read()
-
-				raw = json.loads(content)
-				# blanks.append(raw)
-				blocks = self.split(raw, 1)
-
-				self.ads_blank.append(blocks[0])
-				self.des_blank.append(blocks[1])
-				filePart = file.split("/")[-1].split("_")[:4]
-				
-				blankLabel = '_'.join(filePart)
-				self.origin_blanks.append(blankLabel)
-				
-				index += 1
 
 	def load(self):
 		# blanks = []
