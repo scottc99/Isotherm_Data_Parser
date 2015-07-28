@@ -29,10 +29,10 @@
         <item type="dict">
           <prefix type="str">Corr.</prefix>
           <value type="float">0.0</value>
-          <unit type="str">mmol/g</unit>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">0.0</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -74,11 +74,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">1.47460809791</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">6.48827563081</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">6.28179002573</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -120,11 +120,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">1.81717642552</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">7.99557627229</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">7.85069430383</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -166,11 +166,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">2.03432155995</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">8.95101486378</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">8.86657492596</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -212,11 +212,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">2.28867798202</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">10.0701831209</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">10.0776526922</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -258,11 +258,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">2.45158198365</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">10.7869607281</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">10.8652588188</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -304,11 +304,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">2.71587641086</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">11.9498562078</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">12.1629395874</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -350,11 +350,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">2.96077164828</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.0273952524</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">13.3873198363</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -396,11 +396,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.06431978913</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.4830070722</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">13.9113708305</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -442,11 +442,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.12700631835</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.7588278007</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.2304578625</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -488,11 +488,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.16448157947</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.9237189497</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.4218751734</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -534,11 +534,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.17782456135</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.98242807</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.4901482257</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -580,11 +580,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.18388489018</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">14.0090935168</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.5211782702</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -626,11 +626,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.17564424375</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.9728346725</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.4789877445</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -672,11 +672,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.15792676258</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.8948777554</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.3883585997</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -718,11 +718,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.11992166014</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.7276553046</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.1943261913</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -764,11 +764,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.0892147411</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.5925448609</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.0379255379</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -810,11 +810,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.01530726322</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.2673519582</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">13.6628508621</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -856,11 +856,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">2.92537587083</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">12.8716538317</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">13.2090495704</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -902,11 +902,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.03825806616</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.3683354911</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">13.7791185411</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -948,11 +948,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.07432739327</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.5270405304</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">13.9622187518</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -994,11 +994,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.11077375007</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.6874045003</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.1476980981</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1040,11 +1040,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.15002028649</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.8600892606</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.3479507479</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1086,11 +1086,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.16764672108</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.9376455727</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.4380648244</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1132,11 +1132,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.18115603907</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.9970865719</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.5072044296</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1178,11 +1178,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.18322075834</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">14.0061713367</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.5177771571</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1224,11 +1224,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.16878419751</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.942650469</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.4438838604</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1270,11 +1270,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.14298535054</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.8291355424</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.3120156026</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1316,11 +1316,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.1054362991</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.663919716</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">14.1205060218</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1362,11 +1362,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">3.05286693124</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">13.4326144975</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">13.8532229405</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1408,11 +1408,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">2.87763428884</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">12.6615908709</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">12.9692984934</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1454,11 +1454,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">2.48035102922</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">10.9135445286</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">11.005321631</value>
           <unit type="str">mass change(mg)</unit>
         </item>
@@ -1500,11 +1500,11 @@
         </item>
         <item type="dict">
           <prefix type="str">Corr.</prefix>
-          <value type="float">2.23186661175</value>
-          <unit type="str">mmol/g</unit>
+          <value type="float">9.8202130917</value>
+          <unit type="str">% chg</unit>
         </item>
         <item type="dict">
-          <prefix type="str">Corr.</prefix>
+          <prefix type="str"/>
           <value type="float">9.8051789437</value>
           <unit type="str">mass change(mg)</unit>
         </item>

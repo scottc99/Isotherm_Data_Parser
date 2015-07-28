@@ -36,11 +36,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
+                    "unit": "% chg",
                     "value": 0.0
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.0
                 }
@@ -82,11 +82,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.007952220359018965
+                    "unit": "% chg",
+                    "value": 0.034989769579683444
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.034234848936555796
                 }
@@ -128,11 +128,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.010086774595990873
+                    "unit": "% chg",
+                    "value": 0.04438180822235984
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.04342832694873669
                 }
@@ -174,11 +174,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.011834630481644782
+                    "unit": "% chg",
+                    "value": 0.05207237411923704
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.050957588646636943
                 }
@@ -220,11 +220,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.011901596736711323
+                    "unit": "% chg",
+                    "value": 0.05236702564152981
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.051246083073808055
                 }
@@ -266,11 +266,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.015352168457651456
+                    "unit": "% chg",
+                    "value": 0.06754954121366641
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.06611364018864264
                 }
@@ -312,11 +312,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.027157772454041298
+                    "unit": "% chg",
+                    "value": 0.11949419879778171
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.11701482026009122
                 }
@@ -358,11 +358,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.0509697260582485
+                    "unit": "% chg",
+                    "value": 0.22426679465629343
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.2198433154461831
                 }
@@ -404,11 +404,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.07567709552127398
+                    "unit": "% chg",
+                    "value": 0.33297922029360555
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.326765533153737
                 }
@@ -450,11 +450,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.1018844639199309
+                    "unit": "% chg",
+                    "value": 0.44829164124769594
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.4404317281105268
                 }
@@ -496,11 +496,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.1265004862272989
+                    "unit": "% chg",
+                    "value": 0.5566021394001152
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.5474328597627982
                 }
@@ -542,11 +542,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.15163162523889795
+                    "unit": "% chg",
+                    "value": 0.6671791510511509
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.6569098393374528
                 }
@@ -588,11 +588,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.17381401405017802
+                    "unit": "% chg",
+                    "value": 0.7647816618207833
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.7537401247875447
                 }
@@ -634,11 +634,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.20034287731939138
+                    "unit": "% chg",
+                    "value": 0.8815086602053221
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.8697882830569221
                 }
@@ -680,11 +680,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.22195181427996474
+                    "unit": "% chg",
+                    "value": 0.9765879828318449
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.964511630412103
                 }
@@ -726,11 +726,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.24079683350066336
+                    "unit": "% chg",
+                    "value": 1.0595060674029189
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 1.0472636283311572
                 }
@@ -772,11 +772,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.25435619469014115
+                    "unit": "% chg",
+                    "value": 1.119167256636621
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 1.1068885150317211
                 }
@@ -818,11 +818,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.25720983864274805
+                    "unit": "% chg",
+                    "value": 1.1317232900280914
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 1.119445777227848
                 }
@@ -864,11 +864,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.24960623384564604
+                    "unit": "% chg",
+                    "value": 1.0982674289208425
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 1.0859934809042753
                 }
@@ -910,11 +910,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.2598347762987019
+                    "unit": "% chg",
+                    "value": 1.1432730157142883
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 1.1309993563626355
                 }
@@ -956,11 +956,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.2596579733272531
+                    "unit": "% chg",
+                    "value": 1.1424950826399136
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 1.130221081778104
                 }
@@ -1002,11 +1002,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.24795537527270203
+                    "unit": "% chg",
+                    "value": 1.0910036511998888
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 1.0787333701084687
                 }
@@ -1048,11 +1048,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.23886892387706957
+                    "unit": "% chg",
+                    "value": 1.051023265059106
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 1.0387916414120897
                 }
@@ -1094,11 +1094,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.21898639828754957
+                    "unit": "% chg",
+                    "value": 0.9635401524652182
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.9515021821497305
                 }
@@ -1140,11 +1140,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.1968653546879634
+                    "unit": "% chg",
+                    "value": 0.8662075606270391
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.8545609897610292
                 }
@@ -1186,11 +1186,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.17873104655768476
+                    "unit": "% chg",
+                    "value": 0.7864166048538129
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.7752291249702746
                 }
@@ -1232,11 +1232,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.14883066754694915
+                    "unit": "% chg",
+                    "value": 0.6548549372065763
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.6446963846196425
                 }
@@ -1278,11 +1278,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.13045428761661249
+                    "unit": "% chg",
+                    "value": 0.5739988655130949
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.5646406663358594
                 }
@@ -1324,11 +1324,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.10698673074248406
+                    "unit": "% chg",
+                    "value": 0.47074161526692987
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.4625914510226075
                 }
@@ -1370,11 +1370,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.08813973719731344
+                    "unit": "% chg",
+                    "value": 0.38781484366817914
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.3807858748879346
                 }
@@ -1416,11 +1416,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.05527098276560154
+                    "unit": "% chg",
+                    "value": 0.24319232416864678
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.23844057102210026
                 }
@@ -1462,11 +1462,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.0218867839214046
+                    "unit": "% chg",
+                    "value": 0.09630184925418023
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.09428184236035272
                 }
@@ -1508,11 +1508,11 @@
                 },
                 {
                     "prefix": "Corr.",
-                    "unit": "mmol/g",
-                    "value": 0.012767447403917635
+                    "unit": "% chg",
+                    "value": 0.05617676857723759
                 },
                 {
-                    "prefix": "Corr.",
+                    "prefix": "",
                     "unit": "mass change(mg)",
                     "value": 0.05497636982495707
                 }

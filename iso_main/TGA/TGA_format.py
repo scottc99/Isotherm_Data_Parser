@@ -183,12 +183,12 @@ class TGApp:
 
 				weight4 = {}
 				weight4["prefix"] = "Corr."
-				weight4["unit"] = "mmol/g"
-				weight4["value"] = (self.sh.cell_value(begin, 8)*10)/44
+				weight4["unit"] = self.sh.cell_value(22, 8)
+				weight4["value"] = self.sh.cell_value(begin, 8)
 				row["weights"].append(weight4)
 
 				weight5 = {}
-				weight5["prefix"] = "Corr."
+				weight5["prefix"] = ""
 				weight5["unit"] = "mass change(mg)"
 				weight5["value"] = ((self.sh.cell_value(begin, 8))*(self.sh.cell_value(begin, 7)))/100
 				row["weights"].append(weight5)

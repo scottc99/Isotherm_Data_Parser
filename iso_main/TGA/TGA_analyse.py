@@ -587,7 +587,6 @@ import simplejson as json
 class TGA_Analyse:
 	def __init__(self):
 
-
 		self.diff_ads_blankMain = []
 		self.diff_des_blankMain = []
 
@@ -605,15 +604,19 @@ class TGA_Analyse:
 		# diff blanks data
 		self.diff_ads_blank = []
 		self.diff_des_blank = []
+		self.diff_ads_blank2 = []
+		self.diff_des_blank2 = []
 
 		# diff aliqs data
 		self.diff_ads_aliq = []
 		self.diff_des_aliq = []
+		self.diff_ads_aliq2 = []
+		self.diff_des_aliq2 = []
 
 		# average blanks data
 		self.average_ads_blank = []
 		self.average_des_blank = []
-
+		
 		# average aliqs data
 		self.average_ads_aliq = []
 		self.average_des_aliq = []
@@ -648,7 +651,7 @@ class TGA_Analyse:
 
 				raw = json.loads(content)
 				# alisqs.append(raw)
-				blocks = self.split(raw, 0)
+				blocks = self.split(raw, run = 0)
 				
 				self.ads_aliq.append(blocks[0])
 				self.des_aliq.append(blocks[1])
@@ -668,7 +671,7 @@ class TGA_Analyse:
 
 				raw = json.loads(content)
 				# blanks.append(raw)
-				blocks = self.split(raw, 1)
+				blocks = self.split(raw, run = 1)
 
 				self.ads_blank.append(blocks[0])
 				self.des_blank.append(blocks[1])
@@ -679,22 +682,22 @@ class TGA_Analyse:
 				
 				index += 1
 
-	def split(self, raw, run = 0):
+	def split(self, raw, run):
 
 		begin3 = 1
 
 		pressure_list = []
 		conc_list = []
 
+		
 		while True: 
 			try:
-				content= raw["content"][begin3 - 1]
-				
-				if run == 0:
-					conc_dict = content.get('weights')[1] # Before it was 3 but corrected to 4th and now second
+				content= raw["content"][begin3 - 1]				
+
+				if run == 0: 
+					conc_dict = content.get('weights')[3] # Before it was 3 but corrected to 4th and now second	
 				elif run == 1:
 					conc_dict = content.get('weights')[4]
-				
 				conc_val = conc_dict.get('value')
 
 				pressure_dict = content.get('pressure')
@@ -710,6 +713,9 @@ class TGA_Analyse:
 
 		total = len(pressure_list) + 1
 
+		corr_pres_index = pressure_list.index(max(pressure_list))
+		corr_conc_value = conc_list[corr_pres_index]
+		
 		pressure_list1 = []
 		conc_list1 = []
 
@@ -736,10 +742,11 @@ class TGA_Analyse:
 
 		if max(pressure_list1) != max(pressure_list):  
 			pressure_list1.append(max(pressure_list))
-			conc_list1.append(max(conc_list))
+			conc_list1.append(corr_conc_value)
 
 		return [[pressure_list1, conc_list1], [pressure_list2, conc_list2]]
 
+		
 	# x array to interpolate
 	# The sampling.
 	def align(self, dataX, dataXY, reverse=False):
@@ -751,13 +758,13 @@ class TGA_Analyse:
 		# print json.dumps(dataXY)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++++dataXY"
 
-		UNDEF = -99.0
+		self.UNDEF = -99.0
 
 		if reverse:
-			aligned = list(reversed(np.interp(list(reversed(dataX)), list(reversed(dataXY[0])), list(reversed(dataXY[1])), right = UNDEF)))
+			aligned = list(reversed(np.interp(list(reversed(dataX)), list(reversed(dataXY[0])), list(reversed(dataXY[1])))))
 			
 		else:
-			aligned = list(np.interp(dataX, dataXY[0], dataXY[1], right = UNDEF))
+			aligned = list(np.interp(dataX, dataXY[0], dataXY[1]))
 		
 		# print "aligned++++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(aligned)
@@ -788,89 +795,85 @@ class TGA_Analyse:
 
 		return average
 
+
 	def analyseBlank(self):
 		##
 		## self.average_ads_blank, self.average_des_blank, self.diff_ads_blank, self.diff_des_blank
 		##
 		#Total Average computations
 		#Asbsorption align
-		refPressure= None
+		refPressure = None
 		aligned_ads_blank = []
-
+		
 		#Determine the reference
 		if len(self.ads_blank) > 0:
-			refPressure = self.ads_blank[0][0]
+			refPressure = []
+			for index in range(len(self.ads_blank[0][0])):
+				value = [val[0][index] for val in self.ads_blank]
+				avg_value = sum(value)/len(self.ads_blank)
+				refPressure.append(avg_value)
 
 		#Align all the rest
-		for index in range(1, len(self.ads_blank)):
-			#(pressure, concentration): [0], [1]
-			for val in range(1, (len(self.ads_blank[index][1]) + 1)):
-				condition = self.ads_blank[index][1][val + 1] < self.ads_blank[index][1][val]	
-				if condition:
-					while True: 
-						try: 
-							self.blank_ads_incrDict = []
-							self.blank_ads_incrList = []
-
-							pres_list_adsIncr = []
-							conc_list_adsIncr = []
-							pres_list_adsIncr.extend(self.ads_blank[index][0][:pos]) 
-							conc_list_adsIncr.extend(self.ads_blank[index][1][:pos])
-							
-							self.blank_ads_incrDict = {'fixPres_%s'%pos: pres_list_adsIncr,\
-													   'fixConc_%s'%pos: conc_list_adsIncr}
-							self.blank_ads_incrList = [self.blank_ads_incrDict['fixPres_%s'%pos],\
-													   self.blank_ads_incrDict['fixConc_%s'%pos]]
-							
-							self.align(refPressure[:pos], self.blank_ads_incrList)
-
-							print index
-							print pos
-						except:
-							break
+		for index in range(len(self.ads_blank)):
+			x1 = []
+			x2 = []
+			
+			x1.extend(self.align(refPressure, self.ads_blank[index]))
+			
+			for val in x1:
+				pos = x1.index(val)
+				if x1[pos] < 0:
+					del x1[pos]
+					
 				else:
 					pass
+			aligned_ads_blank.append([refPressure, x1])
+		
+		aligned_average = []
+		for index in range(len(aligned_ads_blank[0][1])):
+			value = [val[1][index] for val in aligned_ads_blank]
+			avg_value = sum(value)/len(aligned_ads_blank)
+			aligned_average.append(avg_value)
+		
+		self.average_ads_blank = [refPressure, aligned_average]
 
-			print max(self.ads_blank[0][0])
-			aligned_ads_blank.append([refPressure, self.align(refPressure, self.ads_blank[index])])
-			
-			# print self.align(refPressure, self.ads_blank[index])
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print refPressure
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print self.ads_blank[0]
-			# print '#############################################'
-			# print '#############################################'
-			# self.average_ads_blank = [refPressure, self.average([data[1] for data in aligned_ads_blank])]
-			# print '####################################################'
-			# print '####################################################'
-			# print '####################################################'
 		#Desorbtion align
-		refPressure= None
+		refPressure = None
 		aligned_des_blank = []
-
+		
 		#Determine the reference
 		if len(self.des_blank) > 0:
-			refPressure = self.des_blank[0][0]
+			refPressure = []
+			for index in range(len(self.des_blank[0][0])):
+				value = [val[0][index] for val in self.des_blank]
+				avg_value = sum(value)/len(self.des_blank)
+				refPressure.append(avg_value)
 
 		#Align all the rest
-		for index in range(1, len(self.des_blank)):
+		for index in range(len(self.des_blank)):
+			x1 = []
+			x2 = []
+			
+			x1.extend(self.align(refPressure, self.des_blank[index], True))
+			
+			for val in x1:
+				pos = x1.index(val)
+				if x1[pos] < 0:
+					del x1[pos]
+					
+				else:
+					pass
+			aligned_des_blank.append([refPressure, x1])
 		
-			#(pressure, concentration): [0], [1]
-			aligned_des_blank.append([refPressure, self.align(refPressure, self.des_blank[index], True)])
-			# print self.align(refPressure, self.des_blank[index], True)
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print refPressure
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print '"""""""""""""""""""""""""""""""""""""""""""""'
-			# print self.des_blank[0]
-			# print '#############################################'
-			# print '#############################################'
-			# self.average_des_blank = [refPressure, self.average([data[1] for data in aligned_des_blank])]
+		aligned_average = []
+		for index in range(len(aligned_des_blank[0][1])):
+			value = [val[1][index] for val in aligned_des_blank]
+			avg_value = sum(value)/len(aligned_des_blank)
+			aligned_average.append(avg_value)
+		
+		self.average_des_blank = [refPressure, aligned_average]
 
+	
 		##
 		#Comabinatorial diff computations
 
@@ -891,12 +894,12 @@ class TGA_Analyse:
 						already[indexJ][indexI] = 0
 						already[indexI][indexJ] = 0
 					else:
-						# Computing self.ads_blank[indexI] - self.ads_blank[indexJ]
-						# self.ads_blank[indexJ] as to be aligned.
-
+			
+						# print x2
 						interpolateK = self.align(self.ads_blank[indexJ][0], self.ads_blank[indexI])
 						diffJK = self.diff(self.ads_blank[indexJ][1], interpolateK)
-
+						
+						
 						d = diffJK
 						upperQR = np.percentile(d, 75, interpolation='higher')
 						lowerQR = np.percentile(d, 25, interpolation='lower')
@@ -910,8 +913,8 @@ class TGA_Analyse:
 
 						if not problem:
 							self.diff_ads_blank.append({'i':indexI, 'j':indexJ, 'diff':[self.ads_blank[indexJ][0], diffJK]})
-				
-
+		
+	
 		# print "diff_ads_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.diff_ads_blank)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++diff_ads_blank"
@@ -935,8 +938,8 @@ class TGA_Analyse:
 					else:
 						# Computing self.des_blank[indexI] - self.des_blank[indexJ]
 						# self.des_blank[indexJ] as to be aligned.
-
-						interpolateK = self.align(self.des_blank[indexJ][0], self.des_blank[indexI])
+						
+						interpolateK = self.align(self.des_blank[indexJ][0], self.des_blank[indexI], True)
 						diffJK = self.diff(self.des_blank[indexJ][1], interpolateK)
 
 						d = diffJK
@@ -953,10 +956,14 @@ class TGA_Analyse:
 						if not problem:
 							self.diff_des_blank.append({'i':indexI, 'j':indexJ, 'diff':[self.des_blank[indexJ][0], diffJK]})
 
+						
+							
+							
 		# print "diff_des_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.diff_des_blank)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++diff_des_blank"
-
+		
+		
 		##
 		#Average diff computations
 		#Asbsorption align
@@ -973,7 +980,7 @@ class TGA_Analyse:
 			aligned_ads_blank.append([refPressure, self.align(refPressure, self.diff_ads_blank[index]['diff'])])
 
 		self.average_diff_ads_blank = [refPressure, self.average([data[1] for data in aligned_ads_blank])]
-		
+
 		# print "average_diff_ads_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.average_diff_ads_blank)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++average_diff_ads_blank"
@@ -983,9 +990,8 @@ class TGA_Analyse:
 		aligned_des_blank = []
 
 		#Determine the reference
-		if len(self.des_blank) > 0:
+		if len(self.diff_des_blank) > 0:
 			refPressure = self.diff_des_blank[0]['diff'][0]
-
 
 		#Align all the rest
 		for index in range(1, len(self.diff_des_blank)):
@@ -993,10 +999,11 @@ class TGA_Analyse:
 			aligned_des_blank.append([refPressure, self.align(refPressure, self.diff_des_blank[index]['diff'], True)])
 
 		self.average_diff_des_blank = [refPressure, self.average([data[1] for data in aligned_des_blank])]
-		
+
 		# print "average_diff_des_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.average_diff_des_blank)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++average_diff_des_blank"
+
 	
 
 	def analyseAliq(self):
@@ -1010,29 +1017,72 @@ class TGA_Analyse:
 
 		#Determine the reference
 		if len(self.ads_aliq) > 0:
-			refPressure = self.ads_aliq[0][0]
+			refPressure = []
+			for index in range(len(self.ads_aliq[0][0])):
+				value = [val[0][index] for val in self.ads_aliq]
+				avg_value = sum(value)/len(self.ads_aliq)
+				refPressure.append(avg_value)
 
 		#Align all the rest
-		for index in range(1, len(self.ads_aliq)):
-			#(pressure, concentration): [0], [1]
-			# print json.dumps(self.align(refPressure, self.ads_aliq[index]))
-			aligned_ads_aliq.append([refPressure, self.align(refPressure, self.ads_aliq[index])])
-		self.average_ads_aliq = [refPressure, self.average([data[1] for data in aligned_ads_aliq])]
+		for index in range(len(self.ads_aliq)):
+			x1 = []
+			x2 = []
+			
+			x1.extend(self.align(refPressure, self.ads_aliq[index]))
+			
+			for val in x1:
+				pos = x1.index(val)
+				if x1[pos] < 0:
+					del x1[pos]
+					
+				else:
+					pass
+			aligned_ads_aliq.append([refPressure, x1])
+		
+		aligned_average = []
+		for index in range(len(aligned_ads_aliq[0][1])):
+			value = [val[1][index] for val in aligned_ads_aliq]
+			avg_value = sum(value)/len(aligned_ads_aliq)
+			aligned_average.append(avg_value)
+		
+		self.average_ads_aliq = [refPressure, aligned_average]
 
 		#Desorbtion align
-		refPressure= None
+		refPressure = None
 		aligned_des_aliq = []
-
+		
 		#Determine the reference
 		if len(self.des_aliq) > 0:
-			refPressure = self.des_aliq[0][0]
+			refPressure = []
+			for index in range(len(self.des_aliq[0][0])):
+				value = [val[0][index] for val in self.des_aliq]
+				avg_value = sum(value)/len(self.des_aliq)
+				refPressure.append(avg_value)
 
 		#Align all the rest
-		for index in range(1, len(self.des_aliq)):
-			#(pressure, concentration): [0], [1]
-			aligned_des_aliq.append([refPressure, self.align(refPressure, self.des_aliq[index], True)])
+		for index in range(len(self.des_aliq)):
+			x1 = []
+			x2 = []
+			
+			x1.extend(self.align(refPressure, self.des_aliq[index], True))
+			
+			for val in x1:
+				pos = x1.index(val)
+				if x1[pos] < 0:
+					del x1[pos]
+					
+				else:
+					pass
+			aligned_des_aliq.append([refPressure, x1])
+		
+		aligned_average = []
+		for index in range(len(aligned_des_aliq[0][1])):
+			value = [val[1][index] for val in aligned_des_aliq]
+			avg_value = sum(value)/len(aligned_des_aliq)
+			aligned_average.append(avg_value)
+		
+		self.average_des_aliq = [refPressure, aligned_average]
 
-		self.average_des_aliq = [refPressure, self.average([data[1] for data in aligned_des_aliq])]
 
 		##
 		#Comabinatorial diff computations
@@ -1073,7 +1123,7 @@ class TGA_Analyse:
 
 						if not problem:
 							self.diff_ads_aliq.append({'i':indexI, 'j':indexJ, 'diff':[self.ads_aliq[indexJ][0], diffJK]})
-						
+				
 
 		# print "diff_ads_aliq+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.diff_ads_aliq)

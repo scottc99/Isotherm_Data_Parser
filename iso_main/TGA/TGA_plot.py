@@ -163,7 +163,7 @@ class TGA_Plot:
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([xmin, xmax, ymin, ymax])
 		plt.xlabel('Pressure (Bar)')
-		plt.ylabel('Uptake (\delta Mass (mg)')
+		plt.ylabel('Uptake (Change in Mass (mg))')
 		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
 
 		self.ads_blankDiffPath = '%s/TGA/TGA_plots/Blank_plots/Diff_plots/Adsorption/diff_plot_%s_%d.png'\
@@ -209,7 +209,7 @@ class TGA_Plot:
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([xmin, xmax, ymin, ymax])
 		plt.xlabel('Pressure (Bar)')
-		plt.ylabel('Uptake (\delta Mass (mg)')
+		plt.ylabel('Uptake (weight%)')
 		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
 
 		self.ads_aliqDiffPath = '%s/TGA/TGA_plots/Aliq_plots/Diff_plots/Adsorption/diff_plot_%s_%d.png'\
