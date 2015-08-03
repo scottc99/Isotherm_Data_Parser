@@ -1,6 +1,7 @@
 import numpy as np
 import glob, os
 import simplejson as json 
+import re
 
 class TGA_Analyse:
 	def __init__(self):
@@ -61,18 +62,15 @@ class TGA_Analyse:
 		# alisqs = []
 		os.chdir(os.path.dirname(os.getcwd()))
 		
+
 		index = 0
 		for file in glob.glob("TGA/Data_Files/JSON/json_aliq/*.json"):
-			
-			content = None
-			with open(file, "r") as aliq_file:
+			aliqPart = file.split("/")[-1]
+			find_aliq = re.search('Aliq3', aliqPart)
 				
-				aliqPart = file.split("/")[-1].split("_")[3]
-				aliqNum = list(aliqPart)
-				
-				if int(aliqNum[4]) != 3:
-					pass 
-				else:
+			if find_aliq:
+				content = None
+				with open(file, "r") as aliq_file:
 					content = aliq_file.read()
 					raw = json.loads(content)
 					# alisqs.append(raw)
@@ -86,7 +84,7 @@ class TGA_Analyse:
 					self.origin_aliqs.append(aliqLabel)
 
 					index += 1
-				print file
+					print file
 		# os.chdir(os.path.dirname(os.getcwd()))
 		index = 0
 		for file in glob.glob("TGA/Data_Files/JSON/json_blankRuns/*.json"):
@@ -450,11 +448,10 @@ class TGA_Analyse:
 		# print "average_diff_des_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.average_diff_des_blank)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++average_diff_des_blank"
-		print self.ads_aliq
-		
+
+	
 
 	def analyseAliq(self):
-		print self.ads_aliq
 		##
 		## self.average_ads_aliq, self.average_des_aliq, self.diff_ads_aliq, self.diff_des_aliq
 		##
@@ -470,6 +467,7 @@ class TGA_Analyse:
 				value = [val[0][index] for val in self.ads_aliq]
 				avg_value = sum(value)/len(self.ads_aliq)
 				refPressure.append(avg_value)
+
 		#Align all the rest
 		for index in range(len(self.ads_aliq)):
 			x1 = []
@@ -679,7 +677,6 @@ class TGA_Analyse:
 ########################### Convert aliq units -> blank units ######################################
 		
 	def mainPlots(self):
-		print "hi"
 		index = 0
 		for file in glob.glob("TGA/Data_Files/JSON/json_aliq/*.json"):
 			
@@ -696,8 +693,8 @@ class TGA_Analyse:
 				
 				index += 1
 
-############################ Adsorption: Aliq3 ###############################		
-				
+############################ Adsorption: Aliq3 ###############################
+
 		refPressure = self.aligned_ads_aliq[0][0]
 		
 		self.ADSaliq3_list = []
@@ -712,28 +709,27 @@ class TGA_Analyse:
 		self.ADSaliq3_ads_list_BlankCorr = []
 		self.ADSaliq3_ads_list = []
 
-		
-		for x in range(len(self.aligned_ads_aliq)):
-			if x < len(self.aligned_ads_aliq)/2:
-				continue
-			
-			self.ADSaligned_aliq3_weight2_vals.extend(self.align(refPressure, self.ADS_aliqMain[x]))
-			self.ADSaligned_aliq3_norm_list.extend(self.aligned_ads_aliq[x][1])
 
-			for y in range(len(self.ADSaligned_aliq3_norm_list)):
-				i = self.ADSaligned_aliq3_weight2_vals[y]
-				j = self.ADSaligned_aliq3_norm_list[y]
+		for x in range(len(self.aligned_ads_aliq)):
+			
+			self.ADSaligned_aliq3_weight2_vals.extend([self.align(refPressure, self.ADS_aliqMain[x])])
+			self.ADSaligned_aliq3_norm_list.extend([self.aligned_ads_aliq[x][1]])
+
+
+			for y in range(len(self.ADSaligned_aliq3_norm_list[0])):
+				i = self.ADSaligned_aliq3_weight2_vals[x][y]
+				j = self.ADSaligned_aliq3_norm_list[x][y]
 				self.ADSdelta_mass_val = (i*j)/100
 				self.ADSdelta_mass_aliq3_list.append(self.ADSdelta_mass_val)
 		self.ADSdelta_mass_aliq3_list2.extend(self.ADSdelta_mass_aliq3_list)
 		
-		for index in range(0, len(self.ADSaligned_aliq3_norm_list), (len(self.ADSaligned_aliq3_norm_list)/3)):
+		for index in range(0, len(self.ADSdelta_mass_aliq3_list2), len(self.ADSaligned_aliq3_norm_list[0])):
 			begin = index 
-			boundary = index + len(self.ADSaligned_aliq3_norm_list)
+			boundary = index + len(self.ADSaligned_aliq3_norm_list[0])
 			
 			self.ADSdelta_mass_aliq3_listMain.append(self.ADSdelta_mass_aliq3_list2[begin:boundary])
 		
-		for index in range((len(self.ADSaligned_aliq3_norm_list)/3)):
+		for index in range(len(self.ADSaligned_aliq3_norm_list[0])):
 				value = [val[index] for val in self.ADSdelta_mass_aliq3_listMain]
 				avg_value = sum(value)/len(self.ADSdelta_mass_aliq3_listMain)
 				self.ADSdelta_mass_aliq3_listAvg.append(avg_value)
@@ -747,9 +743,8 @@ class TGA_Analyse:
 		self.ADSaliq3_ads_list_BlankCorr = [refPressure, self.ADSdelta_mass_aliq3_listDiff]
 		self.ADSaliq3_ads_list = [refPressure, self.ADSdelta_mass_aliq3_listAvg]
 
-		
-############################ Desorption: Aliq3 ###############################		
-				
+############################ Desorption: Aliq3 ###############################
+
 		refPressure = self.aligned_des_aliq[0][0]
 		
 		self.DESaliq3_list = []
@@ -761,31 +756,27 @@ class TGA_Analyse:
 		self.DESdelta_mass_aliq3_listMain = []
 		self.DESdelta_mass_aliq3_listAvg = []
 		self.DESdelta_mass_aliq3_listDiff = []
-		self.DESaliq3_DES_list_BlankCorr = []
+		self.DESaliq3_des_list_BlankCorr = []
 		self.DESaliq3_des_list = []
 
-		
 		for x in range(len(self.aligned_des_aliq)):
-			if x < len(self.aligned_des_aliq)/2:
-				continue
+			self.DESaligned_aliq3_weight2_vals.extend([self.align(refPressure, self.DES_aliqMain[x])])
+			self.DESaligned_aliq3_norm_list.extend([self.aligned_des_aliq[x][1]])
 			
-			self.DESaligned_aliq3_weight2_vals.extend(self.align(refPressure, self.DES_aliqMain[x]))
-			self.DESaligned_aliq3_norm_list.extend(self.aligned_des_aliq[x][1])
-
-			for y in range(len(self.DESaligned_aliq3_norm_list)):
-				i = self.DESaligned_aliq3_weight2_vals[y]
-				j = self.DESaligned_aliq3_norm_list[y]
+			for y in range(len(self.DESaligned_aliq3_norm_list[0])):
+				i = self.DESaligned_aliq3_weight2_vals[x][y]
+				j = self.DESaligned_aliq3_norm_list[x][y]
 				self.DESdelta_mass_val = (i*j)/100
 				self.DESdelta_mass_aliq3_list.append(self.DESdelta_mass_val)
 		self.DESdelta_mass_aliq3_list2.extend(self.DESdelta_mass_aliq3_list)
 		
-		for index in range(0, len(self.DESaligned_aliq3_norm_list), (len(self.DESaligned_aliq3_norm_list)/3)):
+		for index in range(0, len(self.DESdelta_mass_aliq3_list2), len(self.DESaligned_aliq3_norm_list[0])):
 			begin = index 
-			boundary = index + len(self.DESaligned_aliq3_norm_list)
+			boundary = index + len(self.DESaligned_aliq3_norm_list[0])
 			
 			self.DESdelta_mass_aliq3_listMain.append(self.DESdelta_mass_aliq3_list2[begin:boundary])
 		
-		for index in range((len(self.DESaligned_aliq3_norm_list)/3)):
+		for index in range(len(self.DESaligned_aliq3_norm_list[0])):
 				value = [val[index] for val in self.DESdelta_mass_aliq3_listMain]
 				avg_value = sum(value)/len(self.DESdelta_mass_aliq3_listMain)
 				self.DESdelta_mass_aliq3_listAvg.append(avg_value)
@@ -800,7 +791,7 @@ class TGA_Analyse:
 		self.DESaliq3_des_list = [refPressure, self.DESdelta_mass_aliq3_listAvg]
 
 
-########################### Convert aliq2/aliq3  ######################################
+########################### Convert aliq3/aliq3  ######################################
 
 
 

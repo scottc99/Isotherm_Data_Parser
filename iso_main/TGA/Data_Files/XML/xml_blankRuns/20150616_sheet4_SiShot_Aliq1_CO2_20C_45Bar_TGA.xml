@@ -79,7 +79,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.013915382353</value>
+          <value type="float">0.013913476357</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -125,7 +125,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.0149286484428</value>
+          <value type="float">0.0149264548096</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -171,7 +171,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.0191741186089</value>
+          <value type="float">0.0191705002007</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -217,7 +217,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.0152921397802</value>
+          <value type="float">0.0152898380393</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -263,7 +263,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.0316825226487</value>
+          <value type="float">0.0316726457783</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -309,7 +309,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.0801982793293</value>
+          <value type="float">0.080135053326</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -355,7 +355,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.178312135468</value>
+          <value type="float">0.178000180752</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -401,7 +401,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.282365458192</value>
+          <value type="float">0.281584785408</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -447,7 +447,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.381572216391</value>
+          <value type="float">0.380149366091</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -493,7 +493,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.493865153374</value>
+          <value type="float">0.49148681083</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -539,7 +539,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.589033856457</value>
+          <value type="float">0.585656809779</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -585,7 +585,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.686204921874</value>
+          <value type="float">0.681630370245</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -631,7 +631,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.792801849006</value>
+          <value type="float">0.786708191884</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -677,7 +677,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.886228251926</value>
+          <value type="float">0.878627436439</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -723,7 +723,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.940178513245</value>
+          <value type="float">0.931632956635</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -769,7 +769,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.983363760169</value>
+          <value type="float">0.974022854984</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -815,7 +815,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">1.01589729294</value>
+          <value type="float">1.0059342982</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -861,7 +861,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.957303882162</value>
+          <value type="float">0.94844708135</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -907,7 +907,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">1.01190181784</value>
+          <value type="float">1.00201628175</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -953,7 +953,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">1.01329893596</value>
+          <value type="float">1.00338634822</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -999,7 +999,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.991953957426</value>
+          <value type="float">0.98245070627</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1045,7 +1045,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.925398581825</value>
+          <value type="float">0.917117246136</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1091,7 +1091,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.873780936496</value>
+          <value type="float">0.866390367109</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1137,7 +1137,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.769709723058</value>
+          <value type="float">0.763963325227</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1183,7 +1183,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.691590076716</value>
+          <value type="float">0.686943926521</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1229,7 +1229,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.582109297033</value>
+          <value type="float">0.578810741253</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1275,7 +1275,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.493519495353</value>
+          <value type="float">0.491144464931</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1321,7 +1321,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.406947936235</value>
+          <value type="float">0.405330344555</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1367,7 +1367,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.308203767938</value>
+          <value type="float">0.307274153776</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1413,7 +1413,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.187003709786</value>
+          <value type="float">0.1866606607</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1459,7 +1459,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.0447979548175</value>
+          <value type="float">0.0447782131339</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>
@@ -1505,7 +1505,7 @@
         </item>
         <item type="dict">
           <prefix type="str"/>
-          <value type="float">0.00540521343701</value>
+          <value type="float">0.00540492580969</value>
           <unit type="str">mass change(mg)</unit>
         </item>
       </weights>

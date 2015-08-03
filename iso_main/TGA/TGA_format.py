@@ -190,7 +190,7 @@ class TGApp:
 				weight5 = {}
 				weight5["prefix"] = ""
 				weight5["unit"] = "mass change(mg)"
-				weight5["value"] = ((self.sh.cell_value(begin, 8))*(self.sh.cell_value(begin, 7)))/100
+				weight5["value"] = ((self.sh.cell_value(begin, 8))*(self.sh.cell_value(23, 7)))/100
 				row["weights"].append(weight5)
 
 				row["pressure"] = {}

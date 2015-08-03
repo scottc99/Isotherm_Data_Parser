@@ -1,4 +1,4 @@
-from TGA_analyse_aliq3 import TGA_Analyse 
+from TGA_analyse_aliq2 import TGA_Analyse 
 import simplejson as json 
 from TGA_plot_surf import TGA_Plot
 import numpy as np
@@ -8,32 +8,48 @@ if __name__ == '__main__':
 	analyse = TGA_Analyse()
 	analyse.load()
 	analyse.analyseAll()
-
 	plot = TGA_Plot()
 
-# ######################################### Simple plot: Aliq w/o blank correction #########################################
+# # ############################################# Simple plot: Aliq2 #############################################
 
-# plot.aliqSimplePlot(analyse.ADSaliq2_ads_list, analyse.DESaliq2_des_list, 'aliq2_analysis_raw', 'Adsorption',\
-# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)', )
+# w/ blank subtraction # #
 
+# plot.aliqSimplePlot(analyse.ADSmaster_list_blankCorr[0], analyse.DESmaster_list_blankCorr[0], 'aliq2_analysis_blankCorr1', 'Adsorption',\
+# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+
+# plot.aliqSimplePlot(analyse.ADSmaster_list_blankCorr[1], analyse.DESmaster_list_blankCorr[1], 'aliq2_analysis_blankCorr2', 'Adsorption',\
+# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+
+# plot.aliqSimplePlot(analyse.ADSmaster_list_blankCorr[2], analyse.DESmaster_list_blankCorr[2], 'aliq2_analysis_blankCorr3', 'Adsorption',\
+# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+
+
+# # w/o blank subtraction # #
+
+# plot.aliqSimplePlot(analyse.ADSmaster_list_raw[0], analyse.DESmaster_list_raw[0], 'aliq2_analysis_raw1', 'Adsorption',\
+# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+
+# plot.aliqSimplePlot(analyse.ADSmaster_list_raw[1], analyse.DESmaster_list_raw[1], 'aliq2_analysis_raw2', 'Adsorption',\
+# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+
+# plot.aliqSimplePlot(analyse.ADSmaster_list_raw[2], analyse.DESmaster_list_raw[2], 'aliq2_analysis_raw3', 'Adsorption',\
+# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+
+# ############################################# Simple plot: Aliq3 #############################################
+
+# # w/o blank subtraction #
 
 # plot.aliqSimplePlot(analyse.ADSaliq3_ads_list, analyse.DESaliq3_des_list, 'aliq3_analysis_raw', 'Adsorption',\
 # 										 			'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
 
-# ######################################### Simple plot: Aliq w/ blank correction #########################################
-
-# plot.aliqSimplePlot(analyse.ADSaliq2_ads_list_BlankCorr, analyse.DESaliq2_des_list_BlankCorr, 'aliq2_analysis_blank_corr', 'Adsorption',\
-# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
-
+# # w/ blank subtraction #
 
 # plot.aliqSimplePlot(analyse.ADSaliq3_ads_list_BlankCorr, analyse.DESaliq3_des_list_BlankCorr, 'aliq3_analysis_blank_corr', 'Adsorption',\
 # 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
 
 
-
 # 	# Note: Replace all the prints by the plots. To see run this like: python run.py > check.txt
 	
-
 # ######################################### Many plots: blank diffs. #########################################
 
 # 	plot.ads_blankManyPlot([diff['diff'] for diff in analyse.diff_ads_blank], 'many_blank_diffs_ads',\

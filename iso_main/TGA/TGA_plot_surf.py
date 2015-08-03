@@ -236,12 +236,13 @@ class TGA_Plot:
 
 	def aliqSimplePlot(self, listOne, listTwo, label='unknown', legendOne = 'unknown',\
 					   legendTwo = 'unknown', xmin = 0, xmax = 45, ymin = 0, ymax = 20, yAxisLabel = 'unknown',\
-					   markerADS = 'ro', markerDES = 'bo'):
+					   markerADS = 'ro', markerDES = 'bo', close = True):
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
 		
 		plt.plot(listOne[0], listOne[1], markerADS, mec = 'r', ms = float(4.5), ls = '-', lw = float(1.5), label = 'unknown', zorder = 3.5)
-		plt.plot(listTwo[0], listTwo[1], markerDES,mec = 'b', ms = float(4.5), ls = '-', lw = float(1.5), label = 'unknown', zorder = 3.5)
+		plt.plot(listTwo[0], listTwo[1], markerDES, mec = 'b', ms = float(4.5), ls = '-', lw = float(1.5), label = 'unknown', zorder = 3.5)
+		plt.plot(0, max(listOne[0]), 'g-')
 
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([xmin, xmax, ymin, ymax])
@@ -254,7 +255,9 @@ class TGA_Plot:
 		self.aliq_SimplePath = '%s/TGA/TGA_plots/Aliq_plots/Simple_plots/simple_plot_%s.png'\
 					 	 		 %(os.getcwd(), label)
 		plt.savefig('%s'%self.aliq_SimplePath)
+		
 		plt.close()
+
 
 	def blankSimplePlot(self, listOne, listTwo, label='unknown', legendOne = 'unknown',\
 					    legendTwo = 'unknown', xmin = 0, xmax = 45, ymin = 0, ymax = 1.2, yAxisLabel = 'unknown'):

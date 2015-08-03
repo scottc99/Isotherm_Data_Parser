@@ -1,9 +1,68 @@
 import numpy as np
 import glob, os
 import simplejson as json 
+import re
 
 class TGA_Analyse:
 	def __init__(self):
+
+		self.DESaligned_aliq2_weight2_vals1 = []
+		self.DESaligned_aliq2_weight2_vals2 = []
+		self.DESaligned_aliq2_norm_list1 = []
+		self.DESaligned_aliq2_norm_list2 = []
+		self.DESdelta_mass_aliq2_list1 = []
+		self.DESdelta_mass_aliq2_list2 = []
+		self.DESdelta_mass_aliq2_listDiff1 = []
+		self.DESdelta_mass_aliq2_listDiff2 = []
+		self.DESaliq2_des_list_BlankCorr1 = []
+		self.DESaliq2_des_list_BlankCorr2 = []
+		self.DESaliq2_des_list1 = []
+		self.DESaliq2_des_list2 = []
+
+		self.ADSaligned_aliq2_weight2_vals1 = []
+		self.ADSaligned_aliq2_weight2_vals2 = []
+		self.ADSaligned_aliq2_norm_list1 = []
+		self.ADSaligned_aliq2_norm_list2 = []
+		self.ADSdelta_mass_aliq2_list1 = []
+		self.ADSdelta_mass_aliq2_list2 = []	
+		self.ADSdelta_mass_aliq2_listDiff1 = []
+		self.ADSdelta_mass_aliq2_listDiff2 = []
+		self.ADSaliq2_ads_list_BlankCorr1 = []
+		self.ADSaliq2_ads_list_BlankCorr2 = []
+		self.ADSaliq2_ads_list1 = []
+		self.ADSaliq2_ads_list2 = []
+
+		self.DESmaster_listMain_aliq1 = []
+		self.DESmaster_listMain_aliq2 = []
+		self.DESaligned_blank_weight2_vals1 = []
+		self.DESaligned_blank_weight2_vals2 = []
+		self.DESaligned_blank_norm_list1 = []
+		self.DESaligned_blank_norm_list2 = []
+		self.DESdelta_mass_blank_list1 = []
+		self.DESdelta_mass_blank_list2 = []
+		self.DESblank_des_list1 = []
+		self.DESblank_des_list2 = []
+		self.new_des_blank_align1 = [] 
+		self.new_des_blank_align2 = []
+
+		self.ADSmaster_listMain_aliq1 = []
+		self.ADSmaster_listMain_aliq2 = []
+		self.ADSaligned_blank_weight2_vals1 = []
+		self.ADSaligned_blank_weight2_vals2 = []
+		self.ADSaligned_blank_norm_list1 = []
+		self.ADSaligned_blank_norm_list2 = []
+		self.ADSdelta_mass_blank_list1 = []
+		self.ADSdelta_mass_blank_list2 = []
+		self.ADSblank_ads_list1 = []
+		self.ADSblank_ads_list2 = []
+		self.new_ads_blank_align1 = []
+		self.new_ads_blank_align2 = []
+
+		self.ADSmaster_list_blankCorr = []
+		self.ADSmaster_list_raw = []
+
+		self.DESmaster_list_blankCorr = []
+		self.DESmaster_list_raw = []
 
 		self.ADS_aliqMain = []
 		self.DES_aliqMain = []
@@ -22,8 +81,8 @@ class TGA_Analyse:
 		# diff blanks data
 		self.diff_ads_blank = []
 		self.diff_des_blank = []
-		self.diff_ads_blank2 = []
-		self.diff_des_blank2 = []
+		self.diff_ads_blank = []
+		self.diff_des_blank = []
 
 		# diff aliqs data
 		self.diff_ads_aliq = []
@@ -61,14 +120,13 @@ class TGA_Analyse:
 		# alisqs = []
 		os.chdir(os.path.dirname(os.getcwd()))
 		
+
 		index = 0
 		for file in glob.glob("TGA/Data_Files/JSON/json_aliq/*.json"):
-			aliqPart = file.split("/")[-1].split("_")[3]
-			aliqNum = list(aliqPart)
+			aliqPart = file.split("/")[-1]
+			find_aliq = re.search('Aliq2', aliqPart)
 				
-			if int(aliqNum[4]) != 2:
-				pass 
-			else:
+			if find_aliq:
 				content = None
 				with open(file, "r") as aliq_file:
 					content = aliq_file.read()
@@ -84,17 +142,17 @@ class TGA_Analyse:
 					self.origin_aliqs.append(aliqLabel)
 
 					index += 1
-				print file
+					
 		# os.chdir(os.path.dirname(os.getcwd()))
 		index = 0
-		for file in glob.glob("TGA/Data_Files/JSON/json_blankRuns/*.json"):
+		for file in glob.glob("TGA/Data_Files/JSON/json_blank/*.json"):
 			content = None
 			with open(file, "r") as blank_file:
 				content = blank_file.read()
 
 				raw = json.loads(content)
 				# blanks.append(raw)
-				blocks = self.split(raw, run = 1)
+				blocks = self.split(raw, run = 0)
 				self.ads_blank.append(blocks[0])
 				self.des_blank.append(blocks[1])
 				filePart = file.split("/")[-1].split("_")[:4]
@@ -226,6 +284,7 @@ class TGA_Analyse:
 		##
 		#Total Average computations
 		#Asbsorption align
+	
 		refPressure = None
 		self.aligned_ads_blank = []
 		
@@ -236,9 +295,8 @@ class TGA_Analyse:
 				value = [val[0][index] for val in self.ads_blank]
 				avg_value = sum(value)/len(self.ads_blank)
 				refPressure.append(avg_value)
-
+		
 		#Align all the rest
-
 		for index in range(len(self.ads_blank)):
 			x1 = []
 			
@@ -252,14 +310,15 @@ class TGA_Analyse:
 				else:
 					pass
 			self.aligned_ads_blank.append([refPressure, x1])
+
+
+		# self.aligned_average = []
+		# for index in range(len(self.aligned_ads_blank[0][1])):
+		# 	value = [val[1][index] for val in self.aligned_ads_blank]
+		# 	avg_value = sum(value)/len(self.aligned_ads_blank)
+		# 	self.aligned_average.append(avg_value)
 		
-		self.aligned_average = []
-		for index in range(len(self.aligned_ads_blank[0][1])):
-			value = [val[1][index] for val in self.aligned_ads_blank]
-			avg_value = sum(value)/len(self.aligned_ads_blank)
-			self.aligned_average.append(avg_value)
-		
-		self.average_ads_blank = [refPressure, self.aligned_average]
+		# self.average_ads_blank = [refPressure, self.aligned_average]
 
 		#Desorbtion align
 		refPressure = None
@@ -272,13 +331,13 @@ class TGA_Analyse:
 				value = [val[0][index] for val in self.des_blank]
 				avg_value = sum(value)/len(self.des_blank)
 				refPressure.append(avg_value)
-
+		
 		#Align all the rest
 		for index in range(len(self.des_blank)):
 			x1 = []
 			
 			x1.extend(self.align(refPressure, self.des_blank[index], True))
-
+			
 			for val in x1:
 				pos = x1.index(val)
 				if x1[pos] < 0:
@@ -288,14 +347,16 @@ class TGA_Analyse:
 					pass
 			self.aligned_des_blank.append([refPressure, x1])
 		
-		self.aligned_average = []
-		for index in range(len(self.aligned_des_blank[0][1])):
-			value = [val[1][index] for val in self.aligned_des_blank]
-			avg_value = sum(value)/len(self.aligned_des_blank)
-			self.aligned_average.append(avg_value)
 		
-		self.average_des_blank = [refPressure, self.aligned_average]
-	
+
+		# self.aligned_average = []
+		# for index in range(len(self.aligned_des_blank[0][1])):
+		# 	value = [val[1][index] for val in self.aligned_des_blank]
+		# 	avg_value = sum(value)/len(self.aligned_des_blank)
+		# 	self.aligned_average.append(avg_value)
+		
+		# self.average_des_blank = [refPressure, self.aligned_average]
+
 		##
 		#Comabinatorial diff computations
 
@@ -377,7 +438,7 @@ class TGA_Analyse:
 
 						if not problem:
 							self.diff_des_blank.append({'i':indexI, 'j':indexJ, 'diff':[self.des_blank[indexJ][0], diffJK]})		
-							
+
 		# print "diff_des_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.diff_des_blank)
 		# print "+++++++++++++++++++++++++++++++++++++++++++++++diff_des_blank"
@@ -396,7 +457,7 @@ class TGA_Analyse:
 				value = [val['diff'][0][index] for val in self.diff_ads_blank]
 				avg_value = sum(value)/len(self.diff_ads_blank)
 				refPressure.append(avg_value)
-			
+
 		#Align all the rest
 		for index in range(len(self.diff_ads_blank)):
 			x1 = []
@@ -443,7 +504,7 @@ class TGA_Analyse:
 			self.aligned_average.append(avg_value)
 		
 		self.average_diff_des_blank = [refPressure, self.aligned_average]
-	
+		
 
 		# print "average_diff_des_blank+++++++++++++++++++++++++++++++++++++++++++++++"
 		# print json.dumps(self.average_diff_des_blank)
@@ -457,7 +518,7 @@ class TGA_Analyse:
 		##
 		#Total Average computations
 		#Asbsorption align
-		refPressure= None
+		refPressure = None
 		self.aligned_ads_aliq = []
 
 		#Determine the reference
@@ -483,19 +544,19 @@ class TGA_Analyse:
 					pass
 			self.aligned_ads_aliq.append([refPressure, x1])
 		
-		self.aligned_average = []
-		for index in range(len(self.aligned_ads_aliq[0][1])):
-			value = [val[1][index] for val in self.aligned_ads_aliq]
-			avg_value = sum(value)/len(self.aligned_ads_aliq)
-			self.aligned_average.append(avg_value)
-		
-		self.average_ads_aliq = [refPressure, self.aligned_average]
+		# self.aligned_average = []
+		# for index in range(len(self.aligned_ads_aliq[0][1])):
+		# 	value = [val[1][index] for val in self.aligned_ads_aliq]
+		# 	avg_value = sum(value)/len(self.aligned_ads_aliq)
+		# 	self.aligned_average.append(avg_value)
+			
+		# self.average_ads_aliq = [refPressure, self.aligned_average]
 
 #######################################################################################
 #######################################################################################
 
 		#Desorbtion align
-		refPressure = None
+		refPressure= None
 		self.aligned_des_aliq = []
 		
 		#Determine the reference
@@ -509,7 +570,7 @@ class TGA_Analyse:
 		#Align all the rest
 		for index in range(len(self.des_aliq)):
 			x1 = []
-
+			
 			x1.extend(self.align(refPressure, self.des_aliq[index], True))
 			
 			for val in x1:
@@ -520,15 +581,9 @@ class TGA_Analyse:
 				else:
 					pass
 			self.aligned_des_aliq.append([refPressure, x1])
-		
+
 		self.aligned_average = []
-		for index in range(len(self.aligned_des_aliq[0][1])):
-			value = [val[1][index] for val in self.aligned_des_aliq]
-			avg_value = sum(value)/len(self.aligned_des_aliq)
-			self.aligned_average.append(avg_value)
 		
-		self.average_des_aliq = [refPressure, self.aligned_average]
-			
 		##
 		#Comabinatorial diff computations
 
@@ -626,7 +681,7 @@ class TGA_Analyse:
 				value = [val['diff'][0][index] for val in self.diff_ads_aliq]
 				avg_value = sum(value)/len(self.diff_ads_aliq)
 				refPressure.append(avg_value)
-			
+		
 		#Align all the rest
 		for index in range(len(self.diff_ads_aliq)):
 			x1 = []
@@ -634,15 +689,13 @@ class TGA_Analyse:
 			x1.extend(self.align(refPressure, self.diff_ads_aliq[index]['diff']))
 			self.aligned_diff_ads_aliq.append([refPressure, x1])
 
-		self.aligned_average = []
-		for index in range(len(self.aligned_ads_aliq[0][1])):
-			value = [val[1][index] for val in self.aligned_ads_aliq]
-			avg_value = sum(value)/len(self.aligned_ads_aliq)
-			self.aligned_average.append(avg_value)
-		
-		self.average_diff_ads_aliq = [refPressure, self.aligned_average]
-
-		# print self.average_diff_ads_aliq
+		self.average_diff_ads_aliq = []
+		for index in range(len(self.aligned_diff_ads_aliq[0][1])):
+			value = [val[1][index] for val in self.aligned_diff_ads_aliq]
+			avg_value = sum(value)/len(self.aligned_diff_ads_aliq)
+			self.average_diff_ads_aliq.append(avg_value)
+	
+		self.average_diff_ads_aliq = [refPressure, self.average_diff_ads_aliq]
 
 #######################################################################################
 #######################################################################################
@@ -666,149 +719,437 @@ class TGA_Analyse:
 			x1.extend(self.align(refPressure, self.diff_des_aliq[index]['diff'], True))
 			self.aligned_diff_des_aliq.append([refPressure, x1])
 
-		self.aligned_average = []
-		for index in range(len(self.aligned_des_aliq[0][1])):
-			value = [val[1][index] for val in self.aligned_des_aliq]
-			avg_value = sum(value)/len(self.aligned_des_aliq)
-			self.aligned_average.append(avg_value)
+		self.average_diff_des_aliq = []
+		for index in range(len(self.aligned_diff_des_aliq[0][1])):
+			value = [val[1][index] for val in self.aligned_diff_des_aliq]
+			avg_value = sum(value)/len(self.aligned_diff_des_aliq)
+			self.average_diff_des_aliq.append(avg_value)
+	
+		self.average_diff_des_aliq = [refPressure, self.average_diff_des_aliq]
 		
-		self.average_diff_des_aliq = [refPressure, self.aligned_average]
-
 ########################### Convert aliq units -> blank units ######################################
+
+	def baliqEatToast(self, sliced): 
+		if sliced == 1:	
+			for index in range(len(self.ADSaligned_aliq2_norm_list1[0])):
+				x = self.ADSdelta_mass_aliq2_list1[index]
+				y = self.new_ads_blank_align1[index]
+				
+				diff1 = (x - y)
+			self.ADSdelta_mass_aliq2_listDiff1.append(diff1)
 		
-	def mainPlots(self):
-		index = 0
+		self.ADSaliq2_ads_list_BlankCorr1.append([self.ADSrefPressure, self.ADSdelta_mass_aliq2_listDiff1])
+		self.ADSaliq2_ads_list1.append([self.ADSrefPressure, self.ADSdelta_mass_aliq2_list1])
+
+		if sliced == 2:
+			for index in range(len(self.DESaligned_aliq2_norm_list1[0])):
+				x = self.DESdelta_mass_aliq2_list1[index]
+				y = self.new_des_blank_align1[index]
+				
+				diff2 = (x - y)
+			self.DESdelta_mass_aliq2_listDiff1.append(diff2)
+
+		self.DESaliq2_des_list_BlankCorr1.append([self.DESrefPressure, self.DESdelta_mass_aliq2_listDiff1])
+		self.DESaliq2_des_list1.append([self.DESrefPressure, self.DESdelta_mass_aliq2_list1])
+
+		if sliced == 3:
+			for index in range(len(self.ADSaligned_aliq2_norm_list2[0])):
+				x = self.ADSdelta_mass_aliq2_list2[index]
+				y = self.new_ads_blank_align2[index]
+				
+				diff1 = (x - y)
+			self.ADSdelta_mass_aliq2_listDiff2.append(diff1)
+
+		self.ADSaliq2_ads_list_BlankCorr2.append([self.ADSrefPressure, self.ADSdelta_mass_aliq2_listDiff2])
+		self.ADSaliq2_ads_list2.append([self.ADSrefPressure, self.ADSdelta_mass_aliq2_list2])
+
+		if sliced == 4:
+			for index in range(len(self.DESaligned_aliq2_norm_list2[0])):
+				x = self.DESdelta_mass_aliq2_list2[index]
+				y = self.new_des_blank_align2[index]
+				
+				diff2 = (x - y)
+			self.DESdelta_mass_aliq2_listDiff2.append(diff2)
+
+		self.DESaliq2_des_list_BlankCorr2.append([self.DESrefPressure, self.DESdelta_mass_aliq2_listDiff2])
+		self.DESaliq2_des_list2.append([self.DESrefPressure, self.DESdelta_mass_aliq2_list2])
+
+
+	def mainPlotsAliq(self, toaster):
+		
+		self.aliqNumAds1 = 0 
+		self.aliqNumAds2 = 0
+		self.aliqNumDes1 = 0 
+		self.aliqNumDes2 = 0
 		for file in glob.glob("TGA/Data_Files/JSON/json_aliq/*.json"):
-			
-			content = None
-			with open(file, "r") as aliq_file:
-				content = aliq_file.read()
+			aliqPart = file.split("/")[-1]
+			find_aliq = re.search('Aliq2', aliqPart)
 
-				raw = json.loads(content)
-				# alisqs.append(raw)
-				blocks = self.split(raw, run = 2)
+			if find_aliq:
+				self.ADS_aliqMain = []
+				self.DES_aliqMain = []
+				content = None
+				path = '%s/TGA/Data_Files/JSON/json_aliq/'%os.getcwd()
 				
-				self.ADS_aliqMain.append(blocks[0])
-				self.DES_aliqMain.append(blocks[1])
-				
-				index += 1
-
+				with open(file, "r") as aliq_file:
+					
+					content = aliq_file.read()
+					raw = json.loads(content)
+					# alisqs.append(raw)
+					blocks = self.split(raw, run = 2)
+					pres_listAds = []
+					conc_listAds = []
+					pres_listDes = []
+					conc_listDes = []
+					for i in range(len(self.ads_aliq[0][0])):
+						conc_listAds.append(blocks[0][1][0])
+					for j in range(len(self.des_aliq[0][0])):
+						conc_listDes.append(blocks[0][1][0])
+					 
+					self.ADS_aliqMain.extend([blocks[0][0], conc_listAds])
+					self.DES_aliqMain.extend([blocks[1][0], conc_listDes])
+					
 ############################ Adsorption: Aliq2 ###############################
+					
+					self.ADSrefPressure = self.aligned_ads_aliq[0][0]			
+					
+					for i in range(len(self.ADS_blankMain1)):
+						if toaster == 1: 
+							self.ADSaligned_aliq2_weight2_vals1.extend(self.align(self.ADSrefPressure, self.ADS_aliqMain))
+							self.ADSaligned_aliq2_norm_list1.extend(self.aligned_ads_aliq[self.aliqNumAds1])
+							
+							for y in range(len(self.ADSaligned_aliq2_norm_list1[0])):
+								i = self.ADSaligned_aliq2_weight2_vals1[y]
+								j = self.ADSaligned_aliq2_norm_list1[1][y]
+								
+								self.ADSdelta_mass_val1 = (i*j)/100
+								self.ADSdelta_mass_aliq2_list1.append(self.ADSdelta_mass_val1)
+							
+							ads_blank_align = []
+							ads_blank_align2 = []
+							ads_blank_alignMain = []
+							new_ads_blank_align = []
+							
+							print self.ADSmaster_listMain_aliq1
+							ads_blank_align.extend(self.align(self.ADSrefPressure, self.ADSmaster_listMain_aliq1))
+							ads_blank_align2.extend(ads_blank_align)
 
-		refPressure = self.aligned_ads_aliq[0][0]
+							for index in range(len(self.ads_blank[0][0])):
+								value = [val for val in ads_blank_align2]
+								avg_value = sum(value)/len(self.ads_blank)
+								self.new_ads_blank_align1.append(avg_value)
+							
+							print "Aliq Num1: %s"%self.aliqNumAds1
+							self.baliqToastBread(toaster)
+
+						elif toaster == 2: 
+							self.ADSaligned_aliq2_weight2_vals2.extend(self.align(self.ADSrefPressure, self.ADS_aliqMain))
+							self.ADSaligned_aliq2_norm_list2.extend(self.aligned_ads_aliq[self.aliqNumAds2])
+
+							ads_blank_align = []
+							ads_blank_align2 = []
+							ads_blank_alignMain = []
+							new_ads_blank_align = []
+
+							ads_blank_align.extend(self.align(self.ADSrefPressure, self.ADSmaster_listMain_aliq2))
+							ads_blank_align2.extend(ads_blank_align)
+
+							for index in range(len(self.ads_blank[0][0])):
+								value = [val for val in ads_blank_align2]
+								avg_value = sum(value)/len(self.ads_blank)
+								self.new_ads_blank_align2.append(avg_value)
+							
+							print "Aliq Num2: %s"%self.aliqNumAds2
+
+							self.baliqToastBread(toaster)
+
+		############################ Desorption: Aliq2 ###############################
+
+	def baliqToastBread(self, toaster):		
+		self.DESrefPressure = self.aligned_des_aliq[0][0]
 		
-		self.ADSaliq2_list = []
-		self.ADSaligned_aliq2_weight2_vals = []
-		self.ADSaligned_aliq2_norm_list = []
+		for i in range(len(self.DES_blankMain1)):
+			if toaster == 1: 
+				
+				self.DESaligned_aliq2_weight2_vals1.extend(self.align(self.DESrefPressure, self.DES_aliqMain))										
+				self.DESaligned_aliq2_norm_list1.extend(self.aligned_des_aliq[self.aliqNumAds1])
+		
+				for y in range(len(self.DESaligned_aliq2_norm_list1[0])):
+					i = self.DESaligned_aliq2_weight2_vals1[y]
+					j = self.DESaligned_aliq2_norm_list1[1][y]
+					
+					self.DESdelta_mass_val1 = (i*j)/100
+					self.DESdelta_mass_aliq2_list1.append(self.DESdelta_mass_val1)
 
-		self.ADSdelta_mass_aliq2_list = []
-		self.ADSdelta_mass_aliq2_list2 = []
-		self.ADSdelta_mass_aliq2_listMain = []
-		self.ADSdelta_mass_aliq2_listAvg = []
-		self.ADSdelta_mass_aliq2_listDiff = []
-		self.ADSaliq2_ads_list_BlankCorr = []
-		self.ADSaliq2_ads_list = []
+				des_blank_align = []
+				des_blank_align2 = []
+				des_blank_alignMain = []
+				new_des_blank_align = []
+
+				des_blank_align.extend(self.align(self.DESrefPressure, self.DESmaster_listMain_aliq1))
+				des_blank_align2.extend(des_blank_align)
+
+				for index in range(len(self.des_blank[0][0])):
+					value = [val for val in des_blank_align2]
+					avg_value = sum(value)/len(self.des_blank)
+					self.new_des_blank_align1.append(avg_value)
+
+				self.baliqEatToast(1)
+				self.baliqEatToast(2)
+				
+				# self.ADSaliq2_ads_list_BlankCorr1.append([self.ADSrefPressure, self.ADSdelta_mass_aliq2_listDiff])
+				# self.ADSaliq2_ads_list1.append([self.ADSrefPressure, self.ADSdelta_mass_aliq2_list])
+				# self.DESaliq2_des_list_BlankCorr1.append([self.DESrefPressure, self.DESdelta_mass_aliq2_listDiff])
+				# self.DESaliq2_des_list1.append([self.DESrefPressure, self.DESdelta_mass_aliq2_list])
+
+			elif toaster == 2: 
+				self.DESaligned_aliq2_weight2_vals2.extend(self.align(self.DESrefPressure, self.DES_aliqMain))										
+				self.DESaligned_aliq2_norm_list2.extend(self.aligned_des_aliq[self.aliqNumAds2])
+
+				for y in range(len(self.DESaligned_aliq2_norm_list2[0])):
+					i = self.DESaligned_aliq2_weight2_vals2[y]
+					j = self.DESaligned_aliq2_norm_list2[1][y]
+					
+					self.DESdelta_mass_val2 = (i*j)/100
+					self.DESdelta_mass_aliq2_list2.append(self.DESdelta_mass_val2)
+				
+				des_blank_align = []
+				des_blank_align2 = []
+				des_blank_alignMain = []
+				new_des_blank_align = []
+
+				des_blank_align.extend(self.align(self.DESrefPressure, self.DESmaster_listMain_aliq2))
+				des_blank_align2.extend(des_blank_align)
+
+				for index in range(len(self.des_blank[0][0])):
+					value = [val for val in des_blank_align2]
+					avg_value = sum(value)/len(self.des_blank)
+					self.new_des_blank_align2.append(avg_value)
+
+				self.baliqEatToast(3)
+				self.baliqEatToast(4)
 
 
-		for x in range(len(self.aligned_ads_aliq)/2):
+				# self.ADSaliq2_ads_list_BlankCorr2.append([self.ADSrefPressure, self.ADSdelta_mass_aliq2_listDiff])
+				# self.ADSaliq2_ads_list2.append([self.ADSrefPressure, self.ADSdelta_mass_aliq2_list])
+				# self.DESaliq2_des_list_BlankCorr2.append([self.DESrefPressure, self.DESdelta_mass_aliq2_listDiff])
+				# self.DESaliq2_des_list2.append([self.DESrefPressure, self.DESdelta_mass_aliq2_list])
+
+	def mainPlotsBlank(self):
+		
+		self.blankNum1 = 0
+		self.blankNum2 = 0
+		for file in glob.glob("TGA/Data_Files/JSON/json_blank/*.json"):
+			blankPart = file.split("/")[-1]
+			find_blankAliq1 = re.search('Aliq1', blankPart)
+			find_blankAliq2 = re.search('Aliq2', blankPart)
+			if find_blankAliq1:
+
+				self.ADS_blankMain1 = []
+				self.DES_blankMain1 = []
+				content = None
+				path = '%s/TGA/Data_Files/JSON/json_blank/'%os.getcwd()
+				
+				with open(file, "r") as blank_file:
+					print "Blank Num1: %s"%self.blankNum1
+					content = blank_file.read()
+					raw = json.loads(content)
+					# alisqs.append(raw)
+					blocks = self.split(raw, run = 2)
+					pres_listAds = []
+					conc_listAds = []
+					pres_listDes = []
+					conc_listDes = []
+					for i in range(len(self.ads_blank[0][0])):
+						conc_listAds.append(blocks[0][1][0])
+					for j in range(len(self.des_blank[0][0])):
+						conc_listDes.append(blocks[0][1][0])
+					 
+					self.ADS_blankMain1.extend([blocks[0][0], conc_listAds])
+					self.DES_blankMain1.extend([blocks[1][0], conc_listDes])
+					
+############################ Adsorption: blank ###############################
+					
+					self.ADSrefPressure = self.aligned_ads_blank[0][0]			
+						
+					self.ADSaligned_blank_weight2_vals1.extend(self.align(self.ADSrefPressure, self.ADS_blankMain1))
+					self.ADSaligned_blank_norm_list1.extend(self.aligned_ads_blank[self.blankNum1])
+				
+					for y in range(len(self.ADSaligned_blank_norm_list1[0])):
+						
+						i = self.ADSaligned_blank_weight2_vals1[y]
+						j = self.ADSaligned_blank_norm_list1[1][y]
+						
+						self.ADSdelta_mass_val1 = (i*j)/100
+						self.ADSdelta_mass_blank_list1.append(self.ADSdelta_mass_val1)
+					
+					self.ADSblank_ads_list1 = [self.ADSrefPressure, self.ADSdelta_mass_blank_list1]
+				
+		############################ Desorption: blank ###############################
+
+					self.DESrefPressure = self.aligned_des_blank[0][0]
+					
+					self.DESaligned_blank_weight2_vals1.extend(self.align(self.DESrefPressure, self.DES_blankMain1))										
+					self.DESaligned_blank_norm_list1.extend(self.aligned_des_blank[self.blankNum1])
+					
+					for y in range(len(self.DESaligned_blank_norm_list1[0])):
+						
+						i = self.DESaligned_blank_weight2_vals1[y]
+						j = self.DESaligned_blank_norm_list1[1][y]
+						
+						self.DESdelta_mass_val1 = (i*j)/100
+						self.DESdelta_mass_blank_list1.append(self.DESdelta_mass_val1)
+
+						self.DESblank_des_list1 = [self.DESrefPressure, self.DESdelta_mass_blank_list1]
+
+					self.ADSmaster_listMain_aliq1.extend(self.ADSblank_ads_list1)
+					self.DESmaster_listMain_aliq1.extend(self.DESblank_des_list1)
+					
+					self.mainPlotsAliq(1)
+
+					self.aliqNumAds1 += 1
+					self.aliqNumDes1 += 1
+
+				self.blankNum1 += 1
+				
+			if find_blankAliq2:
+				self.ADS_blankMain2 = []
+				self.DES_blankMain2 = []
+				content = None
+				path = '%s/TGA/Data_Files/JSON/json_blank/'%os.getcwd()
+				
+				with open(file, "r") as blank_file:
+					print "Blank Num2: %s"%self.blankNum2
+					content = blank_file.read()
+					raw = json.loads(content)
+
+					blocks = self.split(raw, run = 2)
+					pres_listAds = []
+					conc_listAds = []
+					pres_listDes = []
+					conc_listDes = []
+					for i in range(len(self.ads_blank[0][0])):
+						conc_listAds.append(blocks[0][1][0])
+					for j in range(len(self.des_blank[0][0])):
+						conc_listDes.append(blocks[0][1][0])
+					 
+					self.ADS_blankMain2.extend([blocks[0][0], conc_listAds])
+					self.DES_blankMain2.extend([blocks[1][0], conc_listDes])
+					
+############################ Adsorption: blank ###############################
+					
+					self.ADSrefPressure = self.aligned_ads_blank[0][0]			
+						
+					self.ADSaligned_blank_weight2_vals2.extend(self.align(self.ADSrefPressure, self.ADS_blankMain2))
+					self.ADSaligned_blank_norm_list2.extend(self.aligned_ads_blank[self.blankNum2])
+				
+					for y in range(len(self.ADSaligned_blank_norm_list2[0])):
+						
+						i = self.ADSaligned_blank_weight2_vals2[y]
+						j = self.ADSaligned_blank_norm_list2[1][y]
+						
+						self.ADSdelta_mass_val2 = (i*j)/100
+						self.ADSdelta_mass_blank_list2.append(self.ADSdelta_mass_val2)
+					
+					self.ADSblank_ads_list2 = [self.ADSrefPressure, self.ADSdelta_mass_blank_list2]
+				
+		############################ Desorption: blank ###############################
+
+					self.DESrefPressure = self.aligned_des_blank[0][0]
 			
-			self.ADSaligned_aliq2_weight2_vals.extend([self.align(refPressure, self.ADS_aliqMain[x])])
-			self.ADSaligned_aliq2_norm_list.extend([self.aligned_ads_aliq[x][1]])
+					self.DESaligned_blank_weight2_vals2.extend(self.align(self.DESrefPressure, self.DES_blankMain2))										
+					self.DESaligned_blank_norm_list2.extend(self.aligned_des_blank[self.blankNum2])
+					
+					for y in range(len(self.DESaligned_blank_norm_list2[0])):
+						
+						i = self.DESaligned_blank_weight2_vals2[y]
+						j = self.DESaligned_blank_norm_list2[1][y]
+						
+						self.DESdelta_mass_val2 = (i*j)/100
+						self.DESdelta_mass_blank_list.append(self.DESdelta_mass_val2)
 
+						self.DESblank_des_list2 = [self.DESrefPressure, self.DESdelta_mass_blank_list2]
 
-			for y in range(len(self.ADSaligned_aliq2_norm_list[0])):
-				i = self.ADSaligned_aliq2_weight2_vals[x][y]
-				j = self.ADSaligned_aliq2_norm_list[x][y]
-				self.ADSdelta_mass_val = (i*j)/100
-				self.ADSdelta_mass_aliq2_list.append(self.ADSdelta_mass_val)
-		self.ADSdelta_mass_aliq2_list2.extend(self.ADSdelta_mass_aliq2_list)
-		
-		for index in range(0, len(self.ADSdelta_mass_aliq2_list2), len(self.ADSaligned_aliq2_norm_list[0])):
-			begin = index 
-			boundary = index + len(self.ADSaligned_aliq2_norm_list[0])
+					self.ADSmaster_listMain_aliq2.extend(self.ADSblank_ads_list2)
+					self.DESmaster_listMain_aliq2.extend(self.DESblank_des_list2)
+				
+					self.mainPlotsAliq(2)
+
+					self.aliqNumAds2 += 1
+					self.aliqNumDes2 += 1
+
+				self.blankNum2 += 1	
 			
-			self.ADSdelta_mass_aliq2_listMain.append(self.ADSdelta_mass_aliq2_list2[begin:boundary])
-		
-		for index in range(len(self.ADSaligned_aliq2_norm_list[0])):
-				value = [val[index] for val in self.ADSdelta_mass_aliq2_listMain]
-				avg_value = sum(value)/len(self.ADSdelta_mass_aliq2_listMain)
-				self.ADSdelta_mass_aliq2_listAvg.append(avg_value)
-		
-		for index in range(len(self.average_ads_blank[1])):
-			x = self.ADSdelta_mass_aliq2_listAvg[index]
-			y = self.average_ads_blank[1][index]
-			diff = (x - y)
-			self.ADSdelta_mass_aliq2_listDiff.append(diff)
-
-		self.ADSaliq2_ads_list_BlankCorr = [refPressure, self.ADSdelta_mass_aliq2_listDiff]
-		self.ADSaliq2_ads_list = [refPressure, self.ADSdelta_mass_aliq2_listAvg]
-
-############################ Desorption: Aliq2 ###############################
-
-		refPressure = self.aligned_des_aliq[0][0]
-		
-		self.DESaliq2_list = []
-		self.DESaligned_aliq2_weight2_vals = []
-		self.DESaligned_aliq2_norm_list = []
-
-		self.DESdelta_mass_aliq2_list = []
-		self.DESdelta_mass_aliq2_list2 = []
-		self.DESdelta_mass_aliq2_listMain = []
-		self.DESdelta_mass_aliq2_listAvg = []
-		self.DESdelta_mass_aliq2_listDiff = []
-		self.DESaliq2_des_list_BlankCorr = []
-		self.DESaliq2_des_list = []
-
-
-		for x in range(len(self.aligned_des_aliq)/2):
-			self.DESaligned_aliq2_weight2_vals.extend([self.align(refPressure, self.DES_aliqMain[x])])
-			self.DESaligned_aliq2_norm_list.extend([self.aligned_des_aliq[x][1]])
-			
-			for y in range(len(self.DESaligned_aliq2_norm_list[0])):
-				i = self.DESaligned_aliq2_weight2_vals[x][y]
-				j = self.DESaligned_aliq2_norm_list[x][y]
-				self.DESdelta_mass_val = (i*j)/100
-				self.DESdelta_mass_aliq2_list.append(self.DESdelta_mass_val)
-		self.DESdelta_mass_aliq2_list2.extend(self.DESdelta_mass_aliq2_list)
-		
-		for index in range(0, len(self.DESdelta_mass_aliq2_list2), len(self.DESaligned_aliq2_norm_list[0])):
-			begin = index 
-			boundary = index + len(self.DESaligned_aliq2_norm_list[0])
-			
-			self.DESdelta_mass_aliq2_listMain.append(self.DESdelta_mass_aliq2_list2[begin:boundary])
-		
-		for index in range(len(self.DESaligned_aliq2_norm_list[0])):
-				value = [val[index] for val in self.DESdelta_mass_aliq2_listMain]
-				avg_value = sum(value)/len(self.DESdelta_mass_aliq2_listMain)
-				self.DESdelta_mass_aliq2_listAvg.append(avg_value)
-		
-		for index in range(len(self.average_des_blank[1])):
-			x = self.DESdelta_mass_aliq2_listAvg[index]
-			y = self.average_des_blank[1][index]
-			diff = (x - y)
-			self.DESdelta_mass_aliq2_listDiff.append(diff)
-
-		self.DESaliq2_des_list_BlankCorr = [refPressure, self.DESdelta_mass_aliq2_listDiff]
-		self.DESaliq2_des_list = [refPressure, self.DESdelta_mass_aliq2_listAvg]
-
-
-########################### Convert aliq2/aliq3  ######################################
-
-
 
 	def analyseAll(self):
 		self.analyseAliq()
 		self.analyseBlank()
-		self.mainPlots()
-		# self.average_ads_blank 
-		# self.average_des_blank
-		# self.average_diff_ads_blank
-		# self.average_diff_des_blank
+		self.mainPlotsBlank()
+		
+		# print '################  ADS: aliq2 w/blank aliq1  ################'
+		# print 'Raw data list: %s'%self.ADSaliq2_ads_list1
+		# print 'BlankCorr: %s'%self.ADSaliq2_ads_list_BlankCorr1	
+		# print '################  ADS: aliq2 w/blank aliq2  ################'
+		# print 'Raw data list: %s'%self.ADSaliq2_ads_list2
+		# print 'BlankCorr: %s'%self.ADSaliq2_ads_list_BlankCorr2
+		# print '################  DES: aliq2 w/blank aliq1  ################'
+		# print 'Raw data list: %s'%self.DESaliq2_des_list1
+		# print 'BlankCorr: %s'%self.DESaliq2_des_list_BlankCorr1	
+		# print '################  ADS: aliq2 w/blank aliq2  ################'
+		# print 'Raw data list: %s'%self.DESaliq2_des_list2
+		# print 'BlankCorr: %s'%self.DESaliq2_des_list_BlankCorr2
 
-		# self.average_ads_aliq
-		# self.average_des_aliq
-		# self.average_diff_ads_aliq
-		# self.average_diff_des_aliq
+################################################ Lists for referernce ################################################
+
+		# print "######################## aliqMain ###################################"
+		# print self.ADS_aliqMain 
+		# print self.DES_aliqMain 
+		# # print "######################## origins blanks/aliqs ###################################"
+		# # print self.origin_blanks 
+		# # print self.origin_aliqs 
+		# print "######################## blank data ###################################"
+		# # blanks data
+		# print self.ads_blank 
+		# print self.des_blank 
+		# print "######################## aliq data ###################################"
+		# # aliqs data
+		# print self.ads_aliq[0][1]
+		# print self.des_aliq[0][1]
+		# # print "######################## diff/diff2 blank ###################################"
+		# # # diff blanks data
+		# # print self.diff_ads_blank 
+		# # print self.diff_des_blank 
+		# # print self.diff_ads_blank 
+		# # print self.diff_des_blank 
+		# print "######################## diff/diff2 aliq ###################################"
+		# # diff aliqs data
+		# print self.diff_ads_aliq[0]['diff'][1]
+		# print self.diff_des_aliq[0]['diff'][1]
+		# print self.diff_ads_aliq2 
+		# print self.diff_des_aliq2 
+		# # print "######################## average blank ###################################"
+		# # # average blanks data
+		# # print self.average_ads_blank 
+		# # print self.average_des_blank 
+		# print "######################## average aliq ###################################"
+		# # average aliqs data
+		# print self.average_ads_aliq 
+		# print self.average_des_aliq 
+		# print "######################## average diff blank ###################################"
+		# # average diffs blanks data
+		# print self.average_diff_ads_blank[1]
+		# print self.average_diff_des_blank[1] 
+		# print "######################## average diff aliq ###################################"
+		# # average diffs aliqs data
+		# print self.average_diff_ads_aliq 
+		# print self.average_diff_des_aliq 
+	
+		
+
+		
+
+
+		
 
 
 		
