@@ -10,30 +10,27 @@ if __name__ == '__main__':
 	analyse.analyseAll()
 	plot = TGA_Plot()
 
-# # ############################################# Simple plot: Aliq2 #############################################
+# ############################################# Simple plot: Aliq2 #############################################
 
-# w/ blank subtraction # #
+# w/ blank subtraction 
 
-# plot.aliqSimplePlot(analyse.ADSmaster_list_blankCorr[0], analyse.DESmaster_list_blankCorr[0], 'aliq2_analysis_blankCorr1', 'Adsorption',\
-# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+plot.aliqSimplePlot(analyse.ADS_aliqBlank1_list, analyse.DES_aliqBlank1_list, 'aliq2_blank1_corr', 'Adsorption',\
+													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
 
-# plot.aliqSimplePlot(analyse.ADSmaster_list_blankCorr[1], analyse.DESmaster_list_blankCorr[1], 'aliq2_analysis_blankCorr2', 'Adsorption',\
-# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
-
-# plot.aliqSimplePlot(analyse.ADSmaster_list_blankCorr[2], analyse.DESmaster_list_blankCorr[2], 'aliq2_analysis_blankCorr3', 'Adsorption',\
-# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+plot.aliqSimplePlot(analyse.ADS_aliqBlank2_list, analyse.DES_aliqBlank2_list, 'aliq2_blank2_corr', 'Adsorption',\
+													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
 
 
-# # w/o blank subtraction # #
+# w/o blank subtraction 
 
-# plot.aliqSimplePlot(analyse.ADSmaster_list_raw[0], analyse.DESmaster_list_raw[0], 'aliq2_analysis_raw1', 'Adsorption',\
-# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+plot.aliqSimplePlot(analyse.ADS_aliqRaw_list, analyse.DES_aliqRaw_list, 'aliq2_raw', 'Adsorption',\
+													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
 
-# plot.aliqSimplePlot(analyse.ADSmaster_list_raw[1], analyse.DESmaster_list_raw[1], 'aliq2_analysis_raw2', 'Adsorption',\
-# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
 
-# plot.aliqSimplePlot(analyse.ADSmaster_list_raw[2], analyse.DESmaster_list_raw[2], 'aliq2_analysis_raw3', 'Adsorption',\
-# 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
+plot.ads_aliqManyPlot(analyse.ADS_aliqBlank_many_list, 'ADSraw_blank_comparison', xmax = 45, ymax = 1.2)
+
+plot.ads_aliqManyPlot(analyse.DES_aliqBlank_many_list, 'DESraw_blank_comparison', xmax = 45, ymax = 1.2)
+
 
 # ############################################# Simple plot: Aliq3 #############################################
 

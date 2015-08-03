@@ -242,7 +242,7 @@ class TGA_Plot:
 		
 		plt.plot(listOne[0], listOne[1], markerADS, mec = 'r', ms = float(4.5), ls = '-', lw = float(1.5), label = 'unknown', zorder = 3.5)
 		plt.plot(listTwo[0], listTwo[1], markerDES, mec = 'b', ms = float(4.5), ls = '-', lw = float(1.5), label = 'unknown', zorder = 3.5)
-		plt.plot(0, max(listOne[0]), 'g-')
+		# plt.plot(0, refValue, 'g-')
 
 		plt.grid(b=True, which='major', color='k', linestyle='-')
 		plt.axis([xmin, xmax, ymin, ymax])
