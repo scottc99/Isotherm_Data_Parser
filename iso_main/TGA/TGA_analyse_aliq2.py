@@ -685,6 +685,9 @@ class TGA_AnalyseAliq2:
 		self.ADS_blankDiff_list = []
 		self.ADS_blank1_diff_list = []
 		self.ADS_blank2_diff_list = []
+		self.ADSblank1_compareAll_list = []
+		self.ADSblank2_compareAll_list = []
+		self.ADSaliqBlank_compareAll_list = []
 
 		ADSaliq_average = []
 		ADSblank1_average = []
@@ -693,6 +696,10 @@ class TGA_AnalyseAliq2:
 		diff_aliqBlank1_list = []
 		diff_aliqBlank2_list = []
 		blankDiff_list = []
+
+		diff_aliqRaw_aliqBlank1_list = []
+		diff_aliqRaw_aliqBlank2_list = []
+		diff_aliqBlank1_aliqBlank2_list = []
 
 		for index in range(len(self.ADSdelta_mass_aliq2_listMain[0])):
 			
@@ -719,12 +726,27 @@ class TGA_AnalyseAliq2:
 			diff_aliqB1 = (xVal - b1Val)
 			diff_aliqB2 = (xVal - b2Val)
 
+		####################################################################################################################
+
+			diff_aliqRaw_aliqBlank1 = xVal - diff_aliqB1
+			diff_aliqRaw_aliqBlank1_list.append(diff_aliqRaw_aliqBlank1)
+
+			diff_aliqRaw_aliqBlank2 = xVal - diff_aliqB2
+			diff_aliqRaw_aliqBlank2_list.append(diff_aliqRaw_aliqBlank2)
+
+			diff_aliqBlank1_aliqBlank2 = diff_aliqB1 - diff_aliqB2
+			diff_aliqBlank1_aliqBlank2_list.append(diff_aliqBlank1_aliqBlank2)
+
+		####################################################################################################################
+
 			blankDiff = abs(b1Val - b2Val)
 
 			diff_aliqBlank1_list.append(diff_aliqB1)
 			diff_aliqBlank2_list.append(diff_aliqB2)
 
 			blankDiff_list.append(blankDiff)
+
+############################################################################################################################
 
 		self.ADS_aliqBlank1_list.extend([self.ADSrefPressure, diff_aliqBlank1_list])
 		self.ADS_aliqBlank2_list.extend([self.ADSrefPressure, diff_aliqBlank2_list])
@@ -734,8 +756,29 @@ class TGA_AnalyseAliq2:
 		self.ADS_blankDiff_list.extend([self.ADSrefPressure, blankDiff_list])
 		
 		self.ADS_aliqBlank_many_list.extend([self.ADS_aliqRaw_list, self.ADS_aliqBlank1_list, self.ADS_aliqBlank2_list])
-		# self.ADS_aliqBlank_diffComparison_list = []
-	
+
+############################################################################################################################
+
+		self.blank1_list1 = [self.ADSrefPressure, self.ADS_Aliq1_blankMain[0]]
+		self.blank1_list2 = [self.ADSrefPressure, self.ADS_Aliq1_blankMain[1]]
+		self.blank1_list3 = [self.ADSrefPressure, self.ADS_Aliq1_blankMain[2]]
+		self.blank1_listAvg = [self.ADSrefPressure, ADSblank1_average]
+
+		self.ADSblank1_compareAll_list.extend([self.blank1_list1, self.blank1_list2, self.blank1_list3, self.blank1_listAvg])
+
+		self.blank2_list1 = [self.ADSrefPressure, self.ADS_Aliq2_blankMain[0]]
+		self.blank2_list2 = [self.ADSrefPressure, self.ADS_Aliq2_blankMain[1]]
+		self.blank2_list3 = [self.ADSrefPressure, self.ADS_Aliq2_blankMain[2]]
+		self.blank2_listAvg = [self.ADSrefPressure, ADSblank2_average]
+
+		self.ADSblank2_compareAll_list.extend([self.blank2_list1, self.blank2_list2, self.blank2_list3, self.blank2_listAvg])
+
+############################################################################################################################
+		
+		self.ADSaliqBlank_compareAll_list.extend([[self.ADSrefPressure, diff_aliqRaw_aliqBlank1_list],\
+												  [self.ADSrefPressure, diff_aliqRaw_aliqBlank2_list],\
+												  [self.ADSrefPressure, diff_aliqBlank1_aliqBlank2_list]])
+
 
 	def desPlotsCombine(self):
 
@@ -744,6 +787,9 @@ class TGA_AnalyseAliq2:
 		self.DES_aliqBlank2_list = []
 		self.DES_aliqBlank_many_list = []
 		self.DES_blankDiff_list = []
+		self.DESblank1_compareAll_list = []
+		self.DESblank2_compareAll_list = []
+		self.DESaliqBlank_compareAll_list = []
 
 		DESaliq_average = []
 		DESblank1_average = []
@@ -752,6 +798,10 @@ class TGA_AnalyseAliq2:
 		diff_aliqBlank1_list = []
 		diff_aliqBlank2_list = []
 		blankDiff_list = []
+
+		diff_aliqRaw_aliqBlank1_list = []
+		diff_aliqRaw_aliqBlank2_list = []
+		diff_aliqBlank1_aliqBlank2_list = []
 
 		for index in range(len(self.DESdelta_mass_aliq2_listMain[0])):
 			
@@ -778,6 +828,19 @@ class TGA_AnalyseAliq2:
 			diff_aliqB1 = (xVal - b1Val)
 			diff_aliqB2 = (xVal - b2Val)
 
+		####################################################################################################################
+
+			diff_aliqRaw_aliqBlank1 = xVal - diff_aliqB1
+			diff_aliqRaw_aliqBlank1_list.append(diff_aliqRaw_aliqBlank1)
+
+			diff_aliqRaw_aliqBlank2 = xVal - diff_aliqB2
+			diff_aliqRaw_aliqBlank2_list.append(diff_aliqRaw_aliqBlank2)
+
+			diff_aliqBlank1_aliqBlank2 = diff_aliqB1 - diff_aliqB2
+			diff_aliqBlank1_aliqBlank2_list.append(diff_aliqBlank1_aliqBlank2)
+
+		####################################################################################################################
+
 			blankDiff = abs(b1Val - b2Val)
 
 			diff_aliqBlank1_list.append(diff_aliqB1)
@@ -785,13 +848,37 @@ class TGA_AnalyseAliq2:
 
 			blankDiff_list.append(blankDiff)
 
+############################################################################################################################
+
 		self.DES_aliqBlank1_list.extend([self.DESrefPressure, diff_aliqBlank1_list])
 		self.DES_aliqBlank2_list.extend([self.DESrefPressure, diff_aliqBlank2_list])
 
 		self.DES_aliqBlank_many_list.extend([self.DES_aliqRaw_list, self.DES_aliqBlank1_list, self.DES_aliqBlank2_list])
 
 		self.DES_blankDiff_list.extend([self.DESrefPressure, blankDiff_list])
-		print self.DES_aliqBlank_many_list
+
+############################################################################################################################
+
+		self.blank1_list1 = [self.DESrefPressure, self.DES_Aliq1_blankMain[0]]
+		self.blank1_list2 = [self.DESrefPressure, self.DES_Aliq1_blankMain[1]]
+		self.blank1_list3 = [self.DESrefPressure, self.DES_Aliq1_blankMain[2]]
+		self.blank1_listAvg = [self.DESrefPressure, DESblank1_average]
+
+		self.DESblank1_compareAll_list.extend([self.blank1_list1, self.blank1_list2, self.blank1_list3, self.blank1_listAvg])
+
+		self.blank2_list1 = [self.DESrefPressure, self.DES_Aliq2_blankMain[0]]
+		self.blank2_list2 = [self.DESrefPressure, self.DES_Aliq2_blankMain[1]]
+		self.blank2_list3 = [self.DESrefPressure, self.DES_Aliq2_blankMain[2]]
+		self.blank2_listAvg = [self.DESrefPressure, DESblank2_average]
+
+		self.DESblank2_compareAll_list.extend([self.blank2_list1, self.blank2_list2, self.blank2_list3, self.blank2_listAvg])
+
+############################################################################################################################
+
+		self.DESaliqBlank_compareAll_list.extend([[self.DESrefPressure, diff_aliqRaw_aliqBlank1_list],\
+												  [self.DESrefPressure, diff_aliqRaw_aliqBlank2_list],\
+												  [self.DESrefPressure, diff_aliqBlank1_aliqBlank2_list]])
+
 	def mainPlotsAliq(self):
 			
 		aliqNum = 0

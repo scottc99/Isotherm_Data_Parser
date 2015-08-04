@@ -32,14 +32,25 @@ plot.aliqSimplePlot(analyse.ADS_aliqRaw_list, analyse.DES_aliqRaw_list, 'aliq2_r
 
 ############################################# Many plots #############################################
 
+# compare aliq difference between raw, corected1, and corrected2
 
-plot.ads_aliqManyPlot(analyse.ADS_aliqBlank_many_list, 'ADSraw_blank_comparison')
+plot.ads_aliqDiffPlot(analyse.ADSaliqBlank_compareAll_list[0], analyse.ADSaliqBlank_compareAll_list[1],\
+					  analyse.ADSaliqBlank_compareAll_list[2], 'ADSraw_blank_comparison', 0, 'aliqRaw_aliqBlank1_diff',\
+					  'aliqRaw_aliqBlank2_diff', 'aliqBlank1_aliqBlank2_diff', xmax = 45, ymin = -0.03, ymax = 0.10)
 
-plot.des_aliqManyPlot(analyse.DES_aliqBlank_many_list, 'DESraw_blank_comparison')
+plot.des_aliqDiffPlot(analyse.DESaliqBlank_compareAll_list[0], analyse.DESaliqBlank_compareAll_list[1],\
+					  analyse.DESaliqBlank_compareAll_list[2], 'DESraw_blank_comparison', 0, 'aliqRaw_aliqBlank1_diff',\
+					  'aliqRaw_aliqBlank2_diff', 'aliqBlank1_aliqBlank2_diff', xmax = 45, ymin = -0.03, ymax = 0.15)
 
-# plot.ads_blankManyPlot(analyse.ADS_aliqBlank_many_list, 'ADSraw_blank_comparison')
+# compare all blanks with average 
 
-# plot.des_blankManyPlot(analyse.DES_aliqBlank_many_list, 'DESraw_blank_comparison')
+plot.ads_blankManyPlot(analyse.ADSblank1_compareAll_list, 'ADScompare_all_blanks_1', xmax = 45,  ymax = 0.2)
+
+plot.des_blankManyPlot(analyse.DESblank1_compareAll_list, 'DEScompare_all_blanks_1', xmax = 45,  ymax = 0.2)
+
+plot.ads_blankManyPlot(analyse.ADSblank2_compareAll_list, 'ADScompare_all_blanks_2', xmax = 45,  ymax = 0.2)
+
+plot.des_blankManyPlot(analyse.DESblank2_compareAll_list, 'DEScompare_all_blanks_2', xmax = 45,  ymax = 0.2)
 
 ############################################# Diff plots #############################################
 
