@@ -176,7 +176,7 @@ class TGA_Plot:
 		plt.ylabel('Uptake (Change in Mass (mg))')
 		plt.legend([legendOne, legendTwo, legendDiff], loc = 2, fontsize = 10)
 
-		self.ads_blankDiffPath = '%s/TGA/TGA_plots/Blank_plots/Diff_plots/Adsorption/diff_plot_%s_%d.png'\
+		self.ads_blankDiffPath = '%s/TGA/TGA_plots/Blank_plots/Diff_plots/Adsorption/diff_plot_%s_%s.png'\
 					 	 			  %(os.getcwd(), label, index)
 		plt.savefig('%s'%self.ads_blankDiffPath)
 		plt.close()

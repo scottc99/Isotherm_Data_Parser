@@ -1,16 +1,20 @@
-from TGA_analyse_aliq2 import TGA_Analyse 
+from TGA_analyse_aliq2 import TGA_AnalyseAliq2
+# from TGA_analyse_aliq3 import TGA_AnalyseAliq3
 import simplejson as json 
 from TGA_plot_surf import TGA_Plot
 import numpy as np
 
 
 if __name__ == '__main__':
-	analyse = TGA_Analyse()
+	analyse = TGA_AnalyseAliq2()
+	# analyse3 = TGA_AnalyseAliq3()
 	analyse.load()
 	analyse.analyseAll()
+	# analyse3.load()
+	# analyse3.analyseAll()
 	plot = TGA_Plot()
 
-# ############################################# Simple plot: Aliq2 #############################################
+############################################# Simple plots #############################################
 
 # w/ blank subtraction 
 
@@ -26,10 +30,21 @@ plot.aliqSimplePlot(analyse.ADS_aliqBlank2_list, analyse.DES_aliqBlank2_list, 'a
 plot.aliqSimplePlot(analyse.ADS_aliqRaw_list, analyse.DES_aliqRaw_list, 'aliq2_raw', 'Adsorption',\
 													'Desorption', xmax = 45, ymax = 20, yAxisLabel = 'delta mass (mg)')
 
+############################################# Many plots #############################################
 
-plot.ads_aliqManyPlot(analyse.ADS_aliqBlank_many_list, 'ADSraw_blank_comparison', xmax = 45, ymax = 1.2)
 
-plot.ads_aliqManyPlot(analyse.DES_aliqBlank_many_list, 'DESraw_blank_comparison', xmax = 45, ymax = 1.2)
+plot.ads_aliqManyPlot(analyse.ADS_aliqBlank_many_list, 'ADSraw_blank_comparison')
+
+plot.des_aliqManyPlot(analyse.DES_aliqBlank_many_list, 'DESraw_blank_comparison')
+
+# plot.ads_blankManyPlot(analyse.ADS_aliqBlank_many_list, 'ADSraw_blank_comparison')
+
+# plot.des_blankManyPlot(analyse.DES_aliqBlank_many_list, 'DESraw_blank_comparison')
+
+############################################# Diff plots #############################################
+
+plot.ads_blankDiffPlot(analyse.ADS_blank1_diff_list, analyse.ADS_blank2_diff_list, analyse.ADS_blankDiff_list, 'blanks_diffs_ads',\
+																				'Difference between lines', xmax = 45, ymax = 0.1)
 
 
 # ############################################# Simple plot: Aliq3 #############################################
