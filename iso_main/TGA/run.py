@@ -1,7 +1,7 @@
 from TGA_analyse import TGA_Analyse
 import simplejson as json 
 from TGA_plot import TGA_Plot
-
+import numpy as np
 
 
 if __name__ == '__main__':
@@ -16,13 +16,21 @@ if __name__ == '__main__':
 
 ######################################### Many plots: blank diffs. #########################################
 
+<<<<<<< HEAD
+	# # print json.dumps([ diff['diff'] for diff in analyse.diff_ads_blank])
+	# plot.ads_blankManyPlot([diff['diff'] for diff in analyse.diff_ads_blank], 'many_blank_diffs_ads',\
+	# 					   													   xmax = 45, ymax = 0.2)
+	# plot.des_blankManyPlot([diff['diff'] for diff in analyse.diff_des_blank], 'many_blank_diffs_des',\
+	# 					   													   xmax = 45, ymax = 0.2)
+=======
 	# print json.dumps([ diff['diff'] for diff in analyse.diff_ads_blank])
 	plot.ads_blankManyPlot([diff['diff'] for diff in analyse.diff_ads_blank], 'many_blank_diffs_ads',\
 						   													   xmax = 45, ymax = 0.2)
 	plot.des_blankManyPlot([diff['diff'] for diff in analyse.diff_des_blank], 'many_blank_diffs_des',\
 						   													   xmax = 45, ymax = 0.2)
+>>>>>>> 751597ef4341f73f7b250232a6182fac2d0db008
 	
-######################################### Diff plot: blanks and their diffs. #########################################
+# ######################################### Diff plot: blanks and their diffs. #########################################
 
 	index = 0
 	for diff in analyse.diff_ads_blank:
@@ -42,22 +50,27 @@ if __name__ == '__main__':
 							   index, '%s'%origin1, '%s'%origin2, 'Difference between lines', xmax = 45, ymax = 1.2)
 		index += 1
 
+<<<<<<< HEAD
 	# print json.dumps([ {'blank1':analyse.ads_blank[diff['i']], 'blank2':analyse.ads_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_blank])
 	# print json.dumps([ {'blank1':analyse.des_blank[diff['i']], 'blank2':analyse.des_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_blank])
+=======
+	print json.dumps([ {'blank1':analyse.ads_blank[diff['i']], 'blank2':analyse.ads_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_blank])
+	print json.dumps([ {'blank1':analyse.des_blank[diff['i']], 'blank2':analyse.des_blank[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_blank])
+>>>>>>> 751597ef4341f73f7b250232a6182fac2d0db008
 
 ######################################### Simple plot: blanks average diffs #########################################
 
 	plot.blankSimplePlot(analyse.average_diff_ads_blank, analyse.average_diff_des_blank, 'blanks_avg_diffs',\
 														 'Adsorption', 'Desorption', xmax = 45, ymax = 1.2)
 
-######################################### Simple plot: blanks average. #########################################
+# ######################################### Simple plot: blanks average. #########################################
 
 	
-	plot.blankSimplePlot(analyse.average_ads_blank, analyse.average_des_blank, 'blanks_avg', 'Adsorption', 'Desorption',\
-													xmax = 45, ymax = 1.2)
+# 	plot.blankSimplePlot(analyse.average_ads_blank, analyse.average_des_blank, 'blanks_avg', 'Adsorption', 'Desorption',\
+# 													xmax = 45, ymax = 1.2)
 
-	# plot.ads_aliqManyPlot(analyse.ads_aliq, 'many_blank_ads_all')
-	# plot.des_aliqManyPlot(analyse.des_aliq, 'many_blank_des_all')
+# 	# plot.ads_aliqManyPlprint self.average_des_blankot(analyse.ads_aliq, 'many_blank_ads_all')
+# 	# plot.des_aliqManyPlot(analyse.des_aliq, 'many_blank_des_all')
 
 ######################################### Many plots: aliq diffs. #########################################
 
@@ -79,7 +92,11 @@ if __name__ == '__main__':
 	# print json.dumps([ diff['diff'] for diff in analyse.diff_ads_aliq])
 	# print json.dumps([ diff['diff'] for diff in analyse.diff_des_aliq])
 	
+<<<<<<< HEAD
 ######################################### Diff plot: aliqs and their diffs. #########################################
+=======
+# ######################################## Diff plot: aliqs and their diffs. #########################################
+>>>>>>> 751597ef4341f73f7b250232a6182fac2d0db008
 
 	index  = 0
 	for diff in analyse.diff_ads_aliq:
@@ -97,22 +114,24 @@ if __name__ == '__main__':
 
 		plot.des_aliqDiffPlot(analyse.des_aliq[diff['i']], analyse.des_aliq[diff['j']], diff['diff'], 'aliqs_diffs_des',\
 							  index, '%s'%origin1, '%s'%origin2, 'Difference between lines', xmax = 45, ymax = 20)
+
 		index += 1
 
-	# print json.dumps([ {'aliq1':analyse.ads_aliq[diff['i']], 'aliq2':analyse.ads_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_aliq])
-	# print json.dumps([ {'aliq1':analyse.des_aliq[diff['i']], 'aliq2':analyse.des_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_aliq])
+# 	# print json.dumps([ {'aliq1':analyse.ads_aliq[diff['i']], 'aliq2':analyse.ads_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_ads_aliq])
+# 	# print json.dumps([ {'aliq1':analyse.des_aliq[diff['i']], 'aliq2':analyse.des_aliq[diff['j']], 'diff':diff['diff']} for diff in analyse.diff_des_aliq])
 
-######################################### Many plots: aliqs corrected. #########################################
+# ######################################### Many plots: aliqs corrected. #########################################
 
 	
-	plot.ads_aliqManyPlot(analyse.corrected_ads_aliq, 'aliq_ads_corrected', xmax = 45, ymax = 16)
-	plot.des_aliqManyPlot(analyse.corrected_des_aliq, 'aliq_des_corrected', xmin = 0, xmax = 45, ymin = 10, ymax = 16)
+# 	plot.ads_aliqManyPlot(analyse.corrected_ads_aliq, 'aliq_ads_corrected', xmax = 45, ymax = 16)
+# 	plot.des_aliqManyPlot(analyse.corrected_des_aliq, 'aliq_des_corrected', xmin = 0, xmax = 45, ymin = 10, ymax = 16)
 
 
 ######################################### Simple plot: aliqs corrected average. #########################################
 
-	plot.aliqSimplePlot(analyse.average_corrected_ads_aliq, analyse.average_corrected_des_aliq, 'aliq_corr_avg', 'Adsorption',\
-															'Desorption', xmax = 45, ymax = 20)
+	# plot.aliqSimplePlot(analyse.average_corrected_ads_aliq, analyse.average_corrected_des_aliq, 'aliq_corr_avg', 'Adsorption',\
+	# 														'Desorption', xmax = 45, ymax = 20)
 
 	
 
+# 	
